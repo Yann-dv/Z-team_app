@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import logo from './logo192.png';
 import './App.css';
 
 function App() {
@@ -6,8 +6,14 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Welcome to the Z-Team Academy
+        <ul class="header-nav-ul">
+          <li class="header-nav-li"><a href="#" class="header-nav-links">Link to another page</a></li>
+          <li class="header-nav-li"><a href="#" class="header-nav-links">Link to another page</a></li>
+          <li class="header-nav-li"><a href="#" class="header-nav-links">Link to another page</a></li>
+          <li class="header-nav-li"><a href="#" class="header-nav-links">Link to another page</a></li>
+        </ul>
+        <p class="header-welcome">
+          Welcome to Z-Team Academy
         </p>
         <a
           className="App-link"
