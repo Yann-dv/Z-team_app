@@ -7,15 +7,15 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload. Done, baby !
+          Welcome to the Z-Team Academy
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://www.helloasso.com/associations/a-m-j-z-team-boulogne/adhesions/inscription-zteam-bjj-boulogne-2022-2023"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Inscription Link - 2022/2023
         </a>
       </header>
     </div>
