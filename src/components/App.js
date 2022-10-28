@@ -1,8 +1,7 @@
-import './App.css';
+import '../styles/App.css';
 import Header from './Header.js';
 import HomeContent from './Home.js';
 import Footer from './Footer.js';
-import Legal from './Legal.js';
 
 function App() {
   return (

@@ -1,6 +1,6 @@
-import Img1 from "./img/competition_1.jpg";
-import Img2 from "./img/competition_2.jpg";
-import Img3 from "./img/competition_3.jpg";
+import Img1 from "../img/competition_1.jpg";
+import Img2 from "../img/competition_2.jpg";
+import Img3 from "../img/competition_3.jpg";
 
 function HomeContent() {
   return (
