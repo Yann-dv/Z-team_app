@@ -15,7 +15,7 @@ function Navbar() {
         <div className="navBar">
           <ul className="header-nav-ul">
               <li className="header-nav-li"><Link to="/about" className="header-nav-links">About us</Link></li>
-              <li className="header-nav-li"><Link to="/planning" className="header-nav-links">Planning</Link></li>
+              <li className="header-nav-li"><Link to="/schedule" className="header-nav-links">Schedule</Link></li>
               <li className="header-nav-li"><Link to="/prices" className="header-nav-links">Prices</Link></li>
               <li className="header-nav-li"><Link to="/teachers" className="header-nav-links">Teachers</Link></li>
               <li className="header-nav-li"><Link to="/gallery" className="header-nav-links">Gallery</Link></li>

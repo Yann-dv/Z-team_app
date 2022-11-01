@@ -1,12 +1,9 @@
 import '../styles/App.css';
-import {
-  Routes,
-  Route,
-} from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Header from './Header.js';
 import Home from './Home.js';
 import About from './About.js';
-import Planning from './Planning.js';
+import Schedule from './Schedule.js';
 import Prices from './Prices.js';
 import Teachers from './Teachers.js';
 import Gallery from './Gallery.js';
@@ -19,7 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/planning" element={<Planning />} />
+        <Route path="/schedule" element={<Schedule />} />
         <Route path="/prices" element={<Prices />} />
         <Route path="/teachers" element={<Teachers />} />
         <Route path="/gallery" element={<Gallery />} />
