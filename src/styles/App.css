@@ -1,0 +1,163 @@
+
+:root {
+  --dark-background : #181A1B;
+  --footer-background : #2d2a2d;
+  --purple-background : #5d0a61;
+  --img-background : #cccccc;
+  --white-text : white;
+  --black-text : black;
+  --links-text : #61dafb;
+}
+
+a {
+  color: var(--links-text);
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 10vmin;
+  pointer-events: none;
+  margin-left: 1rem;
+}
+
+/*@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}*/
+
+.App-header {
+  /*background-color: #282c34;*/
+  background-color: var(--dark-background );
+  min-height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  font-size: calc(10px + 2vmin);
+  color: var(--white-text);
+  position: sticky;
+  top: 0;
+}
+
+.banner {
+  height: 110vmin;
+  width: auto;
+  background-image: url("../img/team_banner_min.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: var(--img-background);
+}
+
+.bannerTitle {
+  font-size: 5rem;
+  color: var(--white-text);
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: underline;
+  display: inline-block;
+  border-top: 5px solid var(--white-text);
+  line-height: 60px;
+}
+
+.navBar {
+  display: flex;
+  margin: 0;
+}
+.header-nav-ul {
+  display: inherit;
+  flex-direction: row;
+  margin: 0;
+}
+
+.header-nav-li {
+  list-style: none;
+  position: relative;
+}
+
+.header-nav-links {
+  color: var(--white-text);
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 1rem;
+  display: block;
+}
+
+.header-nav-links:hover {
+  background-color: var(--purple-background);
+  text-decoration: underline;
+}
+
+.registration-link {
+  align-self: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/*@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}*/
+
+
+.homeContainer {
+  background-color: var(--dark-background);
+  margin: 0;
+}
+
+.academyHistory {
+  margin: 0;
+  padding: 5rem;
+  color: var(--white-text);
+  font-size: 1.5rem;
+}
+
+.homeImages {
+  display: flex;
+  justify-content: center;
+}
+
+.homeImageContainer {
+  height: 350px;
+  width: 350px;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.homeImage {
+  object-fit: contain;
+  max-height: 100%;
+}
+
+.footerList {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  background-color: var(--footer-background);
+  justify-content: center;
+}
+
+.footerLi {
+  list-style: none;
+  position: relative;
+}
+
+.footerLink {
+  color: var(--white-text);
+  font-size: 1.2rem;
+  padding: 1rem;
+  display: block;
+}
+
+.footerLink:hover {
+  color: var(--links-text);
+}
