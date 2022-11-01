@@ -5,6 +5,7 @@ import Img3 from "../img/competition_3.jpg";
 function HomeContent() {
   return (
     <section className="homeContainer">
+      <Banner />
       <article className="homePresentation">
         <p className="academyHistory">
           The Z-Team was founded in 2000 by Mestres Zakaria ARHAB, Karim
@@ -45,5 +46,14 @@ function HomeContent() {
     </section>
   );
 }
+
+function Banner() {
+  return (
+    <section className="banner" >
+      <h1 className="bannerTitle">Z-Team Academy</h1>
+    </section>
+  );
+}
+
 
 export default HomeContent;
