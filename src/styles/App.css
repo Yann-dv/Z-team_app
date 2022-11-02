@@ -141,7 +141,7 @@ a {
   color: var(--links-text);
 }
 
-.scheduleContainer, .teachersContainer {
+.scheduleContainer, .teachersContainer, .pricesContainer {
   background-color: black;
   display: flex;
   justify-content: center;
@@ -151,7 +151,7 @@ a {
   display: inherit;
 }
 
-.scheduleBackground, .teachersBackground{
+.scheduleBackground, .teachersBackground, .pricesBackground{
   background-image: url('../assets/logo.svg');
   background-repeat: no-repeat;
   background-position: center;
@@ -191,6 +191,31 @@ tfoot > tr  {
 }
 tbody > tr:hover {
   background-color: #8534cd;
+  text-decoration: underline;
+}
+
+.registration-btn {
+  background-color:#8534cd;
+  color: var(--black-text);
+  margin-top: 1rem;
+  padding: 0;
+}
+
+.registration-btn a {
+  display: block;
+  background-color:#8534cd;
+  color: var(--black-text);
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 1.5rem;
+  border: 2px solid transparent;
+}
+
+.registration-btn a:hover {
+  background-color: var(--black-text);
+  color: #8534cd;
+  text-decoration: underline;
+  border: 2px solid #8534cd;
 }
 
 .teachers-title {
