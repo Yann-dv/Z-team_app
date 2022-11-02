@@ -19,19 +19,11 @@ a {
 }
 
 .App-logo {
-  height: 10vmin;
-  pointer-events: none;
-  margin-left: 1rem;
+  display: none;
+  height: 0;
 }
 
-/*@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}*/
-
 .App-header {
-  /*background-color: #282c34;*/
   background-color: var(--dark-background );
   min-height: 8vh;
   display: flex;
@@ -71,6 +63,7 @@ a {
 }
 .header-nav-ul {
   display: inherit;
+  flex-wrap: wrap;
   flex-direction: row;
   margin: 0;
 }
@@ -93,23 +86,6 @@ a {
   text-decoration: underline;
 }
 
-.registration-link {
-  align-self: center;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-/*@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}*/
-
-
 .homeContainer {
   background-color: var(--dark-background);
   margin: 0;
@@ -124,6 +100,7 @@ a {
 
 .homeImages {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -201,4 +178,20 @@ tfoot > tr  {
 }
 tbody > tr:hover {
   background-color: #8534cd;
+}
+
+@media only screen and (min-width: 1024px) {
+  .registration-link {
+    align-self: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .App-logo {
+    display: block;
+    height: 10vmin;
+    pointer-events: none;
+    margin-left: 1rem;
+  }
 }
