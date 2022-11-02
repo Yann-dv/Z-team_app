@@ -141,12 +141,11 @@ a {
   color: var(--links-text);
 }
 
-.scheduleContainer {
+.scheduleContainer, .teachersContainer {
   background-color: black;
 }
 
-.schedule{
-  display: flex;
+.scheduleBackground, .teachersBackground{
   padding: 5rem;
   background-image: url('../assets/logo.svg');
   background-repeat: no-repeat;
@@ -162,14 +161,17 @@ table {
 
 td, th {
   border: 2px solid var(--black-text);
-  padding: 1.5rem;
+  padding: 2rem;
   text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 th {
   background: var(--purple-background);
   color: white;
   border-radius: 0;
   padding: 1.5rem;
+  font-size: 2rem;
 }
 
 tfoot > tr  {
@@ -178,6 +180,86 @@ tfoot > tr  {
 }
 tbody > tr:hover {
   background-color: #8534cd;
+}
+
+.teachers-title {
+  color: var(--white-text);
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-size: 2rem;
+}
+
+.teachers-grid {
+  padding-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(auto, auto);
+  gap: 10px;
+}
+
+.teacherCard {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+  background-color: rgba(128, 128, 128, 0.877);
+}
+
+.teacherCard-img {
+ align-self: center;
+ border-radius: 50%;
+}
+
+.teacherCard-name {
+  color: var(--white-text);
+  font-size: 1.8rem;
+  text-decoration: underline;
+  text-transform: uppercase;
+  margin: .5rem;
+}
+
+.teacherCard-content {
+  color: var(--white-text);
+  font-size: 1.4rem;
+}
+
+.one {
+  grid-column: 1 / 3;
+  grid-row: 1;
+}
+
+.two {
+  grid-column: 3 / 5;
+  grid-row: 1;
+}
+
+.three {
+  grid-column: 1 / 2;
+  grid-row: 2;
+}
+
+.four {
+  grid-column: 2 / 3;
+  grid-row: 2;
+}
+
+.five {
+  grid-column: 3 / 4;
+  grid-row: 2;
+}
+
+.six {
+  grid-column: 4 / 5;
+  grid-row: 2;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "header header header header"
+    "main main . sidebar"
+    "footer footer footer footer";
 }
 
 @media only screen and (min-width: 1024px) {
