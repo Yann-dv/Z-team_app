@@ -143,14 +143,25 @@ a {
 
 .scheduleContainer, .teachersContainer {
   background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.scheduleBackground {
+  display: inherit;
 }
 
 .scheduleBackground, .teachersBackground{
-  padding: 5rem;
   background-image: url('../assets/logo.svg');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 70%;
+  background-size: cover;
+  width: 100vw;
+  padding: 3rem;
+}
+
+.schedule {
+  margin: auto;
 }
 
 table {

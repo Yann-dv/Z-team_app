@@ -2,7 +2,7 @@ function Teachers() {
   return (
     <section className="teachersContainer">
       <div className="teachersBackground">
-        <h2 className="teachers-title">Our teachers</h2>
+       <h2 className="teachers-title">Our teachers</h2>
         <div className="teachers-grid">
           <div className="teacherCard one">
             <div>
