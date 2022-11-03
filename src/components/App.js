@@ -5,7 +5,7 @@ import Home from './Home.js';
 import About from './About.js';
 import Schedule from './Schedule.js';
 import Prices from './Prices.js';
-import Teachers from './Teachers.js';
+import Instructors from './Instructors';
 import Gallery from './Gallery.js';
 import Footer from './Footer.js';
 
@@ -18,7 +18,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/schedule" element={<Schedule />} />
         <Route path="/prices" element={<Prices />} />
-        <Route path="/teachers" element={<Teachers />} />
+        <Route path="/instructors" element={<Instructors />} />
         <Route path="/gallery" element={<Gallery />} />
       </Routes>
       <Footer />
