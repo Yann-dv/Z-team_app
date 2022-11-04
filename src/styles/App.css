@@ -142,18 +142,13 @@ a {
   color: var(--links-text);
 }
 
-.scheduleContainer, .instructorsContainer, .pricesContainer {
+.scheduleContainer, .instructorsContainer, .pricesContainer, .galleryContainer {
   background-color: black;
   display: flex;
   justify-content: center;
 }
 
-.scheduleBackground {
-  display: inherit;
-  min-height: 80vh;
-}
-
-.scheduleBackground, .instructorsBackground, .pricesBackground{
+.scheduleBackground, .instructorsBackground, .pricesBackground, .galleryBackground{
   background-image: url('../assets/logo.svg');
   background-repeat: no-repeat;
   background-position: center;
@@ -161,6 +156,12 @@ a {
   background-attachment: fixed;
   width: 100vw;
 }
+
+.scheduleBackground {
+  display: inherit;
+  min-height: 80vh;
+}
+
 
 .schedule {
   margin: auto;
@@ -219,7 +220,7 @@ tbody > tr:hover {
   border: 2px solid #8534cd;
 }
 
-.instructors-title {
+.instructors-title, .gallery-title {
   color: var(--white-text);
   text-transform: uppercase;
   text-decoration: underline;
@@ -264,14 +265,32 @@ tbody > tr:hover {
   padding: 1rem;
 }
 
-.container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  grid-template-areas: 
-    "header header header header"
-    "main main . sidebar"
-    "footer footer footer footer";
+.galleryBackground {
+  display: inherit;
+  flex-direction: column;
+}
+
+.gallery-flex {
+  display: inherit;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.galleryCard {
+  background-color: #2d2a2d;
+  padding: 1rem;
+  margin: 1rem;
+  width: 22vw;
+}
+
+.galleryImage {
+  height: 200px;
+  width: 100%;
+}
+
+.galleryDescription {
+  color: var(--white-text);
 }
 
 @media only screen and (min-width: 1024px) {
