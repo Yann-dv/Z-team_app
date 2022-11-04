@@ -74,7 +74,7 @@ a {
   position: relative;
 }
 
-.header-nav-links {
+.header-nav-li a {
   color: var(--white-text);
   text-decoration: none;
   font-size: 2rem;
@@ -82,7 +82,12 @@ a {
   display: block;
 }
 
-.header-nav-links:hover {
+.active-Navlink {
+  background-color: var(--purple-background);
+  text-decoration: underline;
+}
+
+.header-nav-li a:hover {
   background-color: var(--purple-background);
   text-decoration: underline;
 }
@@ -142,13 +147,15 @@ a {
   color: var(--links-text);
 }
 
-.scheduleContainer, .instructorsContainer, .pricesContainer, .galleryContainer, .aboutContainer {
+.scheduleContainer, .instructorsContainer, .pricesContainer, .galleryContainer, 
+.aboutContainer, .shopContainer {
   background-color: black;
   display: flex;
   justify-content: center;
 }
 
-.scheduleBackground, .instructorsBackground, .pricesBackground, .galleryBackground, .aboutBackground{
+.scheduleBackground, .instructorsBackground, .pricesBackground, .galleryBackground, 
+.aboutBackground, .shopBackground {
   background-image: url('../assets/logo.svg');
   background-repeat: no-repeat;
   background-position: center;
@@ -157,7 +164,7 @@ a {
   width: 100vw;
 }
 
-.scheduleBackground, .aboutBackground {
+.scheduleBackground, .aboutBackground, .shopBackground {
   display: inherit;
   min-height: 80vh;
   justify-content: center;
@@ -166,6 +173,7 @@ a {
 
 .schedule {
   margin: auto;
+  margin-bottom: 2rem;
 }
 
 table {
@@ -200,7 +208,7 @@ tbody > tr:hover {
 .registration-btn {
   background-color:#8534cd;
   color: var(--black-text);
-  margin-top: 1rem;
+  margin: 1.5rem;
   padding: 0;
 }
 
@@ -221,14 +229,14 @@ tbody > tr:hover {
   border: 2px solid #8534cd;
 }
 
-.instructors-title, .gallery-title, .about-title {
+.schedule-title, .prices-title, .instructors-title, .gallery-title, .about-title, .shop-title {
   color: var(--white-text);
   text-transform: uppercase;
   text-decoration: underline;
   font-size: 2rem;
 }
 
-.instructors-flex, .about-flex {
+.instructors-flex, .about-flex, .shop-flex {
   padding-top: 2rem;
   display: flex;
   flex-direction: column;

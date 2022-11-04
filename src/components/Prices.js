@@ -2,6 +2,7 @@ function Prices() {
   return (
     <section className="pricesContainer">
       <div className="pricesBackground">
+      <h2 className="prices-title">Prices</h2>
         <table className="bjj prices">
           <tbody>
             <tr>

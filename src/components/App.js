@@ -7,6 +7,7 @@ import Schedule from './Schedule.js';
 import Prices from './Prices.js';
 import Instructors from './Instructors';
 import Gallery from './Gallery.js';
+import Shop from './Shop.js';
 import Footer from './Footer.js';
 
 function App() {
@@ -20,11 +21,11 @@ function App() {
         <Route path="/prices" element={<Prices />} />
         <Route path="/instructors" element={<Instructors />} />
         <Route path="/gallery" element={<Gallery />} />
+        <Route path="/shop" element={<Shop />} />
       </Routes>
       <Footer />
     </section>
   );
 }
-
 
 export default App;

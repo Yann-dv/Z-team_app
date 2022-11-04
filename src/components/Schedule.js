@@ -2,6 +2,7 @@ function Schedule() {
   return (
     <section className="scheduleContainer">
       <div className="scheduleBackground">
+      <h2 className="schedule-title">Schedule</h2>
         <table className="bjj schedule">
           <tbody>
             <tr>

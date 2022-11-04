@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import logo from '../assets/logo192.png';
 
 function Header() {
@@ -14,15 +14,17 @@ function Navbar() {
     return (
         <div className="navBar">
           <ul className="header-nav-ul">
-              <li className="header-nav-li"><Link to="/about" className="header-nav-links">About us</Link></li>
-              <li className="header-nav-li"><Link to="/schedule" className="header-nav-links">Schedule</Link></li>
-              <li className="header-nav-li"><Link to="/prices" className="header-nav-links">Prices</Link></li>
-              <li className="header-nav-li"><Link to="/instructors" className="header-nav-links">Instructors</Link></li>
-              <li className="header-nav-li"><Link to="/gallery" className="header-nav-links">Gallery</Link></li>
+              <li className="header-nav-li">< NavLink to="/about" className={({ isActive }) => (isActive ? "active-Navlink " : "")}>About us</ NavLink></li>
+              <li className="header-nav-li">< NavLink to="/schedule" className={({ isActive }) => (isActive ? "active-Navlink " : "")}>Schedule</ NavLink></li>
+              <li className="header-nav-li">< NavLink to="/prices" className={({ isActive }) => (isActive ? "active-Navlink " : "")}>Prices</ NavLink></li>
+              <li className="header-nav-li">< NavLink to="/instructors" className={({ isActive }) => (isActive ? "active-Navlink " : "")}>Instructors</ NavLink></li>
+              <li className="header-nav-li">< NavLink to="/gallery" className={({ isActive }) => (isActive ? "active-Navlink " : "")}>Gallery</ NavLink></li>
+              <li className="header-nav-li">< NavLink to="/shop" className={({ isActive }) => (isActive ? "active-Navlink " : "")}>Shop</ NavLink></li>
               <li className="header-nav-li registration-link"><a className="header-nav-links" href="https://www.helloasso.com/associations/a-m-j-z-team-boulogne/adhesions/inscription-zteam-bjj-boulogne-2022-2023" target="_blank" rel="noopener noreferrer">Registration</a></li>
           </ul>
         </div>
     );
   }
+  
   
   export default Header;
