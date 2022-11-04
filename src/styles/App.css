@@ -142,13 +142,13 @@ a {
   color: var(--links-text);
 }
 
-.scheduleContainer, .instructorsContainer, .pricesContainer, .galleryContainer {
+.scheduleContainer, .instructorsContainer, .pricesContainer, .galleryContainer, .aboutContainer {
   background-color: black;
   display: flex;
   justify-content: center;
 }
 
-.scheduleBackground, .instructorsBackground, .pricesBackground, .galleryBackground{
+.scheduleBackground, .instructorsBackground, .pricesBackground, .galleryBackground, .aboutBackground{
   background-image: url('../assets/logo.svg');
   background-repeat: no-repeat;
   background-position: center;
@@ -157,11 +157,12 @@ a {
   width: 100vw;
 }
 
-.scheduleBackground {
+.scheduleBackground, .aboutBackground {
   display: inherit;
   min-height: 80vh;
+  justify-content: center;
+  flex-direction: column;
 }
-
 
 .schedule {
   margin: auto;
@@ -220,19 +221,26 @@ tbody > tr:hover {
   border: 2px solid #8534cd;
 }
 
-.instructors-title, .gallery-title {
+.instructors-title, .gallery-title, .about-title {
   color: var(--white-text);
   text-transform: uppercase;
   text-decoration: underline;
   font-size: 2rem;
 }
 
-.instructors-flex {
+.instructors-flex, .about-flex {
   padding-top: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.about-content {
+  color: var(--white-text);
+  padding-left: 5rem;
+  padding-right: 5rem;
+
 }
 
 .instructorCard {
