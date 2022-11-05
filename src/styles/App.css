@@ -17,7 +17,7 @@ a {
 
 .App {
   text-align: center;
-}
+  }
 
 .App-logo {
   display: none;
@@ -102,6 +102,8 @@ a {
   padding: 5rem;
   color: var(--white-text);
   font-size: 1.5rem;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .homeImages {
@@ -171,9 +173,24 @@ a {
   flex-direction: column;
 }
 
+.schedule-flex {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .schedule {
   margin: auto;
-  margin-bottom: 2rem;
+}
+
+.bjj {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.grappling {
+  margin-bottom: 3rem;
 }
 
 table {
@@ -248,7 +265,8 @@ tbody > tr:hover {
   color: var(--white-text);
   padding-left: 5rem;
   padding-right: 5rem;
-
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .instructorCard {
@@ -310,6 +328,13 @@ tbody > tr:hover {
 }
 
 @media only screen and (min-width: 1024px) {
+  .schedule-flex {
+  flex-direction: row;
+  align-items: center;
+  }
+  .grappling {
+    margin: auto;
+  }
   .registration-link {
     align-self: center;
     position: absolute;
