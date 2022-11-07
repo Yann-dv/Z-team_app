@@ -114,6 +114,15 @@ a {
   padding: 1rem;
 }
 
+.min {
+  height: 200px;
+}
+
+.homeContainer hr {
+  width : 60%;
+  color: white;
+}
+
 .homeImage {
   object-fit: contain;
   max-height: 100%;
@@ -154,13 +163,19 @@ a {
   flex-direction: column;
 }
 
+.locationMap iframe{
+  border: 0;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
 .generalBackground {
   background-image: url('../assets/logo.svg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  width: 100vw;
+  width: 100%;
 }
 
 .scheduleBackground, .aboutBackground, .shopBackground {
@@ -224,6 +239,7 @@ tbody > tr:hover {
   color: var(--black-text);
   margin: 1.5rem;
   padding: 0;
+  border: none;
 }
 
 .registration-btn a {
@@ -243,7 +259,7 @@ tbody > tr:hover {
   border: 2px solid #8534cd;
 }
 
-.schedule-title, .prices-title, .instructors-title, .gallery-title, .about-title, .shop-title, .schedule-title {
+.section-title {
   color: var(--white-text);
   text-transform: uppercase;
   text-decoration: underline;
@@ -334,6 +350,12 @@ tbody > tr:hover {
   padding-bottom: 2rem;
 }
 
+.privacyPolicy p, .privacyPolicy ul{
+  margin: auto;
+  width: 80%;
+  color: var(--white-text);
+}
+
 @media only screen and (min-width: 1024px) {
   .schedule-flex {
   flex-direction: row;
@@ -356,18 +378,23 @@ tbody > tr:hover {
     margin-left: 1rem;
   }
 
+  .headInstructors {
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+  }
+
+  .headInstructors .instructorCard {
+    width: 28vw;
+    margin: auto;
+  }
+
   .instructors-flex {
     flex-direction: row;
+    margin: 2rem;
   }
 
   .instructorCard {
-    margin: 1rem;
-  }
-  .large {
-    width: 40vw;
-  }
-  
-  .min {
-    width: 22vw;
+    width : 21vw;
   }
 }

@@ -2,7 +2,7 @@ function Gallery() {
   return (
     <section className="generalContainer">
       <div className="generalBackground galleryBackground">
-        <h2 className="gallery-title">Gallery</h2>
+        <h2 className="section-title">Gallery</h2>
         <div className="gallery-flex">
           <div className="galleryCard" id="galleryCard_1">
             <img className="galleryImage img1" src={require("../img/image.png")} alt="Gallery"></img>

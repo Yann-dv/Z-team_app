@@ -10,7 +10,7 @@ import Gallery from './Gallery.js';
 import Shop from './Shop.js';
 import Footer from './Footer.js';
 import Legal from './Legal.js';
-
+import Privacy from './Privacy.js';
 
 function App() {
   return (
@@ -25,6 +25,7 @@ function App() {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/shop" element={<Shop />} />
         <Route path="/legal" element={<Legal />} />
+        <Route path="/privacy" element={<Privacy />} />
       </Routes>
       <Footer />
     </section>

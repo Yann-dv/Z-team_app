@@ -2,7 +2,7 @@ function Legal() {
   return (
     <section className="generalContainer">
       <div className="generalBackground">
-        <h2 className="schedule-title">Legal Notice</h2>
+        <h2 className="section-title">Legal Notice</h2>
         <ul className="legalNoticeList">
           <li className="legalNoticeElement">
             You are currently connected to the website www.z-team.herokuapp.com

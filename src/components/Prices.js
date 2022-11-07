@@ -2,46 +2,43 @@ function Prices() {
   return (
     <section className="generalContainer">
       <div className="generalBackground">
-      <h2 className="prices-title">Prices</h2>
+      <h2 className="section-title">Prices</h2>
         <table className="bjj prices">
           <tbody>
             <tr>
               <th scope="colgoup" rowSpan="1" colSpan="2">Prices</th>
             </tr>
-
             <tr>
               <td>Adult (one-time payment)</td>
               <td>250€/year</td>
             </tr>
-
             <tr>
               <td>Adult (three-times payment)</td>
               <td>85€/month</td>
             </tr>
-
             <tr>
               <td>Student, jobless (three-times payment)</td>
               <td>65€/month</td>
             </tr>
-            
             <tr>
               <td>Kids (three-times payment)</td>
               <td>50€/month</td>
             </tr>
-
             <tr>
               <td>Partners inscriptions (one-time payment)</td>
               <td>150€/year</td>
             </tr>
-
             <tr>
               <td>Cfjjb licence (one-time payment)</td>
               <td>40€/year</td>
             </tr>
-
             <tr>
               <td>Sports passport (one-time payment)</td>
               <td>10€/year</td>
+            </tr>
+            <tr>
+              <td>Trial session</td>
+              <td>free</td>
             </tr>
           </tbody>
         </table>
