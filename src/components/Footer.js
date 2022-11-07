@@ -1,11 +1,13 @@
+import { Link } from 'react-router-dom';
+
 function Footer() {
     return (
         <footer className="footerContainer">
             <ul className="footerList">
-                <li className="footerLi"><a className="footerLink" href="/">Contact</a></li>
-                <li className="footerLi"><a className="footerLink" href="/Legal.js">Legal Notice</a></li>
-                <li className="footerLi"><a className="footerLink" href="/">Terms of Service</a></li>
-                <li className="footerLi"><a className="footerLink" href="/">Privacy Policy</a></li>
+                <li className="footerLi"><a className="footerLink" href="mailto:zteam.boulogne@gmail.com">Contact</a></li>
+                <li className="footerLi"><Link className="footerLink" to="/legal">Legal Notice</Link></li>
+                <li className="footerLi"><Link className="footerLink" to="/">Terms of Service</Link></li>
+                <li className="footerLi"><Link className="footerLink" to="/">Privacy Policy</Link></li>
             </ul>
         </footer>
         );

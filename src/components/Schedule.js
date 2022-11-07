@@ -1,7 +1,7 @@
 function Schedule() {
   return (
-    <section className="scheduleContainer">
-      <div className="scheduleBackground">
+    <section className="generalContainer">
+      <div className="generalBackground scheduleBackground">
         <h2 className="schedule-title">Schedule</h2>
         <div className="schedule-flex">
           <table className="bjj schedule">

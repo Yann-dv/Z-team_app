@@ -1,7 +1,7 @@
 function Gallery() {
   return (
-    <section className="galleryContainer">
-      <div className="galleryBackground">
+    <section className="generalContainer">
+      <div className="generalBackground galleryBackground">
         <h2 className="gallery-title">Gallery</h2>
         <div className="gallery-flex">
           <div className="galleryCard" id="galleryCard_1">

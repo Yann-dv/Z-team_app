@@ -1,7 +1,7 @@
 function Shop() {
     return (
-        <section className="shopContainer">
-            <div className="shopBackground">
+        <section className="generalContainer">
+            <div className="generalBackground shopBackground">
                 <h2 className="shop-title">Shop</h2>
                 <div className="shop-flex">
                 </div>

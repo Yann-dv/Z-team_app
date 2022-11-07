@@ -92,11 +92,6 @@ a {
   text-decoration: underline;
 }
 
-.homeContainer {
-  background-color: var(--dark-background);
-  margin: 0;
-}
-
 .academyHistory {
   margin: 0;
   padding: 5rem;
@@ -149,15 +144,17 @@ a {
   color: var(--links-text);
 }
 
-.scheduleContainer, .instructorsContainer, .pricesContainer, .galleryContainer, 
-.aboutContainer, .shopContainer {
+.generalContainer {
   background-color: black;
   display: flex;
   justify-content: center;
 }
 
-.scheduleBackground, .instructorsBackground, .pricesBackground, .galleryBackground, 
-.aboutBackground, .shopBackground {
+.homeContainer {
+  flex-direction: column;
+}
+
+.generalBackground {
   background-image: url('../assets/logo.svg');
   background-repeat: no-repeat;
   background-position: center;
@@ -246,7 +243,7 @@ tbody > tr:hover {
   border: 2px solid #8534cd;
 }
 
-.schedule-title, .prices-title, .instructors-title, .gallery-title, .about-title, .shop-title {
+.schedule-title, .prices-title, .instructors-title, .gallery-title, .about-title, .shop-title, .schedule-title {
   color: var(--white-text);
   text-transform: uppercase;
   text-decoration: underline;
@@ -325,6 +322,16 @@ tbody > tr:hover {
 
 .galleryDescription {
   color: var(--white-text);
+}
+
+.legalNoticeList {
+  color: var(--white-text);
+}
+
+.legalNoticeElement {
+  width: 50%;
+  margin: auto;
+  padding-bottom: 2rem;
 }
 
 @media only screen and (min-width: 1024px) {

@@ -9,6 +9,8 @@ import Instructors from './Instructors';
 import Gallery from './Gallery.js';
 import Shop from './Shop.js';
 import Footer from './Footer.js';
+import Legal from './Legal.js';
+
 
 function App() {
   return (
@@ -22,6 +24,7 @@ function App() {
         <Route path="/instructors" element={<Instructors />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/shop" element={<Shop />} />
+        <Route path="/legal" element={<Legal />} />
       </Routes>
       <Footer />
     </section>

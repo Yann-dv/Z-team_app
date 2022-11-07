@@ -1,7 +1,7 @@
 function About() {
   return (
-    <section className="aboutContainer">
-      <div className="aboutBackground">
+    <section className="generalContainer">
+      <div className="generalBackground aboutBackground">
         <h2 className="about-title">About</h2>
         <div className="about-flex">
           <div className="about-content">

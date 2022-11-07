@@ -1,7 +1,7 @@
 function Instructors() {
   return (
-    <section className="instructorsContainer">
-      <div className="instructorsBackground">
+    <section className="generalContainer">
+      <div className="generalBackground">
        <h2 className="instructors-title">Instructors</h2>
         <div className="instructors-flex">
           <div className="instructorCard large">

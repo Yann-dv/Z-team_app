@@ -5,7 +5,7 @@ import Img4 from "../img/gft.png";
 
 function HomeContent() {
   return (
-    <section className="homeContainer">
+    <section className="homeContainer generalContainer">
       <Banner />
       <article className="homePresentation">
         <p className="academyHistory">
