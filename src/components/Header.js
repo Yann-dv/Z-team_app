@@ -14,7 +14,7 @@ function Navbar() {
     return (
         <div className="navBar">
           <ul className="header-nav-ul">
-              <li className="header-nav-li">< NavLink to="/about" className={({ isActive }) => (isActive ? "active-Navlink " : "")}>About us</ NavLink></li>
+              <li className="header-nav-li">< NavLink to="/home" className={({ isActive }) => (isActive ? "active-Navlink " : "")}>Home</ NavLink></li>
               <li className="header-nav-li">< NavLink to="/schedule" className={({ isActive }) => (isActive ? "active-Navlink " : "")}>Schedule</ NavLink></li>
               <li className="header-nav-li">< NavLink to="/prices" className={({ isActive }) => (isActive ? "active-Navlink " : "")}>Prices</ NavLink></li>
               <li className="header-nav-li">< NavLink to="/instructors" className={({ isActive }) => (isActive ? "active-Navlink " : "")}>Instructors</ NavLink></li>
