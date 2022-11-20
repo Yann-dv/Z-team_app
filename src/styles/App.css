@@ -12,6 +12,44 @@
   --links-text : #61dafb;
 }
 
+
+#toggle_burgerNavBar {
+  display: none;
+  height: 0;
+}
+
+.burgerNavBar {
+  display: inherit;
+  position: fixed;
+  top: 0;
+}
+
+.burgerNavBarContainer {
+  display: flex;
+}
+
+#burgerNavbarToggle {
+  font-size: 2rem;
+  padding-left: 1rem;
+}
+
+#burgerNavbarToggle:hover {
+  color: var(--purple-background);
+}
+
+.burger_links{
+  display: none;
+}
+
+.show_burger_links {
+  display: flex;
+}
+
+#navBar {
+  display: none;
+  height: 0;
+}
+
 a {
   color: var(--links-text);
 }
@@ -27,7 +65,7 @@ a {
 
 .App-header {
   background-color: var(--dark-background );
-  min-height: 8vh;
+  min-height: 5vh;
   display: flex;
   align-items: center;
   justify-content: left;
@@ -47,56 +85,17 @@ a {
 }
 
 .bannerTitle {
-  font-size: 5rem;
+  font-size: 2.2rem;
   color: var(--white-text);
   text-align: center;
   text-transform: uppercase;
   text-decoration: underline;
   display: inline-block;
-  border-top: 8px solid var(--white-text);
-  line-height: 60px;
+  border-top: .25rem solid var(--white-text);
+  line-height: 1.6rem;
 
 }
-.navBar {
-  display: flex;
-  z-index: 3;
-  margin: 0;
-}
-.header-nav-ul {
-  display: inherit;
-  flex-wrap: wrap;
-  flex-direction: row;
-  margin: 0;
-}
 
-.header-nav-li {
-  list-style: none;
-  position: relative;
-}
-
-.header-nav-li a {
-  color: var(--white-text);
-  text-decoration: none;
-  font-size: 2rem;
-  padding: 1rem;
-  display: block;
-}
-
-.active-Navlink {
-  background-color: var(--dark-purple-background);
-  text-decoration: underline;
-}
-
-.header-nav-li a:hover {
-  background-color: var(--purple-background);
-  text-decoration: underline;
-}
-
-.header-nav-li a:focus {
-  background-color: var(--purple-background);
-  text-decoration: underline;
-  outline: none;
-}
 
 .academyHistory {
   margin: 0;
@@ -355,7 +354,63 @@ tbody > tr:hover {
   color: var(--white-text);
 }
 
+@media only screen and (max-width: 300px) {
+  .bannerTitle {
+    font-size: 1.5rem;
+    line-height: 1rem;
+    border-top: .15rem solid var(--white-text);
+  }
+}
 @media only screen and (min-width: 1024px) {
+  #burgerNavBar {
+    display: none;
+    height: 0;
+  }
+
+  #navBar {
+    display: contents;
+  }
+  
+  .navBar {
+    display: flex;
+    z-index: 3;
+    margin: 0;
+  }
+  .header-nav-ul {
+    display: inherit;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0;
+  }
+  
+  .header-nav-li {
+    list-style: none;
+    position: relative;
+  }
+  
+  .header-nav-li a {
+    color: var(--white-text);
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 1rem;
+    display: block;
+  }
+  
+  .active-Navlink {
+    background-color: var(--dark-purple-background);
+    text-decoration: underline;
+  }
+  
+  .header-nav-li a:hover {
+    background-color: var(--purple-background);
+    text-decoration: underline;
+  }
+  
+  .header-nav-li a:focus {
+    background-color: var(--purple-background);
+    text-decoration: underline;
+    outline: none;
+  }
   .banner {
     height: 110vmin;
     width: auto;
@@ -364,7 +419,9 @@ tbody > tr:hover {
   
   .bannerTitle {
     font-size: 6rem;
-    line-height: 70px;
+    line-height: 4.2rem;
+    border-top: .6rem solid var(--white-text);
+
   }
   .schedule-flex {
   flex-direction: row;
