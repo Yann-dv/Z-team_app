@@ -29,12 +29,26 @@
 }
 
 #burgerNavbarToggle {
+  cursor: pointer;
+  border: none;
+  background-color: var(--dark-background);
+  color: var(--white-text);
+  height: 8vh;
   font-size: 2rem;
-  padding-left: 1rem;
 }
 
-#burgerNavbarToggle:hover {
-  color: var(--purple-background);
+.hideMenu {
+  display: none;
+  height: 0;
+  width: 0;
+}
+
+.showMenu {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: 100%;
+  width: auto;
 }
 
 .burger_links{
@@ -48,6 +62,40 @@
 #navBar {
   display: none;
   height: 0;
+}
+
+  
+.active-Navlink {
+  background-color: var(--dark-purple-background);
+  text-decoration: underline;
+}
+
+.header-nav-ul {
+  margin: 0;
+  padding: .2rem;
+}
+
+.header-nav-li {
+  list-style: none;
+  position: relative;
+}
+
+.header-nav-li a {
+  color: var(--white-text);
+  text-decoration: none;
+  padding: .5rem;
+  display: block;
+}
+
+.header-nav-li a:hover {
+  background-color: var(--purple-background);
+  text-decoration: underline;
+}
+
+.header-nav-li a:focus {
+  background-color: var(--purple-background);
+  text-decoration: underline;
+  outline: none;
 }
 
 a {
@@ -65,7 +113,7 @@ a {
 
 .App-header {
   background-color: var(--dark-background );
-  min-height: 5vh;
+  min-height: 13vh;
   display: flex;
   align-items: center;
   justify-content: left;
@@ -96,10 +144,9 @@ a {
 
 }
 
-
 .academyHistory {
   margin: 0;
-  padding: 5rem;
+  padding: 2rem;
   color: var(--white-text);
   font-size: 1.5rem;
   text-align: justify;
@@ -192,6 +239,7 @@ a {
 }
 
 .schedule-flex {
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -203,6 +251,8 @@ a {
 }
 
 .bjj {
+  margin-left: 1rem;
+  margin-left: 1rem;
   margin-top: 2rem;
   margin-bottom: 3rem;
 }
@@ -317,7 +367,7 @@ tbody > tr:hover {
 
 .gallery-flex {
   display: inherit;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -326,7 +376,6 @@ tbody > tr:hover {
   background-color: #2d2a2d;
   padding: 1rem;
   margin: 1rem;
-  width: 22vw;
 }
 
 .galleryImage {
@@ -361,7 +410,24 @@ tbody > tr:hover {
     border-top: .15rem solid var(--white-text);
   }
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px), (orientation: landscape) {
+  
+  .header-nav-ul {
+    display: inherit;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0;
+    padding: .5rem;
+  }
+
+  .header-nav-li a {
+    color: var(--white-text);
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 1rem;
+    display: block;
+  }
+
   #burgerNavBar {
     display: none;
     height: 0;
@@ -376,41 +442,7 @@ tbody > tr:hover {
     z-index: 3;
     margin: 0;
   }
-  .header-nav-ul {
-    display: inherit;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin: 0;
-  }
-  
-  .header-nav-li {
-    list-style: none;
-    position: relative;
-  }
-  
-  .header-nav-li a {
-    color: var(--white-text);
-    text-decoration: none;
-    font-size: 2rem;
-    padding: 1rem;
-    display: block;
-  }
-  
-  .active-Navlink {
-    background-color: var(--dark-purple-background);
-    text-decoration: underline;
-  }
-  
-  .header-nav-li a:hover {
-    background-color: var(--purple-background);
-    text-decoration: underline;
-  }
-  
-  .header-nav-li a:focus {
-    background-color: var(--purple-background);
-    text-decoration: underline;
-    outline: none;
-  }
+
   .banner {
     height: 110vmin;
     width: auto;
@@ -423,14 +455,22 @@ tbody > tr:hover {
     border-top: .6rem solid var(--white-text);
 
   }
+
+  .academyHistory {
+    padding: 5rem;
+  }
+
   .schedule-flex {
   flex-direction: row;
   align-items: center;
   }
-  .grappling {
+  
+  .grappling, .bjj {
     margin: auto;
   }
+
   .registration-link {
+    text-decoration: underline;
     align-self: center;
     position: absolute;
     top: 0;
@@ -462,5 +502,12 @@ tbody > tr:hover {
 
   .instructorCard {
     width : 21vw;
+  }
+
+  .gallery-flex {
+    flex-direction: row;
+  }
+  .galleryCard {
+    width: 22vw;
   }
 }
