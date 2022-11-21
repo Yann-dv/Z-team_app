@@ -34,7 +34,9 @@
   background-color: var(--dark-background);
   color: var(--white-text);
   height: 8vh;
-  font-size: 2rem;
+  font-size: 3rem;
+  padding-top: .5rem;
+  padding-left: 1rem;
 }
 
 .hideMenu {
@@ -113,7 +115,7 @@ a {
 
 .App-header {
   background-color: var(--dark-background );
-  min-height: 13vh;
+  min-height: 11vh;
   display: flex;
   align-items: center;
   justify-content: left;
@@ -196,8 +198,8 @@ a {
 
 .footerLink {
   color: var(--white-text);
-  font-size: 1.2rem;
-  padding: 1rem;
+  font-size: .8rem;
+  padding: .3rem;
   display: block;
 }
 
@@ -516,5 +518,10 @@ tbody > tr:hover {
   }
   .galleryCard {
     width: 22vw;
+  }
+
+  .footerLink {
+    font-size: 1.2rem;
+    padding: 1rem;
   }
 }
