@@ -251,14 +251,17 @@ a {
 }
 
 .bjj {
-  margin-left: 1rem;
-  margin-left: 1rem;
   margin-top: 2rem;
   margin-bottom: 3rem;
 }
 
 .grappling {
   margin-bottom: 3rem;
+}
+
+
+.prices {
+  margin: 1rem;
 }
 
 table {
@@ -269,7 +272,7 @@ table {
 
 td, th {
   border: 2px solid var(--black-text);
-  padding: 2rem;
+  padding: 1rem;
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
@@ -464,9 +467,13 @@ tbody > tr:hover {
   flex-direction: row;
   align-items: center;
   }
-  
+
   .grappling, .bjj {
     margin: auto;
+  }
+
+  td, th {
+    padding: 2rem;
   }
 
   .registration-link {

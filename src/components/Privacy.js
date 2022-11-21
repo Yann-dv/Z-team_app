@@ -205,8 +205,8 @@ function Privacy() {
       </p>
       <p>
         <span>
-          <span id="span_id_finalite_traitement_donnees" class="encours">
-            <span class="variable_vide">________</span>
+          <span id="span_id_finalite_traitement_donnees" className="encours">
+            <span className="variable_vide">________</span>
           </span>
         </span>
       </p>
@@ -216,7 +216,7 @@ function Privacy() {
       </p>
       <p>
         <span id="span_id_bases_legales">
-          <span class="variable_vide">________</span>
+          <span className="variable_vide">________</span>
         </span>
       </p>
 
@@ -236,19 +236,19 @@ function Privacy() {
         Le site <span id="span_id_nom_du_site_internet">Z-Team</span> est
         hébergé par&nbsp;:{" "}
         <span id="span_id_denomination_sociale_de_l_hebergeur">
-          <span class="variable_vide">________</span>
+          <span className="variable_vide">________</span>
         </span>
         , dont le siège est situé à l'adresse ci-après&nbsp;:
       </p>
       <p>
         <span id="span_id_siege_social_de_l_hebergeur">
-          <span class="variable_vide">________</span>
+          <span className="variable_vide">________</span>
         </span>
       </p>
       <p>
         L'hébergeur peut être contacté au numéro de téléphone suivant&nbsp;:{" "}
         <span id="span_id_telephone_de_l_hebergeur">
-          <span class="variable_vide">________</span>
+          <span className="variable_vide">________</span>
         </span>
         .{" "}
       </p>
@@ -268,13 +268,13 @@ function Privacy() {
         Le responsable du traitement des données à caractère personnel
         est&nbsp;:{" "}
         <span id="span_id_prenom_nom_responsable">
-          <span class="variable_vide">________</span>
+          <span className="variable_vide">________</span>
         </span>
         . Il peut être contacté de la manière suivante&nbsp;:
       </p>
       <p>
         <span id="span_id_methode_contact_rtd">
-          <span class="variable_vide">________</span>
+          <span className="variable_vide">________</span>
         </span>
       </p>
       <p>
@@ -340,7 +340,7 @@ function Privacy() {
       </p>
       <p>
         <span id="span_id_procedure_acces_donnees">
-          <span class="variable_vide">________</span>
+          <span className="variable_vide">________</span>
         </span>{" "}
       </p>
       <p>
@@ -349,7 +349,7 @@ function Privacy() {
       </p>
       <p>
         <span id="span_id_procedure_suppression_compte">
-          <span class="variable_vide">________</span>
+          <span className="variable_vide">________</span>
         </span>
         <br />
       </p>
@@ -363,7 +363,7 @@ function Privacy() {
       </p>
       <p>
         <span id="span_id_procedure_portabilite_donnees_personnelles">
-          <span class="variable_vide">________</span>
+          <span className="variable_vide">________</span>
         </span>
       </p>
       <p>
@@ -386,7 +386,7 @@ function Privacy() {
       </p>
       <p>
         <span id="span_id_procedure_limitation_traitement">
-          <span class="variable_vide">________</span>
+          <span className="variable_vide">________</span>
         </span>
         <br />
       </p>
@@ -467,7 +467,7 @@ function Privacy() {
       </p>
       <p>
         <span id="span_id_consentement_cookies">
-          <span class="variable_vide">________</span>
+          <span className="variable_vide">________</span>
         </span>
       </p>
       <p>
@@ -527,7 +527,7 @@ function Privacy() {
       </p>
       <p>
         <span id="span_id_liste_cookies">
-          <span class="variable_vide">________</span>
+          <span className="variable_vide">________</span>
         </span>{" "}
       </p>
       <p>
@@ -537,7 +537,7 @@ function Privacy() {
       <p>Il s'agit plus particulièrement des tiers suivants&nbsp;:</p>
       <p>
         <span id="span_id_tiers_cookies">
-          <span class="variable_vide">________</span>
+          <span className="variable_vide">________</span>
         </span>{" "}
       </p>
       <p>
@@ -568,7 +568,7 @@ function Privacy() {
       </p>
       <p>
         <span id="span_id_adresse_politique_confidentialite">
-          <span class="variable_vide">________</span>
+          <span className="variable_vide">________</span>
         </span>
       </p>
       <p>
@@ -589,14 +589,14 @@ function Privacy() {
         <strong>
           <br />
           ARTICLE 8&nbsp;:{" "}
-          <span class="flou">
+          <span className="flou">
             88852585588 288 2'55525585558 85 28 282555555 85 888258585582555
           </span>
           <br />
         </strong>
       </p>
       <p>
-        <span class="flou">
+        <span className="flou">
           52 258825522 855 82 8822, 8'52888852255 5222822 58285 85 22 8222588 85
           25282222 228828852 52 822285222858822 22 22 5882222 828 8225828228, 22
           82 858 82282522 2858 2552885882522222 85 82882822 22 82 2558222222 52
