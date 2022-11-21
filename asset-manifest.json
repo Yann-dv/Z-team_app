@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/Z-team_app/static/css/main.4ae36ded.css",
-    "main.js": "/Z-team_app/static/js/main.d9c4574b.js",
-    "static/js/787.300e313d.chunk.js": "/Z-team_app/static/js/787.300e313d.chunk.js",
-    "static/media/team_banner_min.jpg": "/Z-team_app/static/media/team_banner_min.ecb7f5b639376f253492.jpg",
-    "static/media/competition_1.jpg": "/Z-team_app/static/media/competition_1.1e7e8d97667b9a6ab528.jpg",
-    "static/media/competition_2.jpg": "/Z-team_app/static/media/competition_2.0c45247619d439f25784.jpg",
-    "static/media/logo192.png": "/Z-team_app/static/media/logo192.95d520ec46e67a4255ca.png",
-    "static/media/competition_3.jpg": "/Z-team_app/static/media/competition_3.432fc80d6b9720ddb989.jpg",
-    "static/media/instructor_3.jpg": "/Z-team_app/static/media/instructor_3.0f44f345125d947ffbd8.jpg",
-    "static/media/instructor_2.jpg": "/Z-team_app/static/media/instructor_2.de494a1438ca16a2f185.jpg",
-    "static/media/instructor_5.jpg": "/Z-team_app/static/media/instructor_5.933f5814319d502658bb.jpg",
-    "static/media/instructor_1.jpg": "/Z-team_app/static/media/instructor_1.763b4a185de7f312a591.jpg",
-    "static/media/instructor_4.jpg": "/Z-team_app/static/media/instructor_4.bbd5c08fcb5e8ef6bfae.jpg",
-    "static/media/instructor_6.jpg": "/Z-team_app/static/media/instructor_6.33f96bd302853b08b839.jpg",
-    "static/media/logo.svg": "/Z-team_app/static/media/logo.cea1e22399b94dfbce32.svg",
-    "static/media/gft.png": "/Z-team_app/static/media/gft.ff009f610b41b3c59539.png",
-    "index.html": "/Z-team_app/index.html",
-    "main.4ae36ded.css.map": "/Z-team_app/static/css/main.4ae36ded.css.map",
-    "main.d9c4574b.js.map": "/Z-team_app/static/js/main.d9c4574b.js.map",
-    "787.300e313d.chunk.js.map": "/Z-team_app/static/js/787.300e313d.chunk.js.map"
+    "main.css": "/static/css/main.b2266581.css",
+    "main.js": "/static/js/main.88992649.js",
+    "static/js/787.300e313d.chunk.js": "/static/js/787.300e313d.chunk.js",
+    "static/media/team_banner_min.jpg": "/static/media/team_banner_min.ecb7f5b639376f253492.jpg",
+    "static/media/competition_1.jpg": "/static/media/competition_1.1e7e8d97667b9a6ab528.jpg",
+    "static/media/competition_2.jpg": "/static/media/competition_2.0c45247619d439f25784.jpg",
+    "static/media/logo192.png": "/static/media/logo192.95d520ec46e67a4255ca.png",
+    "static/media/competition_3.jpg": "/static/media/competition_3.432fc80d6b9720ddb989.jpg",
+    "static/media/instructor_3.jpg": "/static/media/instructor_3.0f44f345125d947ffbd8.jpg",
+    "static/media/instructor_2.jpg": "/static/media/instructor_2.de494a1438ca16a2f185.jpg",
+    "static/media/instructor_5.jpg": "/static/media/instructor_5.933f5814319d502658bb.jpg",
+    "static/media/instructor_1.jpg": "/static/media/instructor_1.763b4a185de7f312a591.jpg",
+    "static/media/instructor_4.jpg": "/static/media/instructor_4.bbd5c08fcb5e8ef6bfae.jpg",
+    "static/media/instructor_6.jpg": "/static/media/instructor_6.33f96bd302853b08b839.jpg",
+    "static/media/logo.svg": "/static/media/logo.cea1e22399b94dfbce32.svg",
+    "static/media/gft.png": "/static/media/gft.ff009f610b41b3c59539.png",
+    "index.html": "/index.html",
+    "main.b2266581.css.map": "/static/css/main.b2266581.css.map",
+    "main.88992649.js.map": "/static/js/main.88992649.js.map",
+    "787.300e313d.chunk.js.map": "/static/js/787.300e313d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4ae36ded.css",
-    "static/js/main.d9c4574b.js"
+    "static/css/main.b2266581.css",
+    "static/js/main.88992649.js"
   ]
 }
