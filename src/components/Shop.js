@@ -1,0 +1,14 @@
+function Shop() {
+    return (
+        <section className="generalContainer">
+            <div className="generalBackground shopBackground">
+                <h2 className="section-title">Shop</h2>
+                <div className="shop-flex">
+                    <h3 style={{color: 'white',fontSize: '2rem'}}>Under Construction</h3>
+                </div>
+            </div>
+        </section>
+    );
+}
+
+export default Shop;

@@ -1,0 +1,520 @@
+
+:root {
+  --dark-background : #181A1B;
+  --grey-background : #f6f6f6;
+  --footer-background : #2d2a2d;
+  --dark-purple-background : rgb(62, 3, 62);
+  --purple-background : #5d0a61;
+  --blue-background : #2f1196;
+  --img-background : #cccccc;
+  --white-text : white;
+  --black-text : black;
+  --links-text : #61dafb;
+}
+
+
+#toggle_burgerNavBar {
+  display: none;
+  height: 0;
+}
+
+.burgerNavBar {
+  display: inherit;
+  position: fixed;
+  top: 0;
+}
+
+.burgerNavBarContainer {
+  display: flex;
+}
+
+#burgerNavbarToggle {
+  cursor: pointer;
+  border: none;
+  background-color: var(--dark-background);
+  color: var(--white-text);
+  height: 8vh;
+  font-size: 2rem;
+}
+
+.hideMenu {
+  display: none;
+  height: 0;
+  width: 0;
+}
+
+.showMenu {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: 100%;
+  width: auto;
+}
+
+.burger_links{
+  display: none;
+}
+
+.show_burger_links {
+  display: flex;
+}
+
+#navBar {
+  display: none;
+  height: 0;
+}
+
+  
+.active-Navlink {
+  background-color: var(--dark-purple-background);
+  text-decoration: underline;
+}
+
+.header-nav-ul {
+  margin: 0;
+  padding: .2rem;
+}
+
+.header-nav-li {
+  list-style: none;
+  position: relative;
+}
+
+.header-nav-li a {
+  color: var(--white-text);
+  text-decoration: none;
+  padding: .5rem;
+  display: block;
+}
+
+.header-nav-li a:hover {
+  background-color: var(--purple-background);
+  text-decoration: underline;
+}
+
+.header-nav-li a:focus {
+  background-color: var(--purple-background);
+  text-decoration: underline;
+  outline: none;
+}
+
+a {
+  color: var(--links-text);
+}
+
+.App {
+  text-align: center;
+  }
+
+.App-logo {
+  display: none;
+  height: 0;
+}
+
+.App-header {
+  background-color: var(--dark-background );
+  min-height: 13vh;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  font-size: calc(10px + 2vmin);
+  color: var(--white-text);
+  position: sticky;
+  top: 0;
+}
+
+.banner {
+  height: 50vmin;
+  width: auto;
+  background-image: url("../img/team_banner_min.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: var(--img-background);
+}
+
+.bannerTitle {
+  font-size: 2.2rem;
+  color: var(--white-text);
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: underline;
+  display: inline-block;
+  border-top: .25rem solid var(--white-text);
+  line-height: 1.6rem;
+
+}
+
+.academyHistory {
+  margin: 0;
+  padding: 2rem;
+  color: var(--white-text);
+  font-size: 1.5rem;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.homeImages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.homeImageContainer {
+  height: 350px;
+  width: 350px;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.min {
+  height: 200px;
+}
+
+.homeContainer hr {
+  width : 60%;
+  color: white;
+}
+
+.homeImage {
+  object-fit: contain;
+  max-height: 100%;
+}
+
+.footerList {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  background-color: var(--footer-background);
+  justify-content: center;
+}
+
+.footerLi {
+  list-style: none;
+  position: relative;
+}
+
+.footerLink {
+  color: var(--white-text);
+  font-size: 1.2rem;
+  padding: 1rem;
+  display: block;
+}
+
+.footerLink:hover {
+  color: var(--links-text);
+}
+
+.generalContainer {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.homeContainer {
+  flex-direction: column;
+}
+
+.locationMap iframe{
+  border: 0;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  width: 70vw;
+}
+
+.generalBackground {
+  background-image: url('../assets/logo.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+}
+
+.scheduleBackground, .shopBackground {
+  display: inherit;
+  min-height: 80vh;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.schedule-flex {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.schedule {
+  margin: auto;
+}
+
+.bjj {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.grappling {
+  margin-bottom: 3rem;
+}
+
+
+.prices {
+  margin: 1rem;
+}
+
+table {
+  margin: auto;
+  text-align: left;
+  background-color: var(--grey-background);
+}
+
+td, th {
+  border: 2px solid var(--black-text);
+  padding: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+th {
+  background: var(--purple-background);
+  color: white;
+  border-radius: 0;
+  padding: 1.5rem;
+  font-size: 2rem;
+}
+
+tfoot > tr  {
+  background: black;
+  color: white;
+}
+tbody > tr:hover {
+  background-color: #8534cd;
+}
+
+.registration-btn {
+  background-color:#8534cd;
+  color: var(--black-text);
+  margin: 1.5rem;
+  padding: 0;
+  border: none;
+}
+
+.registration-btn a {
+  display: block;
+  background-color:#8534cd;
+  color: var(--black-text);
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 1.5rem;
+  border: 2px solid transparent;
+}
+
+.registration-btn a:hover {
+  background-color: var(--black-text);
+  color: #8534cd;
+  text-decoration: underline;
+  border: 2px solid #8534cd;
+}
+
+.section-title {
+  color: var(--white-text);
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-size: 2rem;
+}
+
+.instructors-flex, .shop-flex {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.instructorCard {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(128, 128, 128, 0.877);
+  margin: auto;
+  margin-top: 1.5rem;
+  width: 90vw;
+}
+
+.instructorCard-img {
+ align-self: center;
+ object-fit: contain;
+ width: 100%;
+ height: auto;
+}
+
+.instructorCard-name {
+  color: var(--white-text);
+  font-size: 1.8rem;
+  text-decoration: underline;
+  text-transform: uppercase;
+  margin: .5rem;
+}
+
+.instructorCard-content {
+  color: var(--white-text);
+  font-size: 1.4rem;
+  padding: 1rem;
+}
+
+.galleryBackground {
+  display: inherit;
+  flex-direction: column;
+}
+
+.gallery-flex {
+  display: inherit;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.galleryCard {
+  background-color: #2d2a2d;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.galleryImage {
+  height: 200px;
+  width: 100%;
+}
+
+.galleryDescription {
+  color: var(--white-text);
+}
+
+.legalNoticeList {
+  color: var(--white-text);
+}
+
+.legalNoticeElement {
+  width: 50%;
+  margin: auto;
+  padding-bottom: 2rem;
+}
+
+.privacyPolicy p, .privacyPolicy ul{
+  margin: auto;
+  width: 80%;
+  color: var(--white-text);
+}
+
+@media only screen and (max-width: 300px) {
+  .bannerTitle {
+    font-size: 1.5rem;
+    line-height: 1rem;
+    border-top: .15rem solid var(--white-text);
+  }
+}
+@media only screen and (min-width: 1024px), (orientation: landscape) {
+  
+  .header-nav-ul {
+    display: inherit;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0;
+    padding: .5rem;
+  }
+
+  .header-nav-li a {
+    color: var(--white-text);
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 1rem;
+    display: block;
+  }
+
+  #burgerNavBar {
+    display: none;
+    height: 0;
+  }
+
+  #navBar {
+    display: contents;
+  }
+  
+  .navBar {
+    display: flex;
+    z-index: 3;
+    margin: 0;
+  }
+
+  .banner {
+    height: 110vmin;
+    width: auto;
+    background-attachment: fixed;
+  }
+  
+  .bannerTitle {
+    font-size: 6rem;
+    line-height: 4.2rem;
+    border-top: .6rem solid var(--white-text);
+
+  }
+
+  .academyHistory {
+    padding: 5rem;
+  }
+
+  .schedule-flex {
+  flex-direction: row;
+  align-items: center;
+  }
+
+  .grappling, .bjj {
+    margin: auto;
+  }
+
+  td, th {
+    padding: 2rem;
+  }
+
+  .registration-link {
+    text-decoration: underline;
+    align-self: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .App-logo {
+    display: block;
+    height: 10vmin;
+    pointer-events: none;
+    margin-left: 1rem;
+  }
+
+  .headInstructors {
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+  }
+
+  .headInstructors .instructorCard {
+    width: 28vw;
+    margin: auto;
+  }
+
+  .instructors-flex {
+    flex-direction: row;
+    margin: 2rem;
+  }
+
+  .instructorCard {
+    width : 21vw;
+  }
+
+  .gallery-flex {
+    flex-direction: row;
+  }
+  .galleryCard {
+    width: 22vw;
+  }
+}
