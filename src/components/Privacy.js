@@ -495,7 +495,7 @@ function Privacy() {
       <ul>
         <li>
           <strong>Safari</strong>&nbsp;:
-          http://www.apple.com/legal/privacy/fr-ww/
+          https://www.apple.com/legal/privacy/fr-ww/
         </li>
       </ul>
       <ul>
@@ -507,7 +507,7 @@ function Privacy() {
       <ul>
         <li>
           <strong>Opera</strong>&nbsp;:
-          http://www.opera.com/help/tutorials/security/cookies/
+          https://www.opera.com/help/tutorials/security/cookies/
         </li>
       </ul>
       <p>
