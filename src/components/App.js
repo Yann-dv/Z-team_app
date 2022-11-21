@@ -16,15 +16,15 @@ function App() {
     <section className="App">
       <Header />
       <Routes>
-        <Route path="/z-team_app/" element={<Home />} />
-        <Route path="/z-team_app/home" element={<Home />} />
-        <Route path="/z-team_app/schedule" element={<Schedule />} />
-        <Route path="/z-team_app/prices" element={<Prices />} />
-        <Route path="/z-team_app/instructors" element={<Instructors />} />
-        <Route path="/z-team_app/gallery" element={<Gallery />} />
-        <Route path="/z-team_app/shop" element={<Shop />} />
-        <Route path="/z-team_app/legal" element={<Legal />} />
-        <Route path="/z-team_app/privacy" element={<Privacy />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/schedule" element={<Schedule />} />
+        <Route path="/prices" element={<Prices />} />
+        <Route path="/instructors" element={<Instructors />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/shop" element={<Shop />} />
+        <Route path="/legal" element={<Legal />} />
+        <Route path="/privacy" element={<Privacy />} />
       </Routes>
       <Footer />
     </section>
