@@ -127,7 +127,7 @@ a {
 .banner {
   height: 50vmin;
   width: auto;
-  background-image: url("../img/team_banner_min.jpg");
+  background-image: url("./../img/team_banner_min.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-color: var(--img-background);
@@ -224,7 +224,7 @@ a {
 }
 
 .generalBackground {
-  background-image: url('../assets/logo.svg');
+  background-image: url("./../assets/logo.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
