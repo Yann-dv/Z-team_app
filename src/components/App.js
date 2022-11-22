@@ -1,5 +1,5 @@
 import '../styles/App.css';
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import Header from './Header.js';
 import Home from './Home.js';
 import Schedule from './Schedule.js';
@@ -25,6 +25,7 @@ function App() {
         <Route path="/z-team_app/shop" element={<Shop />} />
         <Route path="/z-team_app/legal" element={<Legal />} />
         <Route path="/z-team_app/privacy" element={<Privacy />} />
+        <Route path="*" element={<Navigate to="/z-team_app/" />} />
       </Routes>
       <Footer />
     </section>
