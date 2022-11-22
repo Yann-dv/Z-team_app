@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/z-team_app/static/css/main.8283393e.css",
+    "main.css": "/z-team_app/static/css/main.cf7f17c8.css",
     "main.js": "/z-team_app/static/js/main.62e0efdb.js",
     "static/js/787.300e313d.chunk.js": "/z-team_app/static/js/787.300e313d.chunk.js",
     "static/media/team_banner_min.jpg": "/z-team_app/static/media/team_banner_min.ecb7f5b639376f253492.jpg",
@@ -14,15 +14,15 @@
     "static/media/instructor_1.jpg": "/z-team_app/static/media/instructor_1.763b4a185de7f312a591.jpg",
     "static/media/instructor_4.jpg": "/z-team_app/static/media/instructor_4.bbd5c08fcb5e8ef6bfae.jpg",
     "static/media/instructor_6.jpg": "/z-team_app/static/media/instructor_6.33f96bd302853b08b839.jpg",
-    "static/media/logo.svg": "/z-team_app/static/media/logo.f7eef8c1a1211965de30.svg",
+    "static/media/logo.svg": "/z-team_app/static/media/logo.cea1e22399b94dfbce32.svg",
     "static/media/gft.png": "/z-team_app/static/media/gft.ff009f610b41b3c59539.png",
     "index.html": "/z-team_app/index.html",
-    "main.8283393e.css.map": "/z-team_app/static/css/main.8283393e.css.map",
+    "main.cf7f17c8.css.map": "/z-team_app/static/css/main.cf7f17c8.css.map",
     "main.62e0efdb.js.map": "/z-team_app/static/js/main.62e0efdb.js.map",
     "787.300e313d.chunk.js.map": "/z-team_app/static/js/787.300e313d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8283393e.css",
+    "static/css/main.cf7f17c8.css",
     "static/js/main.62e0efdb.js"
   ]
 }
