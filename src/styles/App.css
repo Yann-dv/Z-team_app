@@ -90,6 +90,7 @@
 }
 
 .header-nav-ul {
+  background-color: var(--dark-background);
   margin: 0;
   padding: .2rem;
 }
@@ -132,7 +133,7 @@ a {
 
 .App-header {
   background-color: var(--dark-background );
-  height: 5rem;
+  min-height: 5rem;
   display: flex;
   align-items: center;
   justify-content: left;
@@ -433,7 +434,11 @@ tbody > tr:hover {
   }
 }
 @media only screen and (min-width: 1024px), (orientation: landscape) {
-  
+
+  .App-header {
+    min-height: 4rem;
+  }
+
   .header-nav-ul {
     display: inherit;
     flex-wrap: wrap;

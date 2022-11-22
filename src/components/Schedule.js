@@ -18,11 +18,6 @@ function Schedule() {
               </tr>
 
               <tr>
-                <td>Wednesday</td>
-                <td>21:00 - 22:30</td>
-              </tr>
-
-              <tr>
                 <td>Saturday</td>
                 <td>
                   12:00 - 14:00 <br />
