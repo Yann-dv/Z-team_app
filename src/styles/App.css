@@ -12,6 +12,24 @@
   --links-text : #61dafb;
 }
 
+.errorPage {
+  margin: 0;
+  padding: 0;
+}
+
+.errorMessage {
+  padding-top : 5rem;
+}
+
+.errorMessage h2, a {
+  font-size: 2rem;
+}
+
+.errorContent {
+  height: 100vh;
+  color: var(--white-text);
+  text-align: center;
+}
 
 #toggle_burgerNavBar {
   display: none;
