@@ -33,7 +33,6 @@
   border: none;
   background-color: var(--dark-background);
   color: var(--white-text);
-  height: 8vh;
   font-size: 3rem;
   padding-top: .5rem;
   padding-left: 1rem;
@@ -85,7 +84,7 @@
 .header-nav-li a {
   color: var(--white-text);
   text-decoration: none;
-  padding: .5rem;
+  padding: .4rem;
   display: block;
 }
 
@@ -115,7 +114,7 @@ a {
 
 .App-header {
   background-color: var(--dark-background );
-  min-height: 11vh;
+  height: 5rem;
   display: flex;
   align-items: center;
   justify-content: left;
@@ -235,7 +234,7 @@ a {
 
 .scheduleBackground, .shopBackground {
   display: inherit;
-  min-height: 80vh;
+  min-height: 100vh;
   justify-content: center;
   flex-direction: column;
 }
