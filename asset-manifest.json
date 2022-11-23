@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/z-team_app/static/css/main.c18f9e92.css",
+    "main.css": "/z-team_app/static/css/main.da141144.css",
     "main.js": "/z-team_app/static/js/main.cd01e771.js",
     "static/js/787.300e313d.chunk.js": "/z-team_app/static/js/787.300e313d.chunk.js",
     "static/media/team_banner_min.jpg": "/z-team_app/static/media/team_banner_min.ecb7f5b639376f253492.jpg",
@@ -17,12 +17,12 @@
     "static/media/logo.svg": "/z-team_app/static/media/logo.cea1e22399b94dfbce32.svg",
     "static/media/gft.png": "/z-team_app/static/media/gft.ff009f610b41b3c59539.png",
     "index.html": "/z-team_app/index.html",
-    "main.c18f9e92.css.map": "/z-team_app/static/css/main.c18f9e92.css.map",
+    "main.da141144.css.map": "/z-team_app/static/css/main.da141144.css.map",
     "main.cd01e771.js.map": "/z-team_app/static/js/main.cd01e771.js.map",
     "787.300e313d.chunk.js.map": "/z-team_app/static/js/787.300e313d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c18f9e92.css",
+    "static/css/main.da141144.css",
     "static/js/main.cd01e771.js"
   ]
 }
