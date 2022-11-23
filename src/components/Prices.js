@@ -3,7 +3,7 @@ function Prices() {
     <section className="generalContainer">
       <div className="generalBackground">
       <h2 className="section-title">Prices</h2>
-        <table className="bjj prices">
+        <table className="prices">
           <tbody>
             <tr>
               <th scope="colgoup" rowSpan="1" colSpan="2">Prices</th>
