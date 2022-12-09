@@ -1,4 +1,3 @@
-
 :root {
   --dark-background : #181A1B;
   --grey-background : #f6f6f6;
@@ -12,6 +11,25 @@
   --links-text : #61dafb;
 }
 
+html {
+  background-color: var(--dark-background);
+}
+
+.breakingNews {
+  border: 2px solid red;
+background-color: #2d2a2deb;
+color:white;
+font-size: 1.4rem;
+}
+
+.fade-in {
+  transition: opacity 1s ease;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
 .errorPage {
   margin: 0;
   padding: 0;
@@ -90,6 +108,7 @@
 }
 
 .header-nav-ul {
+  background-color: var(--dark-background);
   margin: 0;
   padding: .2rem;
 }
@@ -107,6 +126,7 @@
 }
 
 .header-nav-li a:hover {
+  transition-duration: .20s;
   background-color: var(--purple-background);
   text-decoration: underline;
 }
@@ -132,7 +152,8 @@ a {
 
 .App-header {
   background-color: var(--dark-background );
-  height: 5rem;
+  z-index: 4;
+  min-height: 5rem;
   display: flex;
   align-items: center;
   justify-content: left;
@@ -236,9 +257,10 @@ a {
 
 .locationMap iframe{
   border: 0;
-  margin-top: 2rem;
-  margin-bottom: 3rem;
-  width: 70vw;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+  width: 80vw;
+  height: 40vh;
 }
 
 .generalBackground {
@@ -253,8 +275,10 @@ a {
 .scheduleBackground, .shopBackground {
   display: inherit;
   min-height: 100vh;
-  justify-content: center;
   flex-direction: column;
+}
+.shopBackground {
+  justify-content: center;
 }
 
 .schedule-flex {
@@ -281,6 +305,7 @@ a {
 
 .prices {
   margin: 1rem;
+  margin-bottom: 3rem;
 }
 
 table {
@@ -342,6 +367,7 @@ tbody > tr:hover {
   text-transform: uppercase;
   text-decoration: underline;
   font-size: 2rem;
+  margin-top: 5rem;
 }
 
 .instructors-flex, .shop-flex {
@@ -433,7 +459,11 @@ tbody > tr:hover {
   }
 }
 @media only screen and (min-width: 1024px), (orientation: landscape) {
-  
+
+  .App-header {
+    min-height: 4rem;
+  }
+
   .header-nav-ul {
     display: inherit;
     flex-wrap: wrap;
@@ -482,17 +512,44 @@ tbody > tr:hover {
     padding: 5rem;
   }
 
+  .generalBackground {
+  min-height: 90vh;
+  padding-bottom: 3rem;
+}
+
+.locationMap iframe{
+  width: 50vw;
+  height: 60vh;
+}
+
   .schedule-flex {
+  margin-top: 5rem;
   flex-direction: row;
   align-items: center;
+  }
+
+  .prices {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
   }
 
   .grappling, .bjj {
     margin: auto;
   }
 
+  .grappling {
+    margin-top: 0;
+  }
+
   td, th {
     padding: 2rem;
+  }
+
+  .grappling td, .bjj td {
+    padding: 3.5rem;
+    font-size: 1.5rem;
   }
 
   .registration-link {
@@ -505,9 +562,10 @@ tbody > tr:hover {
 
   .App-logo {
     display: block;
-    height: 10vmin;
+    min-height: 4rem;
     pointer-events: none;
     margin-left: 1rem;
+    margin-right: 1rem;
   }
 
   .headInstructors {

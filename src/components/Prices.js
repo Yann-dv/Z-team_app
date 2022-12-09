@@ -1,9 +1,14 @@
+import { motion } from "framer-motion";
+
 function Prices() {
   return (
-    <section className="generalContainer">
+    <motion.section className="generalContainer"
+    initial= {{opacity:0, transition: {duration: 0.1}}}
+    animate= {{opacity:1}}
+    exit= {{opacity:0}}>
       <div className="generalBackground">
       <h2 className="section-title">Prices</h2>
-        <table className="bjj prices">
+        <table className="prices">
           <tbody>
             <tr>
               <th scope="colgoup" rowSpan="1" colSpan="2">Prices</th>
@@ -46,7 +51,7 @@ function Prices() {
           <a href="https://www.helloasso.com/associations/a-m-j-z-team-boulogne/adhesions/inscription-zteam-bjj-boulogne-2022-2023" target="_blank" rel="noopener noreferrer">Register now</a>
         </button>
       </div>
-    </section>
+    </motion.section>
   );
 }
 

@@ -38,7 +38,7 @@
   }
 
   .generalBackground {
-    background-image: url("../src/assets/logo.svg");
+    background-image: url("./static/media/logo.cea1e22399b94dfbce32.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
