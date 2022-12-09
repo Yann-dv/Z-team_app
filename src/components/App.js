@@ -19,7 +19,7 @@ function App() {
     <section className="App">
       <Header />
       <AnimatePresence>
-        <Routes location={location} key={location.pathname}>
+      <Routes location={location} key={location.pathname}>
           <Route path="/z-team_app/" element={<Home />} />
           <Route path="/z-team_app/home" element={<Home />} />
           <Route path="/z-team_app/schedule" element={<Schedule />} />
