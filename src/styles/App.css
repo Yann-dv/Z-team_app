@@ -11,6 +11,10 @@
   --links-text : #61dafb;
 }
 
+html {
+  background-color: var(--dark-background);
+}
+
 .breakingNews {
   border: 2px solid red;
 background-color: #2d2a2deb;
@@ -148,6 +152,7 @@ a {
 
 .App-header {
   background-color: var(--dark-background );
+  z-index: 4;
   min-height: 5rem;
   display: flex;
   align-items: center;
@@ -560,6 +565,7 @@ tbody > tr:hover {
     min-height: 4rem;
     pointer-events: none;
     margin-left: 1rem;
+    margin-right: 1rem;
   }
 
   .headInstructors {

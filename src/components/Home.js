@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import Img1 from "../img/competition_1.jpg";
 import Img2 from "../img/competition_2.jpg";
 import Img3 from "../img/competition_3.jpg";
@@ -5,7 +6,10 @@ import Img4 from "../img/gft.png";
 
 function HomeContent() {
   return (
-    <section className="homeContainer generalContainer">
+    <motion.section className="homeContainer generalContainer"
+    initial= {{opacity:0, transition: {duration: 0.1}}}
+    animate={{opacity:1}}
+    exit={{opacity:0}}>
       <Banner />
       <article className="homePresentation">
         <p className="academyHistory">
@@ -60,17 +64,13 @@ function HomeContent() {
           title="Dojo location"
         ></iframe>
       </article>
-    </section>
+    </motion.section>
   );
 }
 
 function Banner() {
   return (
     <section className="banner">
-      <article className="pub">ACTUALITE : REJOIGNEZ-NOUS POUR UNE SEANCE D'INITIATION AU GRAPPLING, GRATUIT ! <br/>
-      Date : mercredi 09/11/2022 et 16/11/2022 <br/>
-      Lieu : 1674 avenue du Vieux Pont de Sèvres, Boulogne-Billancourt <br/>
-      Contactez-nous pour plus d'informations</article>
       <h1 className="bannerTitle">Z-Team Academy</h1>
     </section>
   );

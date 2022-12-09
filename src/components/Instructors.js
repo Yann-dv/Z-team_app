@@ -1,6 +1,11 @@
+import { motion } from "framer-motion";
+
 function Instructors() {
   return (
-    <section className="generalContainer">
+    <motion.section className="generalContainer"
+    initial= {{opacity:0, transition: {duration: 0.1}}}
+    animate={{opacity:1}}
+    exit={{opacity:0}}>
       <div className="generalBackground">
         <h2 className="section-title">Instructors</h2>
         <div className="instructors-flex">
@@ -122,7 +127,7 @@ function Instructors() {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
 

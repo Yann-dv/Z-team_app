@@ -1,6 +1,11 @@
+import { motion } from "framer-motion";
+
 function Schedule() {
   return (
-    <section className="generalContainer">
+    <motion.section className="generalContainer"
+    initial= {{opacity:0, transition: {duration: 0.1}}}
+    animate={{opacity:1}}
+    exit={{opacity:0}}>
       <div className="generalBackground scheduleBackground">
         <h2 className="section-title">Schedule</h2>
         <div className="schedule-flex">
@@ -46,7 +51,7 @@ function Schedule() {
           </table>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
 
