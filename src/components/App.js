@@ -10,8 +10,27 @@ import Shop from './Shop.js';
 import Footer from './Footer.js';
 import Legal from './Legal.js';
 import Privacy from './Privacy.js';
+import { useEffect, useState } from 'react';
 
 function App() {
+  const [fadeProp, setFadeProp] = useState ({
+    fade: "fade-out",
+  });
+
+  useEffect(() => {
+    const timeout = setInterval(() => {
+      if(fadeProp.fade === "fade-in") {
+        setFadeProp({
+          fade: "fade-out"
+        })
+      } else {
+        setFadeProp({
+          fade: "fade-in"
+        })
+      }
+    }, 1000)
+  })
+
   return (
     <section className="App">
       <Header />

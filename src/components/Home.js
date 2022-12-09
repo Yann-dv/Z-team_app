@@ -67,6 +67,10 @@ function HomeContent() {
 function Banner() {
   return (
     <section className="banner">
+      <article className="pub">ACTUALITE : REJOIGNEZ-NOUS POUR UNE SEANCE D'INITIATION AU GRAPPLING, GRATUIT ! <br/>
+      Date : mercredi 09/11/2022 et 16/11/2022 <br/>
+      Lieu : 1674 avenue du Vieux Pont de Sèvres, Boulogne-Billancourt <br/>
+      Contactez-nous pour plus d'informations</article>
       <h1 className="bannerTitle">Z-Team Academy</h1>
     </section>
   );
