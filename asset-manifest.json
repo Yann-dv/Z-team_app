@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/z-team_app/static/css/main.dc2937bd.css",
-    "main.js": "/z-team_app/static/js/main.d7d41f49.js",
+    "main.css": "/z-team_app/static/css/main.2f0cd284.css",
+    "main.js": "/z-team_app/static/js/main.8b791507.js",
     "static/js/787.300e313d.chunk.js": "/z-team_app/static/js/787.300e313d.chunk.js",
     "static/media/team_banner_min.jpg": "/z-team_app/static/media/team_banner_min.ecb7f5b639376f253492.jpg",
     "static/media/competition_1.jpg": "/z-team_app/static/media/competition_1.1e7e8d97667b9a6ab528.jpg",
@@ -17,12 +17,12 @@
     "static/media/logo.svg": "/z-team_app/static/media/logo.cea1e22399b94dfbce32.svg",
     "static/media/gft.png": "/z-team_app/static/media/gft.ff009f610b41b3c59539.png",
     "index.html": "/z-team_app/index.html",
-    "main.dc2937bd.css.map": "/z-team_app/static/css/main.dc2937bd.css.map",
-    "main.d7d41f49.js.map": "/z-team_app/static/js/main.d7d41f49.js.map",
+    "main.2f0cd284.css.map": "/z-team_app/static/css/main.2f0cd284.css.map",
+    "main.8b791507.js.map": "/z-team_app/static/js/main.8b791507.js.map",
     "787.300e313d.chunk.js.map": "/z-team_app/static/js/787.300e313d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dc2937bd.css",
-    "static/js/main.d7d41f49.js"
+    "static/css/main.2f0cd284.css",
+    "static/js/main.8b791507.js"
   ]
 }
