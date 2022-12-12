@@ -10,7 +10,6 @@ import Shop from './Shop.js';
 import Footer from './Footer.js';
 import Legal from './Legal.js';
 import Privacy from './Privacy.js';
-import { AnimatePresence } from 'framer-motion'
 
 function App() {
   const location = useLocation();
@@ -18,7 +17,6 @@ function App() {
   return (
     <section className="App">
       <Header />
-      <AnimatePresence>
       <Routes location={location} key={location.pathname}>
           <Route path="/z-team_app/" element={<Home />} />
           <Route path="/z-team_app/home" element={<Home />} />
@@ -31,7 +29,6 @@ function App() {
           <Route path="/z-team_app/privacy" element={<Privacy />} />
           <Route path="*" element={<Navigate to="/z-team_app/" />} />
         </Routes>
-      </AnimatePresence>
       <Footer />
     </section>
   );

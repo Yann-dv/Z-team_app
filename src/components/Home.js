@@ -1,15 +1,13 @@
-import { motion } from "framer-motion";
 import Img1 from "../img/competition_1.jpg";
 import Img2 from "../img/competition_2.jpg";
 import Img3 from "../img/competition_3.jpg";
 import Img4 from "../img/gft.png";
 
 function HomeContent() {
+  
   return (
-    <motion.section className="homeContainer generalContainer"
-    initial= {{opacity:0, transition: {duration: 0.1}}}
-    animate={{opacity:1}}
-    exit={{opacity:0}}>
+    
+    <section className="homeContainer generalContainer generalBackground">
       <Banner />
       <article className="homePresentation">
         <p className="academyHistory">
@@ -64,13 +62,13 @@ function HomeContent() {
           title="Dojo location"
         ></iframe>
       </article>
-    </motion.section>
+    </section>
   );
 }
 
 function Banner() {
   return (
-    <section className="banner">
+    <section className="banner smooth-show">
       <h1 className="bannerTitle">Z-Team Academy</h1>
     </section>
   );

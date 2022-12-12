@@ -1,12 +1,8 @@
-import { motion } from "framer-motion";
-
 function Prices() {
   return (
-    <motion.section className="generalContainer"
-    initial= {{opacity:0, transition: {duration: 0.1}}}
-    animate= {{opacity:1}}
-    exit= {{opacity:0}}>
+    <section className="generalContainer">
       <div className="generalBackground">
+      <div className="smooth-show">
       <h2 className="section-title">Prices</h2>
         <table className="prices">
           <tbody>
@@ -51,7 +47,8 @@ function Prices() {
           <a href="https://www.helloasso.com/associations/a-m-j-z-team-boulogne/adhesions/inscription-zteam-bjj-boulogne-2022-2023" target="_blank" rel="noopener noreferrer">Register now</a>
         </button>
       </div>
-    </motion.section>
+      </div>
+    </section>
   );
 }
 
