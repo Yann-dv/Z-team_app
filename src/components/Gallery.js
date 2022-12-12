@@ -1,12 +1,8 @@
-import { motion } from "framer-motion";
-
 function Gallery() {
   return (
-    <motion.section className="generalContainer"
-    initial= {{opacity:0 , transition: {duration: 0.1}}}
-    animate={{opacity:1}}
-    exit={{opacity:0}}>
+    <section className="generalContainer">
       <div className="generalBackground galleryBackground">
+        <div className="smooth-show">
         <h2 className="section-title">Gallery</h2>
         <div className="gallery-flex">
           <div className="galleryCard" id="galleryCard_1">
@@ -34,8 +30,9 @@ function Gallery() {
             <div className="galleryDescription">Gallery description to complete</div>
           </div>
         </div>
+        </div>
       </div>
-    </motion.section>
+    </section>
   );
 }
 

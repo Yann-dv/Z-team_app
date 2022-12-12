@@ -1,12 +1,8 @@
-import { motion } from "framer-motion";
-
 function Schedule() {
   return (
-    <motion.section className="generalContainer"
-    initial= {{opacity:0, transition: {duration: 0.1}}}
-    animate={{opacity:1}}
-    exit={{opacity:0}}>
+    <section className="generalContainer">
       <div className="generalBackground scheduleBackground">
+        <div className="smooth-show">
         <h2 className="section-title">Schedule</h2>
         <div className="schedule-flex">
           <table className="bjj schedule">
@@ -50,8 +46,10 @@ function Schedule() {
             </tbody>
           </table>
         </div>
+        </div>
       </div>
-    </motion.section>
+    </section>
+    
   );
 }
 
