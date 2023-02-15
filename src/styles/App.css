@@ -211,13 +211,9 @@ a {
   height: 200px;
 }
 
-.partners-link {
-  margin: 1rem;
-  width: 50vw;
-}
-
 .partners-link img{
-  width: 100%;
+  margin: .5rem;
+  width: 90vw;
   height: auto;
 }
 
@@ -605,6 +601,12 @@ tbody > tr:hover {
   }
   .galleryCard {
     width: 22vw;
+  }
+
+  .partners-link img{
+    margin: 1rem;
+    width: 50vw;
+    height: auto;
   }
 
   .footerLink {
