@@ -1,11 +1,15 @@
 {
   "files": {
-    "main.css": "/z-team_app/static/css/main.2f0cd284.css",
-    "main.js": "/z-team_app/static/js/main.8b791507.js",
+    "main.css": "/z-team_app/static/css/main.66465853.css",
+    "main.js": "/z-team_app/static/js/main.0e3f8338.js",
     "static/js/787.300e313d.chunk.js": "/z-team_app/static/js/787.300e313d.chunk.js",
+    "static/media/blr.jpg": "/z-team_app/static/media/blr.7dd442899882d57b5203.jpg",
+    "static/media/artistemartial.jpg": "/z-team_app/static/media/artistemartial.eab641e156d5d3dd9d64.jpg",
     "static/media/team_banner_min.jpg": "/z-team_app/static/media/team_banner_min.ecb7f5b639376f253492.jpg",
     "static/media/competition_1.jpg": "/z-team_app/static/media/competition_1.1e7e8d97667b9a6ab528.jpg",
     "static/media/competition_2.jpg": "/z-team_app/static/media/competition_2.0c45247619d439f25784.jpg",
+    "static/media/builtbykids.jpg": "/z-team_app/static/media/builtbykids.0d6ddc17dab9fe84f176.jpg",
+    "static/media/gft.jpg": "/z-team_app/static/media/gft.a29af979e495b26d8d96.jpg",
     "static/media/logo192.png": "/z-team_app/static/media/logo192.95d520ec46e67a4255ca.png",
     "static/media/competition_3.jpg": "/z-team_app/static/media/competition_3.432fc80d6b9720ddb989.jpg",
     "static/media/instructor_3.jpg": "/z-team_app/static/media/instructor_3.0f44f345125d947ffbd8.jpg",
@@ -17,12 +21,12 @@
     "static/media/logo.svg": "/z-team_app/static/media/logo.cea1e22399b94dfbce32.svg",
     "static/media/gft.png": "/z-team_app/static/media/gft.ff009f610b41b3c59539.png",
     "index.html": "/z-team_app/index.html",
-    "main.2f0cd284.css.map": "/z-team_app/static/css/main.2f0cd284.css.map",
-    "main.8b791507.js.map": "/z-team_app/static/js/main.8b791507.js.map",
+    "main.66465853.css.map": "/z-team_app/static/css/main.66465853.css.map",
+    "main.0e3f8338.js.map": "/z-team_app/static/js/main.0e3f8338.js.map",
     "787.300e313d.chunk.js.map": "/z-team_app/static/js/787.300e313d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2f0cd284.css",
-    "static/js/main.8b791507.js"
+    "static/css/main.66465853.css",
+    "static/js/main.0e3f8338.js"
   ]
 }
