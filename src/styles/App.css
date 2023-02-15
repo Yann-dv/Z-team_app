@@ -211,6 +211,16 @@ a {
   height: 200px;
 }
 
+.partners-link {
+  margin: 1rem;
+  width: 50vw;
+}
+
+.partners-link img{
+  width: 100%;
+  height: auto;
+}
+
 .homeContainer hr {
   width : 60%;
   color: white;
@@ -371,12 +381,13 @@ tbody > tr:hover {
   margin-top: 5rem;
 }
 
-.instructors-flex, .shop-flex {
+.instructors-flex, .shop-flex, .partners-flex{
   padding-top: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .instructorCard {
