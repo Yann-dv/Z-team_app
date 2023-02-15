@@ -22,6 +22,7 @@ function Navbar() {
         <li className="header-nav-li">< NavLink to="/z-team_app/instructors" className={({ isActive }) => (isActive ? "active-Navlink " : "")}>Instructors</ NavLink></li>
         <li className="header-nav-li">< NavLink to="/z-team_app/gallery" className={({ isActive }) => (isActive ? "active-Navlink " : "")}>Gallery</ NavLink></li>
         <li className="header-nav-li">< NavLink to="/z-team_app/shop" className={({ isActive }) => (isActive ? "active-Navlink " : "")}>Shop</ NavLink></li>
+        <li className="header-nav-li">< NavLink to="/z-team_app/partners" className={({ isActive }) => (isActive ? "active-Navlink " : "")}>Partners</ NavLink></li>
         <li className="header-nav-li registration-link"><a className="header-nav-links" href="https://www.helloasso.com/associations/a-m-j-z-team-boulogne/adhesions/inscription-zteam-bjj-boulogne-2022-2023" target="_blank" rel="noopener noreferrer">Registration</a></li>
       </ul>
     </div>

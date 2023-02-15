@@ -7,6 +7,7 @@ import Prices from './Prices.js';
 import Instructors from './Instructors';
 import Gallery from './Gallery.js';
 import Shop from './Shop.js';
+import Partners from './Partners.js';
 import Footer from './Footer.js';
 import Legal from './Legal.js';
 import Privacy from './Privacy.js';
@@ -25,6 +26,7 @@ function App() {
           <Route path="/z-team_app/instructors" element={<Instructors />} />
           <Route path="/z-team_app/gallery" element={<Gallery />} />
           <Route path="/z-team_app/shop" element={<Shop />} />
+          <Route path="/z-team_app/partners" element={<Partners />} />
           <Route path="/z-team_app/legal" element={<Legal />} />
           <Route path="/z-team_app/privacy" element={<Privacy />} />
           <Route path="*" element={<Navigate to="/z-team_app/" />} />
