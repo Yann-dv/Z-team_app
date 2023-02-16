@@ -1,6 +1,6 @@
 import PartnersDatas from '../datas/PartnersDatas.js';
 import SponsorsDatas from '../datas/SponsorsDatas.js';
-import ParnerCard from './PartnersCards.js';
+import ParnerCard from '../components/PartnersCards';
 
 function Partners() {
     const partnersList = PartnersDatas.map((partner, i) =>
