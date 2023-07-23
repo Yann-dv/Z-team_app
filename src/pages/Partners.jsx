@@ -1,10 +1,10 @@
 import PartnersDatas from '../datas/PartnersDatas.js';
 import SponsorsDatas from '../datas/SponsorsDatas.js';
-import ParnerCard from '../components/PartnersCards';
+import PartnerCard from '../components/PartnersCards';
 
 function Partners() {
     const partnersList = PartnersDatas.map((partner, i) =>
-        <ParnerCard
+        <PartnerCard
             key={i}
             link={partner.link}
             image={partner.image}
@@ -13,7 +13,7 @@ function Partners() {
     );
 
     const sponsorsList = SponsorsDatas.map((sponsor, i) =>
-        <ParnerCard
+        <PartnerCard
             key={i}
             link={sponsor.link}
             image={sponsor.image}

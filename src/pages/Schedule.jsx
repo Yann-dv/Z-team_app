@@ -9,17 +9,17 @@ function Schedule() {
             <tbody>
               <tr>
                 <th scope="colgoup" rowSpan="1" colSpan="2">
-                  BJJ Schedule
+                  Jiu-Jitsu Brésilien
                 </th>
               </tr>
 
               <tr>
-                <td>Tuesday, Thursday</td>
+                <td>Mardi, Jeudi</td>
                 <td>20:00 - 22:00</td>
               </tr>
 
               <tr>
-                <td>Saturday</td>
+                <td>Samedi</td>
                 <td>
                   12:00 - 14:00 <br />
                   18:30 - 20:30
@@ -32,15 +32,15 @@ function Schedule() {
             <tbody>
               <tr>
                 <th scope="colgoup" rowSpan="1" colSpan="2">
-                  Grappling Schedule
+                  Grappling
                 </th>
               </tr>
               <tr>
-                <td>Wednesday</td>
+                <td>Mercredi</td>
                 <td>21:00 - 22:30</td>
               </tr>
               <tr>
-                <td>Saturday</td>
+                <td>Samedi</td>
                 <td>18:30 - 20:30</td>
               </tr>
             </tbody>

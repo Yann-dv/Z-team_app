@@ -3,48 +3,48 @@ function Prices() {
     <section className="generalContainer">
       <div className="generalBackground">
       <div className="smooth-show">
-      <h2 className="section-title">Prices</h2>
+      <h2 className="section-title">Tarifs</h2>
         <table className="prices">
           <tbody>
             <tr>
-              <th scope="colgoup" rowSpan="1" colSpan="2">Prices</th>
+              <th scope="colgoup" rowSpan="1" colSpan="2">Tarifs</th>
             </tr>
             <tr>
-              <td>Adult (one-time payment)</td>
-              <td>250€/year</td>
+              <td>Adulte (paiement unique)</td>
+              <td>250€/an</td>
             </tr>
             <tr>
-              <td>Adult (three-times payment)</td>
-              <td>85€/month</td>
+              <td>Adulte (paiement en 3x)</td>
+              <td>85€/mois</td>
             </tr>
             <tr>
-              <td>Student, jobless (three-times payment)</td>
-              <td>65€/month</td>
+              <td>Etudiants, sans-emploi (paiement en 3x)</td>
+              <td>65€/mois</td>
             </tr>
             <tr>
-              <td>Kids (three-times payment)</td>
-              <td>50€/month</td>
+              <td>Enfants (paiement en 3x)</td>
+              <td>50€/Mois</td>
             </tr>
             <tr>
-              <td>Partners inscriptions (one-time payment)</td>
-              <td>150€/year</td>
+              <td>Inscription club partenaire (paiement unique)</td>
+              <td>150€/an</td>
             </tr>
             <tr>
-              <td>Cfjjb licence (one-time payment)</td>
-              <td>40€/year</td>
+              <td>Licence Cfjjb (paiement unique)</td>
+              <td>40€/an</td>
             </tr>
             <tr>
-              <td>Sports passport (one-time payment)</td>
-              <td>10€/year</td>
+              <td>Passeport sportif cfjjb (paiement unique)</td>
+              <td>10€/an</td>
             </tr>
             <tr>
-              <td>Trial session</td>
-              <td>free</td>
+              <td>Séance d'essai</td>
+              <td>gratuit</td>
             </tr>
           </tbody>
         </table>
         <button className="registration-btn">
-          <a href="https://www.helloasso.com/associations/a-m-j-z-team-boulogne/adhesions/inscription-zteam-bjj-boulogne-2022-2023" target="_blank" rel="noopener noreferrer">Register now</a>
+          <a href="https://www.helloasso.com/associations/a-m-j-z-team-boulogne/adhesions/inscription-zteam-bjj-boulogne-2022-2023" target="_blank" rel="noopener noreferrer">S'inscrire maintenant</a>
         </button>
       </div>
       </div>
