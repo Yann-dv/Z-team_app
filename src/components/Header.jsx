@@ -1,22 +1,22 @@
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import logo from '../assets/logo192-w.png';
+import logo from '../assets/logo192_no_back.png';
 
 function Header() {
   return (
-    <header className="App-header">
-      <Link to="/z-team_app/home">
-        <img src={logo} className="App-logo" alt="logo" />
+    <header className="App-header" id="App-header">
+      <Link id="App-logo" onClick={() => toggleNavbar()}>
+        <img src={logo} className="App-logo" alt="Z-team logo"/>
       </Link>
-      <BurgerNavBar />
       <Navbar />
+      <BurgerNavBar />
     </header>
   );
 }
 
 function Navbar() {
   return (
-    <div id="navBar" className="navBar">
+    <div id="navBar">
       <ul className="header-nav-ul">
         <li className="header-nav-li">
           <NavLink
@@ -192,5 +192,15 @@ function BurgerNavBar() {
     </div>
   );
 }
+
+function toggleNavbar() {
+  var navbarList = document.querySelector(".header-nav-ul");
+  var appHheader = document.querySelector("#App-header");
+  var banner = document.querySelector("#banner");
+
+  navbarList.classList.toggle("toggleNavbar");
+  appHheader.classList.toggle("appHeaderMinimize");
+  banner.classList.toggle("margin-top-less-5");
+} 
 
 export default Header;
