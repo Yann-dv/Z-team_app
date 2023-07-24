@@ -202,10 +202,16 @@ background-blend-mode: multiply;
 
 .instagramLink img {
   border-radius: 30%;
+  transition: .4s all;
+  mix-blend-mode: multiply;
+  -webkit-filter: grayscale(40%) contrast(1.2);
+  filter: grayscale(40%) contrast(1.2);
 }
 
 .instagramLink :hover {
-  filter: brightness(70%);
+  mix-blend-mode: multiply;
+  -webkit-filter: grayscale(0%) contrast(1);
+  filter: grayscale(0%) contrast(1);
 }
 
 .homeImageContainer {

@@ -44,10 +44,10 @@ function HomeContent() {
         <div className="homeImageContainer">
           <img className="homeImage" src={Img3} alt="alt" />
         </div>
-        <div>
-          <a className="instagramLink" href="https://www.instagram.com/zteambjj/?hl=fr" rel="noreferrer" target="_blank"><img src={InstaLogo} alt="Lien vers instagram"/></a>
-        </div>
       </article>
+      <div>
+          <a className="instagramLink" href="https://www.instagram.com/zteambjj/?hl=fr" rel="noreferrer" target="_blank" title="Lien vers Instagram"><img src={InstaLogo} alt="Lien vers instagram"/></a>
+      </div>
       <hr></hr>
       <h2 className="section-title">Emplacement du Dojo :</h2>
       <article className="locationMap generalBackground">
