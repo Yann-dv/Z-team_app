@@ -3,7 +3,7 @@ function Schedule() {
     <section className="generalContainer">
       <div className="generalBackground scheduleBackground">
         <div className="smooth-show">
-        <h2 className="section-title">Schedule</h2>
+        <h2 className="section-title">Planning des cours</h2>
         <div className="schedule-flex">
           <table className="bjj schedule">
             <tbody>

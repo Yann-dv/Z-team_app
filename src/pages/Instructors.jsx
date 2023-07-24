@@ -3,7 +3,7 @@ function Instructors() {
     <section className="generalContainer">
       <div className="generalBackground">
       <div className="smooth-show">
-        <h2 className="section-title">Instructors</h2>
+        <h2 className="section-title">Professeurs & coachs</h2>
         <div className="instructors-grid">
           <div className="headInstructors">
             <div className="instructorCard">
