@@ -105,7 +105,7 @@ function BurgerNavBar() {
   };
   return (
     <div id="burgerNavBar" className="burgerNavBar">
-      <button id="burgerNavbarToggle" onClick={handleToggle}>
+      <button id="burgerNavbarToggle" onClick={handleToggle} className={(navbarOpen ? 'burgerIconSquared' : 'burgerIconRounded')} >
         {navbarOpen ? 'X' : '☰'}
       </button>
       <ul className={`header-nav-ul ${navbarOpen ? 'showMenu' : 'hideMenu'}`}>

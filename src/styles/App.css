@@ -68,13 +68,21 @@ font-size: 1.4rem;
 
 #burgerNavbarToggle {
   cursor: pointer;
-  border: none;
   color: var(--black-text);
   font-size: 2rem;
   padding-inline: .5rem;
-  border-radius: 10px;
+  border: 1px solid var(--black-text);
   box-shadow: #2d2a2d 1px 1px 6px 1px;
+}
 
+.burgerIconSquared {
+  border-radius: 0;
+}
+
+.burgerIconRounded {
+  border-radius: 10px;
+  margin-top: .5rem;
+  margin-left: .5rem;
 }
 
 .hideMenu {
