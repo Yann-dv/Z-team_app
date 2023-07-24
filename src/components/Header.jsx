@@ -200,7 +200,7 @@ function toggleNavbar() {
 
   navbarList.classList.toggle("toggleNavbar");
   appHheader.classList.toggle("appHeaderMinimize");
-  banner.classList.toggle("margin-top-less-5");
+  banner.classList.toggle("margin-top-less-4");
 } 
 
 export default Header;
