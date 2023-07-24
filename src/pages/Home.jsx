@@ -59,8 +59,11 @@ function HomeContent() {
           rel="noreferrer"
           target="_blank"
           title="Lien vers Instagram"
+          style= {{ textDecoration: 'underline', color: 'black' }}
         >
-          <img src={InstaLogo} alt="Lien vers instagram" />
+          <div style={{ display: 'flex', color: 'black', justifyContent: 'center'}}>
+          <p style={{ fontWeight: 'bold', fontSize: '1.5rem', textTransform: 'uppercase'}}>#zteambjj</p> <img src={InstaLogo} alt="Lien vers instagram" style={{ height: '70px'}} />
+            </div>
         </a>
       </div>
       <hr></hr>
