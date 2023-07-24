@@ -23,7 +23,7 @@ function Prices() {
             </tr>
             <tr>
               <td>Enfants (paiement en 3x)</td>
-              <td>50€/Mois</td>
+              <td>50€/mois</td>
             </tr>
             <tr>
               <td>Inscription club partenaire (paiement unique)</td>

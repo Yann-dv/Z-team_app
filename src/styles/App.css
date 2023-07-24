@@ -172,7 +172,7 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
   background-color: rgb(207, 205, 205);
-background-blend-mode: multiply;
+  background-blend-mode: multiply;
 }
 
 .bannerTitle {
@@ -184,6 +184,10 @@ background-blend-mode: multiply;
   display: inline-block;
   border-top: .25rem solid var(--white-text);
   line-height: 1.6rem;
+}
+
+.video-player {
+  animation: zero-to-one-opacity 2.5s ease-in-out;
 }
 
 .academyHistory {
@@ -286,6 +290,7 @@ background-blend-mode: multiply;
 }
 
 .generalBackground {
+  background-image: url("./../assets/logo.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -418,7 +423,7 @@ tbody > tr:hover {
   background-color: var(--purple-background);
   margin: auto;
   margin-top: 1.5rem;
-  width: 300px;
+  width: 350px;
   position: relative;
   border: 2px solid var(--black-text);
 }
@@ -476,7 +481,7 @@ tbody > tr:hover {
 }
 
 .galleryDescription {
-  color: var(--black-text);
+  color: var(--white-text);
 }
 
 .legalNoticeList {
@@ -509,11 +514,10 @@ tbody > tr:hover {
   }
 
   .header-nav-ul {
-    display: inherit;
+    display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     margin: 0;
-    padding: .5rem;
   }
 
   .header-nav-li a {
@@ -599,9 +603,6 @@ tbody > tr:hover {
   .registration-link {
     text-decoration: underline;
     align-self: center;
-    position: absolute;
-    top: 0;
-    right: 0;
   }
 
   .App-logo {
@@ -625,11 +626,7 @@ tbody > tr:hover {
     display: flex;
     flex-direction: row;
     width: 80vw;
-  }
-
-  .headInstructors .instructorCard {
-    width: 350px;
-    margin: auto;
+    margin-top: 2rem;
   }
 
   .gallery-flex {
@@ -665,6 +662,15 @@ tbody > tr:hover {
     to {
       margin-left: 0%;
       width: 100%;
+    }
+  }
+
+  @keyframes zero-to-one-opacity {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
     }
   }
 }  
