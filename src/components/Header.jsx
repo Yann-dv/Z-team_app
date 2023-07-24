@@ -5,8 +5,8 @@ import logo from '../assets/logo192_no_back.png';
 function Header() {
   return (
     <header className="App-header" id="App-header">
-      <Link id="App-logo" onClick={() => toggleNavbar()}>
-        <img src={logo} className="App-logo" alt="Z-team logo"/>
+      <Link id="App-logo" onClick={() => toggleNavbar()} title="Fermer/ouvrir le menu">
+        <img src={logo} className="app-logo" alt="Z-team logo"/>
       </Link>
       <Navbar />
       <BurgerNavBar />

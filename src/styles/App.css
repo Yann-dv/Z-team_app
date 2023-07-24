@@ -70,9 +70,11 @@ font-size: 1.4rem;
   cursor: pointer;
   border: none;
   color: var(--black-text);
-  font-size: 3rem;
-  padding-top: .5rem;
-  padding-left: 1rem;
+  font-size: 2rem;
+  padding-inline: .5rem;
+  border-radius: 10px;
+  box-shadow: #2d2a2d 1px 1px 6px 1px;
+
 }
 
 .hideMenu {
@@ -87,6 +89,7 @@ font-size: 1.4rem;
   flex-direction: row;
   height: 100%;
   width: auto;
+  background-color: var(--white-shade-background);
 }
 
 .burger_links{
@@ -118,6 +121,7 @@ font-size: 1.4rem;
 }
 
 .header-nav-li a {
+  border-radius: 10px;
   color: var(--black-text);
   text-decoration: none;
   padding: .4rem;
@@ -146,13 +150,17 @@ a {
   text-align: center;
   }
 
-.App-logo {
+.app-logo {
   display: none;
   height: 0;
+  transition: .3s all;
+}
+
+.app-logo:hover {
+    transform: scale(1.1);
 }
 
 .App-header {
-  background-color: var(--white-shade-background);
   z-index: 4;
   min-height: 5rem;
   display: flex;
@@ -503,6 +511,7 @@ tbody > tr:hover {
 @media only screen and (min-width: 1024px), (orientation: landscape) {
 
   .App-header {
+    background-color: var(--white-shade-background);
     min-height: 4rem;
   }
 
@@ -519,6 +528,7 @@ tbody > tr:hover {
     font-size: 1.7rem;
     padding: 1rem;
     display: block;
+    border-radius: 0;
   }
 
   #burgerNavBar {
@@ -545,8 +555,7 @@ tbody > tr:hover {
   .appHeaderMinimize {
     width: 10%;
     position: sticky;
-    top: 1rem;
-    left: 1rem;
+    top: .3rem;
     background-color: transparent;
   }
 
@@ -619,10 +628,10 @@ tbody > tr:hover {
     align-self: center;
   }
 
-  .App-logo {
+  .app-logo {
     z-index: 10;
     display: block;
-    min-height: 4rem;
+    height: 4rem;
     margin-left: 1rem;
     margin-right: 1rem;
   }
