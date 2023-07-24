@@ -40,7 +40,7 @@ font-size: 1.4rem;
   padding-top : 5rem;
 }
 
-.errorMessage h2, a {
+.errorMessage h2 {
   font-size: 2rem;
 }
 
@@ -101,10 +101,9 @@ font-size: 1.4rem;
   display: none;
   height: 0;
 }
-
   
 .active-Navlink {
-  background-color: var(--dark-purple-background);
+  background-color: var(--purple-background);
   text-decoration: underline;
 }
 
@@ -128,11 +127,13 @@ font-size: 1.4rem;
 
 .header-nav-li a:hover {
   transition-duration: .20s;
+  color: var(--white-text);
   background-color: var(--purple-background);
   text-decoration: underline;
 }
 
 .header-nav-li a:focus {
+  color: var(--white-text);
   background-color: var(--purple-background);
   text-decoration: underline;
   outline: none;
@@ -202,10 +203,10 @@ background-blend-mode: multiply;
 
 .instagramLink img {
   border-radius: 30%;
-  transition: .4s all;
+  transition: .3s all;
   mix-blend-mode: multiply;
-  -webkit-filter: grayscale(40%) contrast(1.2);
-  filter: grayscale(40%) contrast(1.2);
+  -webkit-filter: grayscale(100%) contrast(1.2);
+  filter: grayscale(100%) contrast(1.2);
 }
 
 .instagramLink :hover {
@@ -390,7 +391,7 @@ tbody > tr:hover {
   margin-top: 5rem;
 }
 
-.instructors-flex, .shop-flex, .partners-flex{
+.shop-flex, .partners-flex{
   padding-top: 2rem;
   display: flex;
   flex-direction: column;
@@ -399,32 +400,54 @@ tbody > tr:hover {
   align-items: center;
 }
 
+.instructors-grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.headInstructors {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
 .instructorCard {
   display: flex;
   flex-direction: column;
-  background-color: rgba(128, 128, 128, 0.877);
+  background-color: var(--purple-background);
   margin: auto;
   margin-top: 1.5rem;
-  width: 90vw;
+  width: 300px;
+  position: relative;
+  border: 2px solid var(--black-text);
 }
 
 .instructorCard-img {
  align-self: center;
- object-fit: contain;
+ object-fit: cover;
  width: 100%;
- height: auto;
+ height: 100%;
+ position: absolute;
+ left: 0;
+ opacity: 1;
+ transition: .5s ease;
+ cursor: pointer;
+}
+
+.instructorCard-img:hover {
+  opacity: 0;
 }
 
 .instructorCard-name {
-  color: var(--black-text);
+  color: var(--white-text);
   font-size: 1.8rem;
   text-decoration: underline;
   text-transform: uppercase;
-  margin: .5rem;
 }
 
 .instructorCard-content {
-  color: var(--black-text);
+  color: var(--white-text);
   font-size: 1.4rem;
   padding: 1rem;
 }
@@ -589,24 +612,24 @@ tbody > tr:hover {
     margin-right: 1rem;
   }
 
+  .instructors-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+    justify-items: center;
+    align-items: center;
+  }
+
   .headInstructors {
     display: flex;
     flex-direction: row;
-    width: 90vw;
+    width: 80vw;
   }
 
   .headInstructors .instructorCard {
-    width: 28vw;
+    width: 350px;
     margin: auto;
-  }
-
-  .instructors-flex {
-    flex-direction: row;
-    margin: 2rem;
-  }
-
-  .instructorCard {
-    width : 21vw;
   }
 
   .gallery-flex {

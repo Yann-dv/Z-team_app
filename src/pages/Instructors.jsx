@@ -4,16 +4,16 @@ function Instructors() {
       <div className="generalBackground">
       <div className="smooth-show">
         <h2 className="section-title">Instructors</h2>
-        <div className="instructors-flex">
+        <div className="instructors-grid">
           <div className="headInstructors">
             <div className="instructorCard">
-              <div>
+            
                 <img
                   src={require("../img/instructor_1.jpg")}
                   className="instructorCard-img"
                   alt="A instructor card"
                 />
-              </div>
+              
               <h3 className="instructorCard-name">KARIM HAMLADJI</h3>
               <div className="instructorCard-content">
                 <p>

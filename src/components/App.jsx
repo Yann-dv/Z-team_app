@@ -19,7 +19,6 @@ function App() {
     <section className="App">
       <Header />
       <Routes location={location} key={location.pathname}>
-          <Route path="/z-team_app/" element={<Home />} />
           <Route path="/z-team_app/home" element={<Home />} />
           <Route path="/z-team_app/schedule" element={<Schedule />} />
           <Route path="/z-team_app/prices" element={<Prices />} />
@@ -29,7 +28,7 @@ function App() {
           <Route path="/z-team_app/partners" element={<Partners />} />
           <Route path="/z-team_app/legal" element={<Legal />} />
           <Route path="/z-team_app/privacy" element={<Privacy />} />
-          <Route path="*" element={<Navigate to="/z-team_app/" />} />
+          <Route path="*" element={<Navigate to="/z-team_app/home" />} />
         </Routes>
       <Footer />
     </section>
