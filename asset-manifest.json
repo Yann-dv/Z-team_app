@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/z-team_app/static/css/main.9c0bfb93.css",
-    "main.js": "/z-team_app/static/js/main.3de4967d.js",
+    "main.css": "/z-team_app/static/css/main.938e2144.css",
+    "main.js": "/z-team_app/static/js/main.6a385b0b.js",
     "static/js/787.300e313d.chunk.js": "/z-team_app/static/js/787.300e313d.chunk.js",
     "static/media/blr.jpg": "/z-team_app/static/media/blr.7dd442899882d57b5203.jpg",
     "static/media/artistemartial.jpg": "/z-team_app/static/media/artistemartial.eab641e156d5d3dd9d64.jpg",
@@ -10,23 +10,23 @@
     "static/media/competition_2.jpg": "/z-team_app/static/media/competition_2.0c45247619d439f25784.jpg",
     "static/media/builtbykids.jpg": "/z-team_app/static/media/builtbykids.0d6ddc17dab9fe84f176.jpg",
     "static/media/gft.jpg": "/z-team_app/static/media/gft.a29af979e495b26d8d96.jpg",
-    "static/media/logo192.png": "/z-team_app/static/media/logo192.95d520ec46e67a4255ca.png",
     "static/media/competition_3.jpg": "/z-team_app/static/media/competition_3.432fc80d6b9720ddb989.jpg",
-    "static/media/instructor_3.jpg": "/z-team_app/static/media/instructor_3.0f44f345125d947ffbd8.jpg",
-    "static/media/instructor_2.jpg": "/z-team_app/static/media/instructor_2.de494a1438ca16a2f185.jpg",
+    "static/media/logo192-w.png": "/z-team_app/static/media/logo192-w.adc5d915ac1b6c0bca91.png",
+    "static/media/instructor_3.jpg": "/z-team_app/static/media/instructor_3.ea5383d3de2042245012.jpg",
+    "static/media/instructor_2.jpg": "/z-team_app/static/media/instructor_2.1131c3fa769b0404b3c6.jpg",
     "static/media/instructor_5.jpg": "/z-team_app/static/media/instructor_5.933f5814319d502658bb.jpg",
-    "static/media/instructor_1.jpg": "/z-team_app/static/media/instructor_1.763b4a185de7f312a591.jpg",
+    "static/media/instructor_1.jpg": "/z-team_app/static/media/instructor_1.8f219084abf69a1148e6.jpg",
     "static/media/instructor_4.jpg": "/z-team_app/static/media/instructor_4.bbd5c08fcb5e8ef6bfae.jpg",
-    "static/media/instructor_6.jpg": "/z-team_app/static/media/instructor_6.33f96bd302853b08b839.jpg",
-    "static/media/logo.svg": "/z-team_app/static/media/logo.cea1e22399b94dfbce32.svg",
+    "static/media/instructor_6.jpg": "/z-team_app/static/media/instructor_6.79991a3f3b9833a62535.jpg",
+    "static/media/logo.svg": "/z-team_app/static/media/logo.9a9abdc0e9399be72741.svg",
     "static/media/gft.png": "/z-team_app/static/media/gft.ff009f610b41b3c59539.png",
     "index.html": "/z-team_app/index.html",
-    "main.9c0bfb93.css.map": "/z-team_app/static/css/main.9c0bfb93.css.map",
-    "main.3de4967d.js.map": "/z-team_app/static/js/main.3de4967d.js.map",
+    "main.938e2144.css.map": "/z-team_app/static/css/main.938e2144.css.map",
+    "main.6a385b0b.js.map": "/z-team_app/static/js/main.6a385b0b.js.map",
     "787.300e313d.chunk.js.map": "/z-team_app/static/js/787.300e313d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9c0bfb93.css",
-    "static/js/main.3de4967d.js"
+    "static/css/main.938e2144.css",
+    "static/js/main.6a385b0b.js"
   ]
 }
