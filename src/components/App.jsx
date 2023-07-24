@@ -1,16 +1,16 @@
 import '../styles/App.css';
 import { Routes, Route, Navigate, useLocation } from "react-router-dom";
-import Header from './Header.js';
-import Home from './Home.js';
-import Schedule from './Schedule.js';
-import Prices from './Prices.js';
-import Instructors from './Instructors';
-import Gallery from './Gallery.js';
-import Shop from './Shop.js';
-import Partners from './Partners.js';
-import Footer from './Footer.js';
-import Legal from './Legal.js';
-import Privacy from './Privacy.js';
+import Header from './Header';
+import Home from '../pages/Home';
+import Schedule from '../pages/Schedule';
+import Prices from '../pages/Prices';
+import Instructors from '../pages/Instructors';
+import Gallery from '../pages/Gallery';
+import Shop from '../pages/Shop';
+import Partners from '../pages/Partners';
+import Footer from './Footer';
+import Legal from '../pages/Legal';
+import Privacy from '../pages/Privacy';
 
 function App() {
   const location = useLocation();
@@ -19,7 +19,6 @@ function App() {
     <section className="App">
       <Header />
       <Routes location={location} key={location.pathname}>
-          <Route path="/z-team_app/" element={<Home />} />
           <Route path="/z-team_app/home" element={<Home />} />
           <Route path="/z-team_app/schedule" element={<Schedule />} />
           <Route path="/z-team_app/prices" element={<Prices />} />
@@ -29,7 +28,7 @@ function App() {
           <Route path="/z-team_app/partners" element={<Partners />} />
           <Route path="/z-team_app/legal" element={<Legal />} />
           <Route path="/z-team_app/privacy" element={<Privacy />} />
-          <Route path="*" element={<Navigate to="/z-team_app/" />} />
+          <Route path="*" element={<Navigate to="/z-team_app/home" />} />
         </Routes>
       <Footer />
     </section>
