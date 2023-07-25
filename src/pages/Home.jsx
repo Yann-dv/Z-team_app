@@ -52,17 +52,15 @@ function HomeContent() {
           <img className="homeImage" src={Img3} alt="alt" />
         </div>
       </article>
-      <div>
+      <div className="instagramLink" >
         <a
-          className="instagramLink"
           href="https://www.instagram.com/zteambjj/?hl=fr"
           rel="noreferrer"
           target="_blank"
           title="Lien vers Instagram"
-          style= {{ textDecoration: 'underline', color: 'black' }}
         >
           <div style={{ display: 'flex', color: 'black', justifyContent: 'center'}}>
-          <p style={{ fontWeight: 'bold', fontSize: '1.5rem', textTransform: 'uppercase'}}>#zteambjj</p> <img src={InstaLogo} alt="Lien vers instagram" style={{ height: '70px'}} />
+          <p style={{ color: 'black', fontWeight: 'bold', fontSize: '1.5rem', textTransform: 'uppercase'}}>#zteambjj</p> <img src={InstaLogo} alt="Lien vers instagram" style={{ height: '80px'}} />
             </div>
         </a>
       </div>

@@ -221,6 +221,14 @@ a {
   justify-content: center;
 }
 
+.instagramLink {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+ text-decoration: "underline";
+ color: "black";
+}
+
 .instagramLink img {
   border-radius: 30%;
   transition: .3s all;
@@ -312,31 +320,15 @@ a {
   min-height: 100vh;
   flex-direction: column;
 }
+
+.planning {
+  margin: 2rem;
+  width: 85vw;
+  height: auto
+}
 .shopBackground {
   justify-content: center;
 }
-
-.schedule-flex {
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.schedule {
-  margin: auto;
-}
-
-.bjj {
-  margin-top: 2rem;
-  margin-bottom: 3rem;
-}
-
-.grappling {
-  margin-bottom: 3rem;
-}
-
 
 .prices {
   margin: 1rem;
@@ -601,10 +593,8 @@ tbody > tr:hover {
     height: 70vh;
   }
 
-  .schedule-flex {
-  margin-top: 5rem;
-  flex-direction: row;
-  align-items: center;
+  .planning {
+    width: 60vw;
   }
 
   .prices {
@@ -614,21 +604,8 @@ tbody > tr:hover {
     margin-bottom: 3rem;
   }
 
-  .grappling, .bjj {
-    margin: auto;
-  }
-
-  .grappling {
-    margin-top: 0;
-  }
-
   td, th {
     padding: 2rem;
-  }
-
-  .grappling td, .bjj td {
-    padding: 3.5rem;
-    font-size: 1.5rem;
   }
 
   .registration-link {
