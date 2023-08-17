@@ -16,7 +16,7 @@ function App() {
   const location = useLocation();
 
   return (
-    <section className="App">
+    <section className="App homeContainer generalBackground">
       <Header />
       <Routes location={location} key={location.pathname}>
           <Route path="/z-team_app/home" element={<Home />} />
