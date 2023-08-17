@@ -362,6 +362,10 @@ ul.header-nav-ul:nth-child(1) > li:nth-last-child(1),
   margin-inline: 15rem;
 }
 
+.flex-wrapper {
+  display: flex;
+}
+
 .scheduleGridContainer {
   margin: 3rem;
   display: grid;
@@ -415,7 +419,7 @@ ul.header-nav-ul:nth-child(1) > li:nth-last-child(1),
   background-size: cover;
   background-image: url("./../img/childs-min.jpg"); 
   background-color: var(--childs-color);
-  background-blend-mode: multiply;
+  background-blgrapplend-mode: multiply;
 }
 
 .gridItem h3 {
