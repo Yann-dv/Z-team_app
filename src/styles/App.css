@@ -1,27 +1,42 @@
 :root {
-  --white-background : #FFFFFF;
-  --white-shade-background : #f5f5f5ec;
-  --grey-background : #f6f6f6;
+  --main-background : #FFFFFF;
+  --main-shade-background : #f5f5f5ec;
+  --secondary-background : #f6f6f6;
   --footer-background : #2d2a2d;
-  --dark-purple-background : rgb(62, 3, 62);
+  --third-background : rgb(62, 3, 62);
   --purple-background : #5d0a61;
   --blue-background : #2f1196;
   --img-background : #cccccc;
-  --white-text : white;
-  --black-text : black;
-  --links-text : #61dafb;
+  --main-text-color : black;
+  --secondary-text-color : white;
+  --links-text-color : #61dafb;
 }
 
 html {
-  background-color: var(--white-background);
+  background-color: var(--main-background);
   overflow-x: hidden;
 }
 
+.themeButton {
+  position: fixed;
+  font-size: 1rem;
+  top: 1rem;
+  right: 1rem;
+  z-index: 5;
+  background-color: var(--main-text-color);
+  color: var(--secondary-text-color);
+  border: none;
+  box-shadow: #2d2a2d 1px 1px 6px 1px;
+  border-radius: 100%;
+  padding: .3rem .5rem;
+  cursor: pointer;
+}
+
 .breakingNews {
-border: 2px solid red;
-background-color: #2d2a2deb;
-color:white;
-font-size: 1.4rem;
+  border: 2px solid red;
+  background-color: #2d2a2deb;
+  color: var(--secondary-text-color);
+  font-size: 1.4rem;
 }
 
 .fade-in {
@@ -47,7 +62,7 @@ font-size: 1.4rem;
 
 .errorContent {
   height: 100vh;
-  color: var(--black-text);
+  color: var(--main-text-color);
   text-align: center;
 }
 
@@ -68,10 +83,10 @@ font-size: 1.4rem;
 
 #burgerNavbarToggle {
   cursor: pointer;
-  color: var(--black-text);
+  color: var(--main-text-color);
   font-size: 2rem;
   padding-inline: .5rem;
-  border: 1px solid var(--black-text);
+  border: 1px solid var(--main-text-color);
   box-shadow: #2d2a2d 1px 1px 6px 1px;
 }
 
@@ -97,7 +112,7 @@ font-size: 1.4rem;
   flex-direction: row;
   height: 100%;
   width: auto;
-  background-color: var(--white-shade-background);
+  background-color: var(--main-shade-background);
 }
 
 .burger_links{
@@ -131,7 +146,7 @@ font-size: 1.4rem;
 
 .header-nav-li a {
   border-radius: 10px;
-  color: var(--black-text);
+  color: var(--main-text-color);
   text-decoration: none;
   padding: .4rem;
   display: block;
@@ -139,13 +154,13 @@ font-size: 1.4rem;
 
 .header-nav-li a:hover {
   transition-duration: .20s;
-  color: var(--white-text);
+  color: var(--secondary-text-color);
   background-color: var(--purple-background);
   text-decoration: underline;
 }
 
 .header-nav-li a:focus {
-  color: var(--white-text);
+  color: var(--secondary-text-color);
   background-color: var(--purple-background);
   text-decoration: underline;
   outline: none;
@@ -172,7 +187,7 @@ font-size: 1.4rem;
   align-items: center;
   justify-content: left;
   font-size: calc(10px + 2vmin);
-  color: var(--black-text);
+  color: var(--main-text-color);
   position: fixed;
   top: 0;
   width: 100%;
@@ -190,12 +205,12 @@ font-size: 1.4rem;
 
 .bannerTitle {
   font-size: 2.2rem;
-  color: var(--white-text);
+  color: var(--secondary-text-color);
   text-align: center;
   text-transform: uppercase;
   text-decoration: underline;
   display: inline-block;
-  border-top: .25rem solid var(--white-text);
+  border-top: .25rem solid var(--secondary-text-color);
   line-height: 1.6rem;
 }
 
@@ -206,7 +221,7 @@ font-size: 1.4rem;
 .academyHistory {
   margin: 0;
   padding: 2rem;
-  color: var(--black-text);
+  color: var(--main-text-color);
   font-size: 1.5rem;
   text-align: justify;
   text-justify: inter-word;
@@ -241,7 +256,7 @@ font-size: 1.4rem;
 }
 
 .instagramLink-p {
-  color: var(--black-text); 
+  color: var(--main-text-color); 
   font-weight: bold;
   font-size: 1.5rem;
   text-transform: uppercase;
@@ -294,14 +309,14 @@ font-size: 1.4rem;
 }
 
 .footerLink {
-  color: var(--white-text);
+  color: var(--secondary-text-color);
   font-size: .8rem;
   padding: .3rem;
   display: block;
 }
 
 .footerLink:hover {
-  color: var(--links-text);
+  color: var(--links-text-color);
 }
 
 .homeContainer {
@@ -317,6 +332,7 @@ font-size: 1.4rem;
 }
 
 .generalBackground {
+  background-color: var(--main-background);
   background-image: url("./../assets/logo.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -348,11 +364,12 @@ font-size: 1.4rem;
 table {
   margin: auto;
   text-align: left;
-  background-color: var(--grey-background);
+  background-color: var(--secondary-background);
 }
 
 td, th {
-  border: 2px solid var(--black-text);
+  color: var(--main-text-color);
+  border: 2px solid var(--main-text-color);
   padding: 1rem;
   text-align: center;
   text-transform: uppercase;
@@ -360,15 +377,15 @@ td, th {
 }
 th {
   background: var(--purple-background);
-  color: white;
+  color: var(--secondary-text-color);
   border-radius: 0;
   padding: 1.5rem;
   font-size: 2rem;
 }
 
 tfoot > tr  {
-  background: black;
-  color: white;
+  background: var(--main-text-color);
+  color: var(--secondary-text-color);
 }
 tbody > tr:hover {
   background-color: #8534cd;
@@ -376,7 +393,7 @@ tbody > tr:hover {
 
 .registration-btn {
   background-color:#8534cd;
-  color: var(--black-text);
+  color: var(--secondary-text-color);
   margin: 1.5rem;
   padding: 0;
   border: none;
@@ -385,7 +402,7 @@ tbody > tr:hover {
 .registration-btn a {
   display: block;
   background-color:#8534cd;
-  color: var(--black-text);
+  color: var(--secondary-text-color);
   text-decoration: none;
   font-size: 1.5rem;
   padding: 1.5rem;
@@ -393,14 +410,14 @@ tbody > tr:hover {
 }
 
 .registration-btn a:hover {
-  background-color: var(--black-text);
+  background-color: var(--secondary-text-color);
   color: #8534cd;
   text-decoration: underline;
   border: 2px solid #8534cd;
 }
 
 .section-title {
-  color: var(--black-text);
+  color: var(--main-text-color);
   text-transform: uppercase;
   text-decoration: underline;
   font-size: 1.5rem;
@@ -436,7 +453,7 @@ tbody > tr:hover {
   margin-top: 1.5rem;
   width: 350px;
   position: relative;
-  border: 2px solid var(--black-text);
+  border: 2px solid var(--secondary-text-color);
 }
 
 .instructorCard-img {
@@ -456,14 +473,14 @@ tbody > tr:hover {
 }
 
 .instructorCard-name {
-  color: var(--white-text);
+  color: var(--secondary-text-color);
   font-size: 1.8rem;
   text-decoration: underline;
   text-transform: uppercase;
 }
 
 .instructorCard-content {
-  color: var(--white-text);
+  color: var(--secondary-text-color);
   font-size: 1.4rem;
   padding: 1rem;
 }
@@ -481,7 +498,7 @@ tbody > tr:hover {
 }
 
 .galleryCard {
-  background-color: #2d2a2d;
+  background-color: var(--footer-background);
   padding: 1rem;
   margin: 1rem;
 }
@@ -492,11 +509,11 @@ tbody > tr:hover {
 }
 
 .galleryDescription {
-  color: var(--white-text);
+  color: var(--secondary-text-color);
 }
 
 .legalNoticeList {
-  color: var(--black-text);
+  color: var(--main-text-color);
 }
 
 .legalNoticeElement {
@@ -508,20 +525,20 @@ tbody > tr:hover {
 .privacyPolicy p, .privacyPolicy ul{
   margin: auto;
   width: 80%;
-  color: var(--black-text);
+  color: var(--main-text-color);
 }
 
 @media only screen and (max-width: 300px) {
   .bannerTitle {
     font-size: 1.5rem;
     line-height: 1rem;
-    border-top: .15rem solid var(--white-text);
+    border-top: .15rem solid var(--secondary-text-color);
   }
 }
 @media only screen and (min-width: 1024px), (orientation: landscape) {
 
   .App-header {
-    background-color: var(--white-shade-background);
+    background-color: var(--main-shade-background);
     min-height: 4rem;
   }
 
@@ -533,7 +550,7 @@ tbody > tr:hover {
   }
 
   .header-nav-li a {
-    color: var(--black-text);
+    color: var(--main-text-color);
     text-decoration: none;
     font-size: 1.7rem;
     padding: 1rem;
@@ -582,7 +599,7 @@ tbody > tr:hover {
   .bannerTitle {
     font-size: 6rem;
     line-height: 4.2rem;
-    border-top: .6rem solid var(--white-text);
+    border-top: .6rem solid var(--secondary-text-color);
 
   }
 

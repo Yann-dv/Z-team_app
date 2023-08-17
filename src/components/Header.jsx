@@ -1,12 +1,22 @@
 import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
 import { Link, NavLink } from 'react-router-dom';
 import logo from '../assets/logo192_no_back.png';
+
+library.add(faSun);
+library.add(faMoon);
 
 function Header() {
   return (
     <header className="App-header" id="App-header">
-      <Link id="App-logo" onClick={() => toggleNavbar()} title="Fermer/ouvrir le menu">
-        <img src={logo} className="app-logo" alt="Z-team logo"/>
+      <Link
+        id="App-logo"
+        onClick={() => toggleNavbar()}
+        title="Fermer/ouvrir le menu"
+      >
+        <img src={logo} className="app-logo" alt="Z-team logo" />
       </Link>
       <Navbar />
       <BurgerNavBar />
@@ -22,7 +32,9 @@ function Navbar() {
           <NavLink
             to="/z-team_app/home"
             className={({ isActive }) => (isActive ? 'active-Navlink ' : '')}
-            style={ ({ isActive}) => (isActive ? {color: 'white'} : {color: ''}) }
+            style={({ isActive }) =>
+              isActive ? { color: 'white' } : { color: '' }
+            }
           >
             Accueil
           </NavLink>
@@ -31,7 +43,9 @@ function Navbar() {
           <NavLink
             to="/z-team_app/schedule"
             className={({ isActive }) => (isActive ? 'active-Navlink ' : '')}
-            style={ ({ isActive}) => (isActive ? {color: 'white'} : {color: ''}) }
+            style={({ isActive }) =>
+              isActive ? { color: 'white' } : { color: '' }
+            }
           >
             Planning
           </NavLink>
@@ -40,7 +54,9 @@ function Navbar() {
           <NavLink
             to="/z-team_app/prices"
             className={({ isActive }) => (isActive ? 'active-Navlink ' : '')}
-            style={ ({ isActive}) => (isActive ? {color: 'white'} : {color: ''}) }
+            style={({ isActive }) =>
+              isActive ? { color: 'white' } : { color: '' }
+            }
           >
             Tarifs
           </NavLink>
@@ -49,7 +65,9 @@ function Navbar() {
           <NavLink
             to="/z-team_app/instructors"
             className={({ isActive }) => (isActive ? 'active-Navlink ' : '')}
-            style={ ({ isActive}) => (isActive ? {color: 'white'} : {color: ''}) }
+            style={({ isActive }) =>
+              isActive ? { color: 'white' } : { color: '' }
+            }
           >
             Professeurs
           </NavLink>
@@ -58,7 +76,9 @@ function Navbar() {
           <NavLink
             to="/z-team_app/gallery"
             className={({ isActive }) => (isActive ? 'active-Navlink ' : '')}
-            style={ ({ isActive}) => (isActive ? {color: 'white'} : {color: ''}) }
+            style={({ isActive }) =>
+              isActive ? { color: 'white' } : { color: '' }
+            }
           >
             Gallerie
           </NavLink>
@@ -67,7 +87,9 @@ function Navbar() {
           <NavLink
             to="/z-team_app/shop"
             className={({ isActive }) => (isActive ? 'active-Navlink ' : '')}
-            style={ ({ isActive}) => (isActive ? {color: 'white'} : {color: ''}) }
+            style={({ isActive }) =>
+              isActive ? { color: 'white' } : { color: '' }
+            }
           >
             Shop
           </NavLink>
@@ -91,8 +113,59 @@ function Navbar() {
           </a>
         </li>
       </ul>
+      <ThemeButton />
     </div>
   );
+}
+
+function ThemeButton() {
+  const [isDarkMode, setDark] = useState(false);
+  const toggleLightMode = () => {
+    setDark(!isDarkMode);
+    setThemeColor(isDarkMode);
+  };
+  return (
+    <button
+      id="themeButton"
+      onClick={() => toggleLightMode()}
+      className="themeButton"
+    >
+      <FontAwesomeIcon icon={isDarkMode ? 'sun' : 'moon'} />
+    </button>
+  );
+}
+
+function setThemeColor(darkMode) {
+  var html = document.getElementsByTagName('html')[0];
+  if (darkMode === true) {
+    html.style.cssText = `
+            --main-background : #FFFFFF;
+            --main-shade-background : #f5f5f5ec;
+            --secondary-background : #f6f6f6;
+            --footer-background : #2d2a2d;
+            --third-background : rgb(62, 3, 62);
+            --purple-background : #5d0a61;
+            --blue-background : #2f1196;
+            --img-background : #cccccc;
+            --main-text-color : black;
+            --secondary-text-color : white;
+            --links-text-color : #61dafb;
+            `;
+  } else {
+    html.style.cssText = `
+            --main-background : #2d2a2d;
+            --main-shade-background : #aba9a9ec;
+            --secondary-background : #000000;
+            --footer-background : #f5f5f5ec;
+            --third-background : rgb(62, 3, 62);
+            --purple-background : #5d0a61;
+            --blue-background : #2f1196;
+            --img-background : #000000;
+            --main-text-color : white;
+            --secondary-text-color : black;
+            --links-text-color : #61dafb;
+            `;
+  }
 }
 
 function BurgerNavBar() {
@@ -105,7 +178,11 @@ function BurgerNavBar() {
   };
   return (
     <div id="burgerNavBar" className="burgerNavBar">
-      <button id="burgerNavbarToggle" onClick={handleToggle} className={(navbarOpen ? 'burgerIconSquared' : 'burgerIconRounded')} >
+      <button
+        id="burgerNavbarToggle"
+        onClick={handleToggle}
+        className={navbarOpen ? 'burgerIconSquared' : 'burgerIconRounded'}
+      >
         {navbarOpen ? 'X' : '☰'}
       </button>
       <ul className={`header-nav-ul ${navbarOpen ? 'showMenu' : 'hideMenu'}`}>
@@ -114,7 +191,9 @@ function BurgerNavBar() {
             to="/z-team_app/home"
             className={({ isActive }) => (isActive ? 'active-Navlink ' : '')}
             onClick={() => closeMenu()}
-            style={ ({ isActive}) => (isActive ? {color: 'white'} : {color: ''}) }
+            style={({ isActive }) =>
+              isActive ? { color: 'white' } : { color: '' }
+            }
           >
             Accueil
           </NavLink>
@@ -124,7 +203,9 @@ function BurgerNavBar() {
             to="/z-team_app/schedule"
             className={({ isActive }) => (isActive ? 'active-Navlink ' : '')}
             onClick={() => closeMenu()}
-            style={ ({ isActive}) => (isActive ? {color: 'white'} : {color: ''}) }
+            style={({ isActive }) =>
+              isActive ? { color: 'white' } : { color: '' }
+            }
           >
             Planning
           </NavLink>
@@ -134,7 +215,9 @@ function BurgerNavBar() {
             to="/z-team_app/prices"
             className={({ isActive }) => (isActive ? 'active-Navlink ' : '')}
             onClick={() => closeMenu()}
-            style={ ({ isActive}) => (isActive ? {color: 'white'} : {color: ''}) }
+            style={({ isActive }) =>
+              isActive ? { color: 'white' } : { color: '' }
+            }
           >
             Tarifs
           </NavLink>
@@ -144,7 +227,9 @@ function BurgerNavBar() {
             to="/z-team_app/instructors"
             className={({ isActive }) => (isActive ? 'active-Navlink ' : '')}
             onClick={() => closeMenu()}
-            style={ ({ isActive}) => (isActive ? {color: 'white'} : {color: ''}) }
+            style={({ isActive }) =>
+              isActive ? { color: 'white' } : { color: '' }
+            }
           >
             Professeurs
           </NavLink>
@@ -154,7 +239,9 @@ function BurgerNavBar() {
             to="/z-team_app/gallery"
             className={({ isActive }) => (isActive ? 'active-Navlink ' : '')}
             onClick={() => closeMenu()}
-            style={ ({ isActive}) => (isActive ? {color: 'white'} : {color: ''}) }
+            style={({ isActive }) =>
+              isActive ? { color: 'white' } : { color: '' }
+            }
           >
             Gallerie
           </NavLink>
@@ -164,7 +251,9 @@ function BurgerNavBar() {
             to="/z-team_app/shop"
             className={({ isActive }) => (isActive ? 'active-Navlink ' : '')}
             onClick={() => closeMenu()}
-            style={ ({ isActive}) => (isActive ? {color: 'white'} : {color: ''}) }
+            style={({ isActive }) =>
+              isActive ? { color: 'white' } : { color: '' }
+            }
           >
             Shop
           </NavLink>
@@ -173,7 +262,9 @@ function BurgerNavBar() {
           <NavLink
             to="/z-team_app/partners"
             className={({ isActive }) => (isActive ? 'active-Navlink ' : '')}
-            style={ ({ isActive}) => (isActive ? {color: 'white'} : {color: ''}) }
+            style={({ isActive }) =>
+              isActive ? { color: 'white' } : { color: '' }
+            }
           >
             Partenaires
           </NavLink>
@@ -194,13 +285,13 @@ function BurgerNavBar() {
 }
 
 function toggleNavbar() {
-  var navbarList = document.querySelector(".header-nav-ul");
-  var appHheader = document.querySelector("#App-header");
-  var banner = document.querySelector("#banner");
+  var navbarList = document.querySelector('.header-nav-ul');
+  var appHheader = document.querySelector('#App-header');
+  var banner = document.querySelector('#banner');
 
-  navbarList.classList.toggle("toggleNavbar");
-  appHheader.classList.toggle("appHeaderMinimize");
-  banner.classList.toggle("margin-top-less-4");
-} 
+  navbarList.classList.toggle('toggleNavbar');
+  appHheader.classList.toggle('appHeaderMinimize');
+  banner.classList.toggle('margin-top-less-4');
+}
 
 export default Header;
