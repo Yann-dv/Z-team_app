@@ -269,18 +269,21 @@ function ThemeButton() {
 function setThemeColor(darkMode) {
   var html = document.getElementsByTagName('html')[0];
   if (darkMode === true) {
-    html.style.cssText = `
-            --main-background : #FFFFFF;
-            --main-shade-background : #f5f5f5ec;
-            --secondary-background : #f6f6f6;
-            --footer-background : #2d2a2d;
-            --third-background : rgb(62, 3, 62);
-            --purple-background : #5d0a61;
-            --blue-background : #2f1196;
-            --img-background : #cccccc;
-            --main-text-color : black;
-            --secondary-text-color : white;
-            --links-text-color : #61dafb;
+      html.style.cssText = `
+      --main-background : #FFFFFF;
+      --main-shade-background : #f5f5f5ec;
+      --secondary-background : #f6f6f6;
+      --footer-background : #2d2a2d;
+      --third-background : rgb(62, 3, 62);
+      --purple-background : #5d0a61;
+      --blue-background : #2f1196;
+      --img-background-grey : #cccccc;
+      --img-background-reactive: #ddd2dd;
+      --main-text-color : black;
+      --secondary-text-color : white;
+      --links-text-color : #61dafb;
+      --bjj-color: #4cfa17;
+      --grappling-color: #f7f717;
             `;
   } else {
     html.style.cssText = `
@@ -291,7 +294,8 @@ function setThemeColor(darkMode) {
             --third-background : rgb(62, 3, 62);
             --purple-background : #5d0a61;
             --blue-background : #2f1196;
-            --img-background : #000000;
+            --img-background-grey : #000000;
+            --img-background-reactive: #faf5fa;
             --main-text-color : white;
             --secondary-text-color : black;
             --links-text-color : #61dafb;

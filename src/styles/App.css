@@ -6,10 +6,15 @@
   --third-background : rgb(62, 3, 62);
   --purple-background : #5d0a61;
   --blue-background : #2f1196;
-  --img-background : #cccccc;
+  --img-background-grey : #cccccc;
+  --img-background-reactive: #ddd2dd;
   --main-text-color : black;
   --secondary-text-color : white;
   --links-text-color : #61dafb;
+  --bjj-color: #4cfa17;
+  --grappling-color: #f7f717;
+  --mixte-color: #f71717;
+  --childs-color: #17f7f7;
 }
 
 html {
@@ -17,7 +22,8 @@ html {
   overflow-x: hidden;
 }
 
-ul.header-nav-ul:nth-child(1) > li:nth-child(9), ul.header-nav-ul:nth-child(2) > li:nth-child(9) {
+ul.header-nav-ul:nth-child(1) > li:nth-last-child(1),
+ ul.header-nav-ul:nth-child(2) > li:nth-last-child(1) {
   list-style: none;
 }
 
@@ -351,11 +357,101 @@ ul.header-nav-ul:nth-child(1) > li:nth-child(9), ul.header-nav-ul:nth-child(2) >
   flex-direction: column;
 }
 
-.planning {
-  margin: 2rem;
-  width: 85vw;
-  height: auto
+.scheduleContainer {
+  margin-top: 4rem;
+  margin-inline: 15rem;
 }
+
+.scheduleGridContainer {
+  margin: 3rem;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 1rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.days {
+  background-color: var(--purple-background);
+  color: var(--secondary-text-color);
+}
+
+.gridItem {
+  height: 100%;
+  width: 100%;
+}
+
+.bjj-background {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("./../img/bjj-min.jpg"); 
+  background-color: var(--bjj-color);
+  background-blend-mode: multiply;
+}
+
+.grappling-background {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("./../img/grappling-min.jpg"); 
+  background-color: var(--grappling-color);
+  background-blend-mode: multiply;
+}
+
+.mixte-background {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("./../img/logo-min.png"); 
+  background-color: var(--mixte-color);
+  background-blend-mode: multiply;
+}
+
+.childs-background {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("./../img/childs-min.jpg"); 
+  background-color: var(--childs-color);
+  background-blend-mode: multiply;
+}
+
+.gridItem h3 {
+  margin: 0;
+  background-color: var(--purple-background);
+  color: var(--secondary-text-color);
+}
+
+.gridItem p {
+  padding: .5rem;
+  color: var(--secondary-text-color);
+}
+
+.gridItem:hover {
+  cursor: pointer;
+  background-color: white;
+  color: var(--purple-background);
+}
+
+.gridItem p {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.vertical-text {
+  transform: rotate(-90deg);
+}
+
+.morning, .midDay, .evening {
+  background-color: var(--img-background-reactive);
+}
+
+.emptySlot {
+  visibility: hidden;
+}
+
 .shopBackground {
   justify-content: center;
 }
@@ -627,10 +723,6 @@ tbody > tr:hover {
   .locationMap iframe{
     width: 60vw;
     height: 70vh;
-  }
-
-  .planning {
-    width: 60vw;
   }
 
   .prices {
