@@ -112,60 +112,12 @@ function Navbar() {
             Inscription
           </a>
         </li>
+        <li>
+          <ThemeButton />
+        </li>
       </ul>
-      <ThemeButton />
     </div>
   );
-}
-
-function ThemeButton() {
-  const [isDarkMode, setDark] = useState(false);
-  const toggleLightMode = () => {
-    setDark(!isDarkMode);
-    setThemeColor(isDarkMode);
-  };
-  return (
-    <button
-      id="themeButton"
-      onClick={() => toggleLightMode()}
-      className="themeButton"
-    >
-      <FontAwesomeIcon icon={isDarkMode ? 'sun' : 'moon'} />
-    </button>
-  );
-}
-
-function setThemeColor(darkMode) {
-  var html = document.getElementsByTagName('html')[0];
-  if (darkMode === true) {
-    html.style.cssText = `
-            --main-background : #FFFFFF;
-            --main-shade-background : #f5f5f5ec;
-            --secondary-background : #f6f6f6;
-            --footer-background : #2d2a2d;
-            --third-background : rgb(62, 3, 62);
-            --purple-background : #5d0a61;
-            --blue-background : #2f1196;
-            --img-background : #cccccc;
-            --main-text-color : black;
-            --secondary-text-color : white;
-            --links-text-color : #61dafb;
-            `;
-  } else {
-    html.style.cssText = `
-            --main-background : #2d2a2d;
-            --main-shade-background : #aba9a9ec;
-            --secondary-background : #000000;
-            --footer-background : #f5f5f5ec;
-            --third-background : rgb(62, 3, 62);
-            --purple-background : #5d0a61;
-            --blue-background : #2f1196;
-            --img-background : #000000;
-            --main-text-color : white;
-            --secondary-text-color : black;
-            --links-text-color : #61dafb;
-            `;
-  }
 }
 
 function BurgerNavBar() {
@@ -279,6 +231,9 @@ function BurgerNavBar() {
             Inscriptions
           </a>
         </li>
+        <li>
+          <ThemeButton />
+        </li>
       </ul>
     </div>
   );
@@ -292,6 +247,56 @@ function toggleNavbar() {
   navbarList.classList.toggle('toggleNavbar');
   appHheader.classList.toggle('appHeaderMinimize');
   banner.classList.toggle('margin-top-less-4');
+}
+
+function ThemeButton() {
+  const [isDarkMode, setDark] = useState(false);
+  const toggleLightMode = () => {
+    setDark(!isDarkMode);
+    setThemeColor(isDarkMode);
+  };
+  return (
+    <button
+      id="themeButton"
+      onClick={() => toggleLightMode()}
+      className="themeButton"
+    >
+      <FontAwesomeIcon icon={isDarkMode ? 'sun' : 'moon'} />
+    </button>
+  );
+}
+
+function setThemeColor(darkMode) {
+  var html = document.getElementsByTagName('html')[0];
+  if (darkMode === true) {
+    html.style.cssText = `
+            --main-background : #FFFFFF;
+            --main-shade-background : #f5f5f5ec;
+            --secondary-background : #f6f6f6;
+            --footer-background : #2d2a2d;
+            --third-background : rgb(62, 3, 62);
+            --purple-background : #5d0a61;
+            --blue-background : #2f1196;
+            --img-background : #cccccc;
+            --main-text-color : black;
+            --secondary-text-color : white;
+            --links-text-color : #61dafb;
+            `;
+  } else {
+    html.style.cssText = `
+            --main-background : #2d2a2d;
+            --main-shade-background : #aba9a9ec;
+            --secondary-background : #000000;
+            --footer-background : #f5f5f5ec;
+            --third-background : rgb(62, 3, 62);
+            --purple-background : #5d0a61;
+            --blue-background : #2f1196;
+            --img-background : #000000;
+            --main-text-color : white;
+            --secondary-text-color : black;
+            --links-text-color : #61dafb;
+            `;
+  }
 }
 
 export default Header;

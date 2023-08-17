@@ -17,18 +17,22 @@ html {
   overflow-x: hidden;
 }
 
+ul.header-nav-ul:nth-child(1) > li:nth-child(9), ul.header-nav-ul:nth-child(2) > li:nth-child(9) {
+  list-style: none;
+}
+
 .themeButton {
-  position: fixed;
-  font-size: 1rem;
-  top: 1rem;
-  right: 1rem;
+  position: absolute;
+  font-size: 1.4rem;
+  top: 94vh;
+  right: 1.4rem;
   z-index: 5;
   background-color: var(--main-text-color);
   color: var(--secondary-text-color);
   border: none;
   box-shadow: #2d2a2d 1px 1px 6px 1px;
   border-radius: 100%;
-  padding: .3rem .5rem;
+  padding: .3rem .6rem;
   cursor: pointer;
 }
 
@@ -556,6 +560,11 @@ tbody > tr:hover {
     padding: 1rem;
     display: block;
     border-radius: 0;
+  }
+
+  .themeButton {
+    top: 1rem;
+    right: 1rem;
   }
 
   #burgerNavBar {
