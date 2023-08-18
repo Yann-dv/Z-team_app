@@ -1,5 +1,7 @@
 /* import PlanningImg from '../img/planningZ.jpg'; */
 
+import locationIcon from '../img/gmapIcon.png';
+
 function Schedule() {
   return (
     <section className="generalContainer">
@@ -59,6 +61,7 @@ function Schedule() {
                   <h3 className="schedule-title-hour emptySlot">Mardi</h3>
                 </div>
                 <div className="gridItem childs-background ">
+                  <h2 className="mobile-day">Mercredi</h2>
                   <h3 className="schedule-title-hour">12H - 14H</h3>
                   <p>JJB / Enfants et ados</p>
                 </div>
@@ -69,6 +72,7 @@ function Schedule() {
                   <h3 className="schedule-title-hour emptySlot">Vendredi</h3>
                 </div>
                 <div className="gridItem bjj-background">
+                  <h2 className="mobile-day">Samedi</h2>
                   <h3 className="schedule-title-hour">12H - 14H</h3>
                   <p>Jiu-Jitsu Brésilien</p>
                 </div>
@@ -84,14 +88,17 @@ function Schedule() {
                   <h3 className="schedule-title-hour emptySlot">Lundi</h3>
                 </div>
                 <div className="gridItem bjj-background">
+                  <h2 className="mobile-day">Mardi</h2>
                   <h3 className="schedule-title-hour">20H - 22H</h3>
                   <p>Jiu-Jitsu Brésilien</p>
                 </div>
                 <div className="gridItem grappling-background">
+                  <h2 className="mobile-day">Mercredi</h2>
                   <h3 className="schedule-title-hour">21H - 22H30</h3>
                   <p>Grappling</p>
                 </div>
                 <div className="gridItem bjj-background ">
+                  <h2 className="mobile-day">Jeudi</h2>
                   <h3 className="schedule-title-hour">20H - 22H</h3>
                   <p>Jiu-Jitsu Brésilien</p>
                 </div>
@@ -100,6 +107,7 @@ function Schedule() {
                 </div>
                 <div className="gridItem mixte-background ">
                   <h3 className="schedule-title-hour">18H30-20H30</h3>
+                  <h2 className="mobile-day">Samedi</h2>
                   <p>Jiu-Jitsu Brésilien / Grappling</p>
                 </div>
                 <div>
@@ -107,8 +115,40 @@ function Schedule() {
                 </div>
               </div>
             </div>
-            <div>
-              <p>TODO : horaires globaux + adress</p>
+            <div className="scheduleGlobalInfos">
+              <h3 className="schedule-title-hour">Informations</h3>
+              <hr />
+              <p>Du Lundi au Vendredi</p>
+              <p>Enfants et ados : 12H-14H</p>
+              <p>Adultes : 20H-22H</p>
+              <hr />
+              <p>Samedi</p>
+              <p>Enfants : 12H-14H</p>
+              <p>Adultes : 12H-14H et 18H30-20H30</p>
+              <hr />
+              <p>
+                Les cours sont ouverts à tous les niveaux, du débutant au
+                confirmé. Les cours sont dispensés par des professeurs diplômés,
+                dans une salle de 200m² avec tatamis homologués.
+              </p>
+              <hr />
+              <p>
+                <strong>Adresse :</strong> 1674 Rue du Vieux Pont de Sèvres,
+                92100 Boulogne-Billancourt
+              </p>
+              <a
+                href="https://goo.gl/maps/d2jiAxcYz1io7PQ59"
+                target="_blank"
+                rel="noreferrer"
+                title="Voir sur Google Maps"
+              >
+                <img
+                  src={locationIcon}
+                  title="Voir sur Google Maps"
+                  alt="Voir sur Google Maps"
+                  className="location-icon"
+                />
+              </a>
             </div>
           </div>
         </div>

@@ -269,7 +269,7 @@ function ThemeButton() {
 function setThemeColor(darkMode) {
   var html = document.getElementsByTagName('html')[0];
   if (darkMode === true) {
-      html.style.cssText = `
+    html.style.cssText = `
       --main-background : #FFFFFF;
       --main-shade-background : #f5f5f5ec;
       --secondary-background : #f6f6f6;
@@ -290,12 +290,12 @@ function setThemeColor(darkMode) {
             --main-background : #2d2a2d;
             --main-shade-background : #aba9a9ec;
             --secondary-background : #000000;
-            --footer-background : #f5f5f5ec;
+            --footer-background : #aba9a9ec;
             --third-background : rgb(62, 3, 62);
-            --purple-background : #5d0a61;
+            --purple-background : #edf2a9;
             --blue-background : #2f1196;
             --img-background-grey : #000000;
-            --img-background-reactive: #faf5fa;
+            --img-background-reactive: #e3dfe3;
             --main-text-color : white;
             --secondary-text-color : black;
             --links-text-color : #61dafb;
