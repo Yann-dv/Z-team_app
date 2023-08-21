@@ -1,10 +1,12 @@
 :root {
   --main-background : #FFFFFF;
   --main-shade-background : #f5f5f5ec;
+  --banner-title-color: white; 
   --secondary-background : #f6f6f6;
   --footer-background : #2d2a2d;
   --third-background : rgb(62, 3, 62);
   --purple-background : #5d0a61;
+  --purple-lighter-color: #8534cd;
   --blue-background : #2f1196;
   --img-background-grey : #cccccc;
   --img-background-reactive: #ddd2dd;
@@ -16,6 +18,9 @@
   --grappling-color: #f7f717;
   --mixte-color: #f71717;
   --childs-color: #17f7f7;
+  --main-banner-url: url("./../assets/logo.svg");
+  --secondary-banner-url: url("./../assets/logo-b.svg");
+  --banner-url: var(--main-banner-url);
 }
 
 html {
@@ -216,12 +221,12 @@ ul.header-nav-ul:nth-child(1) > li:nth-last-child(1),
 
 .bannerTitle {
   font-size: 2.2rem;
-  color: var(--secondary-text-color);
+  color: var(--banner-title-color);
   text-align: center;
   text-transform: uppercase;
   text-decoration: underline;
   display: inline-block;
-  border-top: .25rem solid var(--secondary-text-color);
+  border-top: .25rem solid var(--banner-title-color);
   line-height: 1.6rem;
 }
 
@@ -344,7 +349,7 @@ ul.header-nav-ul:nth-child(1) > li:nth-last-child(1),
 
 .generalBackground {
   background-color: var(--main-background);
-  background-image: url("./../assets/logo.svg");
+  background-image: var(--banner-url);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -424,6 +429,7 @@ ul.header-nav-ul:nth-child(1) > li:nth-last-child(1),
 {
   margin: .5rem;
   width: 100%;
+  height: 34vh;
 }
 
 .gridItem h3 {
@@ -513,11 +519,11 @@ tfoot > tr  {
   color: var(--secondary-text-color);
 }
 tbody > tr:hover {
-  background-color: #8534cd;
+  background-color: var(--purple-lighter-color);
 }
 
 .registration-btn {
-  background-color:#8534cd;
+  background-color:var(--purple-lighter-color);
   color: var(--secondary-text-color);
   margin: 1.5rem;
   padding: 0;
@@ -526,7 +532,7 @@ tbody > tr:hover {
 
 .registration-btn a {
   display: block;
-  background-color:#8534cd;
+  background-color: var(--purple-lighter-color);
   color: var(--secondary-text-color);
   text-decoration: none;
   font-size: 1.5rem;
@@ -536,9 +542,9 @@ tbody > tr:hover {
 
 .registration-btn a:hover {
   background-color: var(--secondary-text-color);
-  color: #8534cd;
+  color: var(--purple-lighter-color);
   text-decoration: underline;
-  border: 2px solid #8534cd;
+  border: 2px solid var(--purple-lighter-color);
 }
 
 .section-title {
@@ -657,7 +663,7 @@ tbody > tr:hover {
   .bannerTitle {
     font-size: 1.5rem;
     line-height: 1rem;
-    border-top: .15rem solid var(--secondary-text-color);
+    border-top: .15rem solid var(--banner-title-color);
   }
 }
 @media only screen and (min-width: 1024px), (orientation: landscape) {
@@ -729,7 +735,7 @@ tbody > tr:hover {
   .bannerTitle {
     font-size: 6rem;
     line-height: 4.2rem;
-    border-top: .6rem solid var(--secondary-text-color);
+    border-top: .6rem solid var(--banner-title-color);
 
   }
 
@@ -818,12 +824,8 @@ tbody > tr:hover {
   display: flex;
 }
 
-.scheduleContainer {
-  margin-inline: 2rem;
-}
-
 .scheduleGridContainer {
-  margin: 3rem;
+  margin-left: 1.5rem;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: auto;
@@ -844,6 +846,10 @@ tbody > tr:hover {
   height: 100%;
 }
 
+.gridItem h3 {
+  height: 8vh;
+}
+
 .days {
   background-color: var(--purple-background);
   color: var(--secondary-text-color);
@@ -858,6 +864,7 @@ tbody > tr:hover {
 }
 
 .vertical-text {
+  display: block;
   transform: rotate(-90deg);
 }
 

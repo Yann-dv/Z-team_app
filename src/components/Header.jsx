@@ -268,14 +268,17 @@ function ThemeButton() {
 
 function setThemeColor(darkMode) {
   var html = document.getElementsByTagName('html')[0];
+
   if (darkMode === true) {
     html.style.cssText = `
       --main-background : #FFFFFF;
       --main-shade-background : #f5f5f5ec;
+      --banner-title-color: white; 
       --secondary-background : #f6f6f6;
       --footer-background : #2d2a2d;
       --third-background : rgb(62, 3, 62);
       --purple-background : #5d0a61;
+      --purple-lighter-color: #8534cd;
       --blue-background : #2f1196;
       --img-background-grey : #cccccc;
       --img-background-reactive: #ddd2dd;
@@ -284,21 +287,25 @@ function setThemeColor(darkMode) {
       --links-text-color : #61dafb;
       --bjj-color: #4cfa17;
       --grappling-color: #f7f717;
+      --banner-url: var(--main-banner-url);
             `;
   } else {
     html.style.cssText = `
             --main-background : #2d2a2d;
             --main-shade-background : #aba9a9ec;
+            --banner-title-color: #edf2a9; 
             --secondary-background : #000000;
             --footer-background : #aba9a9ec;
             --third-background : rgb(62, 3, 62);
             --purple-background : #edf2a9;
+            --purple-lighter-color: #686d2b;
             --blue-background : #2f1196;
             --img-background-grey : #000000;
             --img-background-reactive: #e3dfe3;
             --main-text-color : white;
             --secondary-text-color : black;
             --links-text-color : #61dafb;
+            --banner-url: var(--secondary-banner-url);
             `;
   }
 }

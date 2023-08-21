@@ -25,7 +25,7 @@ function Partners() {
 
   return (
     <section className="generalContainer">
-      <div className="generalBackground shopBackground">
+      <div className="generalBackground light-bg shopBackground">
         <div className="smooth-show">
           <h2 className="section-title">Dojos partenaires</h2>
           <div className="partners-flex">{partnersList}</div>

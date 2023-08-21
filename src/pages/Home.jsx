@@ -52,7 +52,7 @@ function HomeContent() {
           <img className="homeImage" src={Img3} alt="alt" />
         </div>
       </article>
-      <div className="instagramLink" >
+      <div className="instagramLink">
         <a
           href="https://www.instagram.com/zteambjj/?hl=fr"
           rel="noreferrer"
@@ -60,14 +60,25 @@ function HomeContent() {
           title="Lien vers Instagram"
           style={{ color: 'black' }}
         >
-          <div style={{ display: 'flex', color: 'black', justifyContent: 'center'}}>
-          <p className="instagramLink-p">#zteambjj</p> <img src={InstaLogo} alt="Lien vers instagram" style={{ height: '80px'}} />
-            </div>
+          <div
+            style={{
+              display: 'flex',
+              color: 'black',
+              justifyContent: 'center',
+            }}
+          >
+            <p className="instagramLink-p">#zteambjj</p>{' '}
+            <img
+              src={InstaLogo}
+              alt="Lien vers instagram"
+              style={{ height: '80px' }}
+            />
+          </div>
         </a>
       </div>
       <hr></hr>
       <h2 className="section-title">Emplacement du Dojo :</h2>
-      <article className="locationMap generalBackground">
+      <article className="locationMap generalBackground light-bg">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2626.5446679947268!2d2.2319675148436358!3d48.82874861074875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67ae337c3835b%3A0x9b96390ef2591f3c!2sEspace%20Forum%20-%20Ville%20de%20Boulogne-Billancourt!5e0!3m2!1sfr!2sfr!4v1667857012555!5m2!1sfr!2sfr"
           width="600"
