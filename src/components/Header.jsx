@@ -105,7 +105,7 @@ function Navbar() {
         <li className="header-nav-li registration-link">
           <a
             className="header-nav-links"
-            href="https://www.helloasso.com/associations/a-m-j-z-team-boulogne/adhesions/inscription-zteam-bjj-boulogne-2022-2023"
+            href="https://www.helloasso.com/associations/a-m-j-z-team-boulogne/adhesions/inscription-zteam-bjj-boulogne-2023-2024"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -224,7 +224,7 @@ function BurgerNavBar() {
         <li className="header-nav-li registration-link">
           <a
             className="header-nav-links"
-            href="https://www.helloasso.com/associations/a-m-j-z-team-boulogne/adhesions/inscription-zteam-bjj-boulogne-2022-2023"
+            href="https://www.helloasso.com/associations/a-m-j-z-team-boulogne/adhesions/inscription-zteam-bjj-boulogne-2023-2024"
             target="_blank"
             rel="noopener noreferrer"
           >

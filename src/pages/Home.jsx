@@ -32,7 +32,7 @@ function HomeContent() {
           tous les types de pratiquants sont représentés au sein de notre
           académie, alors n'hésitez plus et{' '}
           <a
-            href="https://www.helloasso.com/associations/a-m-j-z-team-boulogne/adhesions/inscription-zteam-bjj-boulogne-2022-2023"
+            href="https://www.helloasso.com/associations/a-m-j-z-team-boulogne/adhesions/inscription-zteam-bjj-boulogne-2023-2024"
             target="_blank"
             rel="noopener noreferrer"
           >
