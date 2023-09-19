@@ -30,7 +30,7 @@ function Navbar() {
       <ul className="header-nav-ul">
         <li className="header-nav-li">
           <NavLink
-            to="/z-team_app/home"
+            to="/home"
             className={({ isActive }) => (isActive ? 'active-Navlink ' : '')}
             style={({ isActive }) =>
               isActive ? { color: 'white' } : { color: '' }
@@ -41,7 +41,7 @@ function Navbar() {
         </li>
         <li className="header-nav-li">
           <NavLink
-            to="/z-team_app/schedule"
+            to="/schedule"
             className={({ isActive }) => (isActive ? 'active-Navlink ' : '')}
             style={({ isActive }) =>
               isActive ? { color: 'white' } : { color: '' }
@@ -52,7 +52,7 @@ function Navbar() {
         </li>
         <li className="header-nav-li">
           <NavLink
-            to="/z-team_app/prices"
+            to="/prices"
             className={({ isActive }) => (isActive ? 'active-Navlink ' : '')}
             style={({ isActive }) =>
               isActive ? { color: 'white' } : { color: '' }
@@ -63,7 +63,7 @@ function Navbar() {
         </li>
         <li className="header-nav-li">
           <NavLink
-            to="/z-team_app/instructors"
+            to="/instructors"
             className={({ isActive }) => (isActive ? 'active-Navlink ' : '')}
             style={({ isActive }) =>
               isActive ? { color: 'white' } : { color: '' }
@@ -74,7 +74,7 @@ function Navbar() {
         </li>
         <li className="header-nav-li">
           <NavLink
-            to="/z-team_app/gallery"
+            to="/gallery"
             className={({ isActive }) => (isActive ? 'active-Navlink ' : '')}
             style={({ isActive }) =>
               isActive ? { color: 'white' } : { color: '' }
@@ -85,7 +85,7 @@ function Navbar() {
         </li>
         <li className="header-nav-li">
           <NavLink
-            to="/z-team_app/shop"
+            to="/shop"
             className={({ isActive }) => (isActive ? 'active-Navlink ' : '')}
             style={({ isActive }) =>
               isActive ? { color: 'white' } : { color: '' }
@@ -96,7 +96,7 @@ function Navbar() {
         </li>
         <li className="header-nav-li">
           <NavLink
-            to="/z-team_app/partners"
+            to="/partners"
             className={({ isActive }) => (isActive ? 'active-Navlink ' : '')}
           >
             Partenaires
@@ -140,7 +140,7 @@ function BurgerNavBar() {
       <ul className={`header-nav-ul ${navbarOpen ? 'showMenu' : 'hideMenu'}`}>
         <li className="header-nav-li">
           <NavLink
-            to="/z-team_app/home"
+            to="/home"
             className={({ isActive }) => (isActive ? 'active-Navlink ' : '')}
             onClick={() => closeMenu()}
             style={({ isActive }) =>
@@ -152,7 +152,7 @@ function BurgerNavBar() {
         </li>
         <li className="header-nav-li">
           <NavLink
-            to="/z-team_app/schedule"
+            to="/schedule"
             className={({ isActive }) => (isActive ? 'active-Navlink ' : '')}
             onClick={() => closeMenu()}
             style={({ isActive }) =>
@@ -164,7 +164,7 @@ function BurgerNavBar() {
         </li>
         <li className="header-nav-li">
           <NavLink
-            to="/z-team_app/prices"
+            to="/prices"
             className={({ isActive }) => (isActive ? 'active-Navlink ' : '')}
             onClick={() => closeMenu()}
             style={({ isActive }) =>
@@ -176,7 +176,7 @@ function BurgerNavBar() {
         </li>
         <li className="header-nav-li">
           <NavLink
-            to="/z-team_app/instructors"
+            to="/instructors"
             className={({ isActive }) => (isActive ? 'active-Navlink ' : '')}
             onClick={() => closeMenu()}
             style={({ isActive }) =>
@@ -188,7 +188,7 @@ function BurgerNavBar() {
         </li>
         <li className="header-nav-li">
           <NavLink
-            to="/z-team_app/gallery"
+            to="/gallery"
             className={({ isActive }) => (isActive ? 'active-Navlink ' : '')}
             onClick={() => closeMenu()}
             style={({ isActive }) =>
@@ -200,7 +200,7 @@ function BurgerNavBar() {
         </li>
         <li className="header-nav-li">
           <NavLink
-            to="/z-team_app/shop"
+            to="/shop"
             className={({ isActive }) => (isActive ? 'active-Navlink ' : '')}
             onClick={() => closeMenu()}
             style={({ isActive }) =>
@@ -212,7 +212,7 @@ function BurgerNavBar() {
         </li>
         <li className="header-nav-li">
           <NavLink
-            to="/z-team_app/partners"
+            to="/partners"
             className={({ isActive }) => (isActive ? 'active-Navlink ' : '')}
             style={({ isActive }) =>
               isActive ? { color: 'white' } : { color: '' }
