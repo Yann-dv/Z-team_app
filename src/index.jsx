@@ -6,8 +6,19 @@ import App from './components/App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+if(process.env.NODE_ENV === 'development') {
+  root.render(
+    <BrowserRouter>
+      <React.StrictMode>
+        <App />
+      </React.StrictMode>
+    </BrowserRouter>
+  );
+}
+else
+
 root.render(
-  <BrowserRouter>
+  <BrowserRouter basename="/z-team_app/">
     <React.StrictMode>
       <App />
     </React.StrictMode>
