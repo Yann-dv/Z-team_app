@@ -19,6 +19,7 @@ function App() {
     <section className="App homeContainer generalBackground light-bg">
       <Header />
       <Routes location={location} key={location.pathname}>
+        <Route path="" element={<Navigate to="/home" />} />
         <Route path="/home" element={<Home />} />
         <Route path="/schedule" element={<Schedule />} />
         <Route path="/prices" element={<Prices />} />

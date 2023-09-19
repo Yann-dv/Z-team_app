@@ -18,7 +18,7 @@ if(process.env.NODE_ENV === 'development') {
 else
 
 root.render(
-  <BrowserRouter basename="/z-team_app/">
+  <BrowserRouter basename={`\${process.env.PUBLIC_URL}`}>
     <React.StrictMode>
       <App />
     </React.StrictMode>
