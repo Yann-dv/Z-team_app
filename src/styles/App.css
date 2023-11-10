@@ -234,6 +234,25 @@ ul.header-nav-ul:nth-child(1) > li:nth-last-child(1),
   animation: zero-to-one-opacity 2.5s ease-in-out;
 }
 
+#video-player {
+  display: block;
+  border: none;
+  backdrop-filter: blur(10px);
+}
+
+.close-video-button {
+  position: absolute;
+  top: 6rem;
+  right: 3rem;
+  font-size: 2rem;
+  color: var(--secondary-text-color);
+  background-color: var(--main-text-color);
+  border: none;
+  border-radius: 10px;
+  padding: .10rem .5rem;
+  cursor: pointer;
+  box-shadow: #2d2a2d 1px 1px 6px 1px;
+}
 .academyHistory {
   margin: 0;
   padding: 2rem;

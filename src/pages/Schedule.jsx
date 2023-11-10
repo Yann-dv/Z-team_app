@@ -54,8 +54,10 @@ function Schedule() {
                 <div>
                   <h3 className="schedule-title-hour vertical-text ">Midi</h3>
                 </div>
-                <div>
-                  <h3 className="schedule-title-hour emptySlot">Lundi</h3>
+                <div className="gridItem bjj-background ">
+                  <h2 className="mobile-day">Lundi</h2>
+                  <h3 className="schedule-title-hour">12H - 14H</h3>
+                  <p>JJB / Adultes</p>
                 </div>
                 <div>
                   <h3 className="schedule-title-hour emptySlot">Mardi</h3>

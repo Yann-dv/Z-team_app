@@ -5,6 +5,7 @@ import InstaLogo from '../img/instagram-logo.png';
 import GftLogo from '../img/gft.png';
 import ReactPlayer from 'react-player';
 import { useState } from 'react';
+import myVideo from '../videos/main_trailer.mp4';
 
 function HomeContent() {
   return (
@@ -106,10 +107,11 @@ function Banner() {
         ) : (
           <h1 className="bannerTitle">Z-Team Jiu-Jitsu</h1>
         )}
+        
       </section>
     );
   } else {
-    setTimeout(() => setVideoLaunch(true), 6000);
+    setTimeout(() => setVideoLaunch(true), 5000);
     return (
       <section className="banner smooth-show">
         <h1 className="bannerTitle">Z-Team Jiu-Jitsu</h1>
@@ -120,22 +122,30 @@ function Banner() {
 
 function VideoPlayer() {
   const [videoEnded, setEnded] = useState(false);
+
   if (videoEnded === false) {
     return (
-      <ReactPlayer
+      <><ReactPlayer
         className="video-player"
-        wrapper={'div'}
-        url={
-          'https://www.youtube.com/watch?v=8HzJTUC6JtE&ab_channel=FloGrappling'
-        }
+        id="video-player"
+        wrapper={'player-wrapper'}
+        //url={'https://youtu.be/jhEqYBMCzFE'} //youtube url
+        url={myVideo}
         width={'100%'}
         height={'100%'}
         playing={true}
         muted={true}
-        onPause={() => setEnded(true)}
         onError={() => setEnded(true)}
         onEnded={() => setEnded(true)}
-      />
+        controls={true}
+        loop={false} /><button
+          className="close-video-button"
+          onClick={() => {
+            setEnded(true);
+          } }
+        >
+          X
+        </button></>
     );
   }
   return <h1 className="bannerTitle">Z-Team Jiu-Jitsu</h1>;
