@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/z-team_app/static/css/main.2bcb92e4.css",
-    "main.js": "/z-team_app/static/js/main.cd2142f6.js",
+    "main.css": "/z-team_app/static/css/main.071522e0.css",
+    "main.js": "/z-team_app/static/js/main.b8ef91df.js",
     "static/js/787.300e313d.chunk.js": "/z-team_app/static/js/787.300e313d.chunk.js",
+    "static/media/main_trailer.mp4": "/z-team_app/static/media/main_trailer.7f221f070490511811b3.mp4",
     "static/media/blr.jpg": "/z-team_app/static/media/blr.7dd442899882d57b5203.jpg",
     "static/media/artistemartial.jpg": "/z-team_app/static/media/artistemartial.eab641e156d5d3dd9d64.jpg",
     "static/media/team_banner_min.jpg": "/z-team_app/static/media/team_banner_min.ecb7f5b639376f253492.jpg",
@@ -24,12 +25,12 @@
     "static/media/logo.svg": "/z-team_app/static/media/logo.e93c175b348a6b44b860.svg",
     "static/media/gft.png": "/z-team_app/static/media/gft.ff009f610b41b3c59539.png",
     "index.html": "/z-team_app/index.html",
-    "main.2bcb92e4.css.map": "/z-team_app/static/css/main.2bcb92e4.css.map",
-    "main.cd2142f6.js.map": "/z-team_app/static/js/main.cd2142f6.js.map",
+    "main.071522e0.css.map": "/z-team_app/static/css/main.071522e0.css.map",
+    "main.b8ef91df.js.map": "/z-team_app/static/js/main.b8ef91df.js.map",
     "787.300e313d.chunk.js.map": "/z-team_app/static/js/787.300e313d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2bcb92e4.css",
-    "static/js/main.cd2142f6.js"
+    "static/css/main.071522e0.css",
+    "static/js/main.b8ef91df.js"
   ]
 }
