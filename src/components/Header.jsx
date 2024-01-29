@@ -30,7 +30,7 @@ function Navbar() {
       <ul className="header-nav-ul">
         <li className="header-nav-li">
           <NavLink
-            to="/z-team_app/home"
+            to="/home"
             className={({ isActive }) => (isActive ? 'active-Navlink ' : '')}
             style={({ isActive }) =>
               isActive ? { color: 'white' } : { color: '' }
@@ -41,7 +41,7 @@ function Navbar() {
         </li>
         <li className="header-nav-li">
           <NavLink
-            to="/z-team_app/schedule"
+            to="/schedule"
             className={({ isActive }) => (isActive ? 'active-Navlink ' : '')}
             style={({ isActive }) =>
               isActive ? { color: 'white' } : { color: '' }
@@ -52,7 +52,7 @@ function Navbar() {
         </li>
         <li className="header-nav-li">
           <NavLink
-            to="/z-team_app/prices"
+            to="/prices"
             className={({ isActive }) => (isActive ? 'active-Navlink ' : '')}
             style={({ isActive }) =>
               isActive ? { color: 'white' } : { color: '' }
@@ -63,7 +63,7 @@ function Navbar() {
         </li>
         <li className="header-nav-li">
           <NavLink
-            to="/z-team_app/instructors"
+            to="/instructors"
             className={({ isActive }) => (isActive ? 'active-Navlink ' : '')}
             style={({ isActive }) =>
               isActive ? { color: 'white' } : { color: '' }
@@ -74,7 +74,7 @@ function Navbar() {
         </li>
         <li className="header-nav-li">
           <NavLink
-            to="/z-team_app/gallery"
+            to="/gallery"
             className={({ isActive }) => (isActive ? 'active-Navlink ' : '')}
             style={({ isActive }) =>
               isActive ? { color: 'white' } : { color: '' }
@@ -85,7 +85,7 @@ function Navbar() {
         </li>
         <li className="header-nav-li">
           <NavLink
-            to="/z-team_app/shop"
+            to="/shop"
             className={({ isActive }) => (isActive ? 'active-Navlink ' : '')}
             style={({ isActive }) =>
               isActive ? { color: 'white' } : { color: '' }
@@ -96,7 +96,7 @@ function Navbar() {
         </li>
         <li className="header-nav-li">
           <NavLink
-            to="/z-team_app/partners"
+            to="/partners"
             className={({ isActive }) => (isActive ? 'active-Navlink ' : '')}
           >
             Partenaires
@@ -105,7 +105,7 @@ function Navbar() {
         <li className="header-nav-li registration-link">
           <a
             className="header-nav-links"
-            href="https://www.helloasso.com/associations/a-m-j-z-team-boulogne/adhesions/inscription-zteam-bjj-boulogne-2022-2023"
+            href="https://www.helloasso.com/associations/a-m-j-z-team-boulogne/adhesions/inscription-zteam-bjj-boulogne-2023-2024"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -140,7 +140,7 @@ function BurgerNavBar() {
       <ul className={`header-nav-ul ${navbarOpen ? 'showMenu' : 'hideMenu'}`}>
         <li className="header-nav-li">
           <NavLink
-            to="/z-team_app/home"
+            to="/home"
             className={({ isActive }) => (isActive ? 'active-Navlink ' : '')}
             onClick={() => closeMenu()}
             style={({ isActive }) =>
@@ -152,7 +152,7 @@ function BurgerNavBar() {
         </li>
         <li className="header-nav-li">
           <NavLink
-            to="/z-team_app/schedule"
+            to="/schedule"
             className={({ isActive }) => (isActive ? 'active-Navlink ' : '')}
             onClick={() => closeMenu()}
             style={({ isActive }) =>
@@ -164,7 +164,7 @@ function BurgerNavBar() {
         </li>
         <li className="header-nav-li">
           <NavLink
-            to="/z-team_app/prices"
+            to="/prices"
             className={({ isActive }) => (isActive ? 'active-Navlink ' : '')}
             onClick={() => closeMenu()}
             style={({ isActive }) =>
@@ -176,7 +176,7 @@ function BurgerNavBar() {
         </li>
         <li className="header-nav-li">
           <NavLink
-            to="/z-team_app/instructors"
+            to="/instructors"
             className={({ isActive }) => (isActive ? 'active-Navlink ' : '')}
             onClick={() => closeMenu()}
             style={({ isActive }) =>
@@ -188,7 +188,7 @@ function BurgerNavBar() {
         </li>
         <li className="header-nav-li">
           <NavLink
-            to="/z-team_app/gallery"
+            to="/gallery"
             className={({ isActive }) => (isActive ? 'active-Navlink ' : '')}
             onClick={() => closeMenu()}
             style={({ isActive }) =>
@@ -200,7 +200,7 @@ function BurgerNavBar() {
         </li>
         <li className="header-nav-li">
           <NavLink
-            to="/z-team_app/shop"
+            to="/shop"
             className={({ isActive }) => (isActive ? 'active-Navlink ' : '')}
             onClick={() => closeMenu()}
             style={({ isActive }) =>
@@ -212,7 +212,7 @@ function BurgerNavBar() {
         </li>
         <li className="header-nav-li">
           <NavLink
-            to="/z-team_app/partners"
+            to="/partners"
             className={({ isActive }) => (isActive ? 'active-Navlink ' : '')}
             style={({ isActive }) =>
               isActive ? { color: 'white' } : { color: '' }
@@ -224,7 +224,7 @@ function BurgerNavBar() {
         <li className="header-nav-li registration-link">
           <a
             className="header-nav-links"
-            href="https://www.helloasso.com/associations/a-m-j-z-team-boulogne/adhesions/inscription-zteam-bjj-boulogne-2022-2023"
+            href="https://www.helloasso.com/associations/a-m-j-z-team-boulogne/adhesions/inscription-zteam-bjj-boulogne-2023-2024"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -268,33 +268,44 @@ function ThemeButton() {
 
 function setThemeColor(darkMode) {
   var html = document.getElementsByTagName('html')[0];
+
   if (darkMode === true) {
     html.style.cssText = `
-            --main-background : #FFFFFF;
-            --main-shade-background : #f5f5f5ec;
-            --secondary-background : #f6f6f6;
-            --footer-background : #2d2a2d;
-            --third-background : rgb(62, 3, 62);
-            --purple-background : #5d0a61;
-            --blue-background : #2f1196;
-            --img-background : #cccccc;
-            --main-text-color : black;
-            --secondary-text-color : white;
-            --links-text-color : #61dafb;
+      --main-background : #FFFFFF;
+      --main-shade-background : #f5f5f5ec;
+      --banner-title-color: white; 
+      --secondary-background : #f6f6f6;
+      --footer-background : #2d2a2d;
+      --third-background : rgb(62, 3, 62);
+      --purple-background : #5d0a61;
+      --purple-lighter-color: #8534cd;
+      --blue-background : #2f1196;
+      --img-background-grey : #cccccc;
+      --img-background-reactive: #ddd2dd;
+      --main-text-color : black;
+      --secondary-text-color : white;
+      --links-text-color : #61dafb;
+      --bjj-color: #4cfa17;
+      --grappling-color: #f7f717;
+      --banner-url: var(--main-banner-url);
             `;
   } else {
     html.style.cssText = `
             --main-background : #2d2a2d;
             --main-shade-background : #aba9a9ec;
+            --banner-title-color: #edf2a9; 
             --secondary-background : #000000;
-            --footer-background : #f5f5f5ec;
+            --footer-background : #aba9a9ec;
             --third-background : rgb(62, 3, 62);
-            --purple-background : #5d0a61;
+            --purple-background : #edf2a9;
+            --purple-lighter-color: #686d2b;
             --blue-background : #2f1196;
-            --img-background : #000000;
+            --img-background-grey : #000000;
+            --img-background-reactive: #e3dfe3;
             --main-text-color : white;
             --secondary-text-color : black;
             --links-text-color : #61dafb;
+            --banner-url: var(--secondary-banner-url);
             `;
   }
 }

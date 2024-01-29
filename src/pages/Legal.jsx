@@ -1,7 +1,7 @@
 function Legal() {
   return (
     <section className="generalContainer">
-      <div className="generalBackground">
+      <div className="generalBackground light-bg">
         <h2 className="section-title">Legal Notice</h2>
         <ul className="legalNoticeList">
           <li className="legalNoticeElement">

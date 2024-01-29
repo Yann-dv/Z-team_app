@@ -1,15 +1,26 @@
 :root {
   --main-background : #FFFFFF;
   --main-shade-background : #f5f5f5ec;
+  --banner-title-color: white; 
   --secondary-background : #f6f6f6;
   --footer-background : #2d2a2d;
   --third-background : rgb(62, 3, 62);
   --purple-background : #5d0a61;
+  --purple-lighter-color: #8534cd;
   --blue-background : #2f1196;
-  --img-background : #cccccc;
+  --img-background-grey : #cccccc;
+  --img-background-reactive: #ddd2dd;
   --main-text-color : black;
   --secondary-text-color : white;
   --links-text-color : #61dafb;
+  --planning-text-color : #FFFFFF;
+  --bjj-color: #4cfa17;
+  --grappling-color: #f7f717;
+  --mixte-color: #f71717;
+  --childs-color: #17f7f7;
+  --main-banner-url: url("./../assets/logo.svg");
+  --secondary-banner-url: url("./../assets/logo-b.svg");
+  --banner-url: var(--main-banner-url);
 }
 
 html {
@@ -17,7 +28,8 @@ html {
   overflow-x: hidden;
 }
 
-ul.header-nav-ul:nth-child(1) > li:nth-child(9), ul.header-nav-ul:nth-child(2) > li:nth-child(9) {
+ul.header-nav-ul:nth-child(1) > li:nth-last-child(1),
+ ul.header-nav-ul:nth-child(2) > li:nth-last-child(1) {
   list-style: none;
 }
 
@@ -209,12 +221,12 @@ ul.header-nav-ul:nth-child(1) > li:nth-child(9), ul.header-nav-ul:nth-child(2) >
 
 .bannerTitle {
   font-size: 2.2rem;
-  color: var(--secondary-text-color);
+  color: var(--banner-title-color);
   text-align: center;
   text-transform: uppercase;
   text-decoration: underline;
   display: inline-block;
-  border-top: .25rem solid var(--secondary-text-color);
+  border-top: .25rem solid var(--banner-title-color);
   line-height: 1.6rem;
 }
 
@@ -222,6 +234,25 @@ ul.header-nav-ul:nth-child(1) > li:nth-child(9), ul.header-nav-ul:nth-child(2) >
   animation: zero-to-one-opacity 2.5s ease-in-out;
 }
 
+#video-player {
+  display: block;
+  border: none;
+  backdrop-filter: blur(10px);
+}
+
+.close-video-button {
+  position: absolute;
+  top: 6rem;
+  right: 3rem;
+  font-size: 2rem;
+  color: var(--secondary-text-color);
+  background-color: var(--main-text-color);
+  border: none;
+  border-radius: 10px;
+  padding: .10rem .5rem;
+  cursor: pointer;
+  box-shadow: #2d2a2d 1px 1px 6px 1px;
+}
 .academyHistory {
   margin: 0;
   padding: 2rem;
@@ -337,7 +368,7 @@ ul.header-nav-ul:nth-child(1) > li:nth-child(9), ul.header-nav-ul:nth-child(2) >
 
 .generalBackground {
   background-color: var(--main-background);
-  background-image: url("./../assets/logo.svg");
+  background-image: var(--banner-url);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -351,11 +382,126 @@ ul.header-nav-ul:nth-child(1) > li:nth-child(9), ul.header-nav-ul:nth-child(2) >
   flex-direction: column;
 }
 
-.planning {
-  margin: 2rem;
-  width: 85vw;
-  height: auto
+.scheduleContainer {
+  margin-top: 4rem;
 }
+
+.scheduleGridContainer {
+  margin: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.days {
+  display: none;
+}
+
+.mobile-day
+{
+  margin: 0;
+  display: block;
+  background-color: var(--purple-background);
+  color: var(--secondary-text-color);
+}
+
+.schedule-title-day {
+  text-transform: uppercase;
+}
+
+.bjj-background {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("./../img/bjj-min.jpg"); 
+  background-color: var(--bjj-color);
+  background-blend-mode: multiply;
+}
+
+.grappling-background {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("./../img/grappling-min.jpg"); 
+  background-color: var(--grappling-color);
+  background-blend-mode: multiply;
+}
+
+.mixte-background {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("./../img/logo-min.png"); 
+  background-color: var(--mixte-color);
+  background-blend-mode: multiply;
+}
+
+.childs-background {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("./../img/childs-min.jpg"); 
+  background-color: var(--childs-color);
+  background-blend-mode: multiply;
+}
+
+.gridItem
+{
+  margin: .5rem;
+  width: 100%;
+  height: 34vh;
+}
+
+.gridItem h3 {
+  margin: 0;
+  background-color: var(--purple-background);
+  color: var(--secondary-text-color);
+}
+
+.gridItem p {
+  padding: .5rem;
+  color: var(--planning-text-color);
+}
+
+.gridItem:hover {
+  cursor: pointer;
+  background-color: white;
+  color: var(--purple-background);
+}
+
+.gridItem p {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.vertical-text {
+  display: none;
+}
+
+.morning, .midDay, .evening {
+  background-color: var(--img-background-reactive);
+}
+
+.emptySlot {
+  display: none;
+}
+
+.scheduleGlobalInfos {
+  background-color: var(--img-background-reactive);
+  margin: 1rem;
+  padding: 1rem;
+  max-width: 95vw;
+}
+
+.scheduleGlobalInfos h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.scheduleGlobalInfos .location-icon{
+  height: 4vh;
+}
+
+
 .shopBackground {
   justify-content: center;
 }
@@ -392,11 +538,11 @@ tfoot > tr  {
   color: var(--secondary-text-color);
 }
 tbody > tr:hover {
-  background-color: #8534cd;
+  background-color: var(--purple-lighter-color);
 }
 
 .registration-btn {
-  background-color:#8534cd;
+  background-color:var(--purple-lighter-color);
   color: var(--secondary-text-color);
   margin: 1.5rem;
   padding: 0;
@@ -405,7 +551,7 @@ tbody > tr:hover {
 
 .registration-btn a {
   display: block;
-  background-color:#8534cd;
+  background-color: var(--purple-lighter-color);
   color: var(--secondary-text-color);
   text-decoration: none;
   font-size: 1.5rem;
@@ -415,9 +561,9 @@ tbody > tr:hover {
 
 .registration-btn a:hover {
   background-color: var(--secondary-text-color);
-  color: #8534cd;
+  color: var(--purple-lighter-color);
   text-decoration: underline;
-  border: 2px solid #8534cd;
+  border: 2px solid var(--purple-lighter-color);
 }
 
 .section-title {
@@ -536,7 +682,7 @@ tbody > tr:hover {
   .bannerTitle {
     font-size: 1.5rem;
     line-height: 1rem;
-    border-top: .15rem solid var(--secondary-text-color);
+    border-top: .15rem solid var(--banner-title-color);
   }
 }
 @media only screen and (min-width: 1024px), (orientation: landscape) {
@@ -608,7 +754,7 @@ tbody > tr:hover {
   .bannerTitle {
     font-size: 6rem;
     line-height: 4.2rem;
-    border-top: .6rem solid var(--secondary-text-color);
+    border-top: .6rem solid var(--banner-title-color);
 
   }
 
@@ -627,10 +773,6 @@ tbody > tr:hover {
   .locationMap iframe{
     width: 60vw;
     height: 70vh;
-  }
-
-  .planning {
-    width: 60vw;
   }
 
   .prices {
@@ -696,6 +838,55 @@ tbody > tr:hover {
     animation-duration: 2s;
     animation-timing-function: "ease-in-out";
   }
+
+.flex-wrapper {
+  display: flex;
+}
+
+.scheduleGridContainer {
+  margin-left: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 1rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.scheduleGlobalInfos {
+  margin-top: 0;
+  margin-right: 1.5rem;
+  padding: 1rem;
+  max-width: 15vw;
+}
+
+.gridItem {
+  margin: 0;
+  height: 100%;
+}
+
+.gridItem h3 {
+  height: 8vh;
+}
+
+.days {
+  background-color: var(--purple-background);
+  color: var(--secondary-text-color);
+}
+.mobile-day {
+  display: none;
+}
+
+.emptySlot {
+  display: block;
+  visibility: hidden;
+}
+
+.vertical-text {
+  display: block;
+  transform: rotate(-90deg);
+}
+
 }
 
   @keyframes appear {
