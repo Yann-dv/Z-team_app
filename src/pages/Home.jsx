@@ -13,8 +13,8 @@ function HomeContent() {
       <Banner />
       <article className="homePresentation">
         <p className="academyHistory">
-          La Z-Team a été fondée en 2000 par les professeurs Zakaria ARHAB,
-          Karim HAMLADJI et Mathias JARDIN, sous la présidence de Mr Isshane
+          La Z-Team a été fondée en 2002 par les professeurs Zakaria ARHAB et
+          Karim HAMLADJI, sous la présidence de Mr Isshane
           AKIL. La Z-team est une académie de Jiu-Jitsu Brésilien et de
           Grappling, regroupant des enseignants de haut niveau parmis les
           pionniers du Jiu-jitsu en France, des compétiteurs nationaux et

@@ -85,17 +85,6 @@ function Navbar() {
         </li>
         <li className="header-nav-li">
           <NavLink
-            to="/shop"
-            className={({ isActive }) => (isActive ? 'active-Navlink ' : '')}
-            style={({ isActive }) =>
-              isActive ? { color: 'white' } : { color: '' }
-            }
-          >
-            Shop
-          </NavLink>
-        </li>
-        <li className="header-nav-li">
-          <NavLink
             to="/partners"
             className={({ isActive }) => (isActive ? 'active-Navlink ' : '')}
           >
@@ -196,18 +185,6 @@ function BurgerNavBar() {
             }
           >
             Gallerie
-          </NavLink>
-        </li>
-        <li className="header-nav-li">
-          <NavLink
-            to="/shop"
-            className={({ isActive }) => (isActive ? 'active-Navlink ' : '')}
-            onClick={() => closeMenu()}
-            style={({ isActive }) =>
-              isActive ? { color: 'white' } : { color: '' }
-            }
-          >
-            Shop
           </NavLink>
         </li>
         <li className="header-nav-li">
