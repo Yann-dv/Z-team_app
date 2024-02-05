@@ -14,15 +14,7 @@ function Gallery() {
           target="_blank"
           title="Lien vers Instagram"
         >
-          <div
-              className='instagramGalleryLink'
-
-            style={{
-              display: 'flex',
-              color: 'black',
-              justifyContent: 'center',
-            }}
-          >
+          <div className='instagramGalleryLink'>
             <img
               src={InstaLogo}
               alt="Lien vers notre gallerie instagram"

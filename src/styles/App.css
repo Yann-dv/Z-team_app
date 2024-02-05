@@ -35,16 +35,15 @@ ul.header-nav-ul:nth-child(1) > li:nth-last-child(1),
 
 .themeButton {
   position: absolute;
-  font-size: 1.4rem;
-  top: 94vh;
-  right: 1.4rem;
+  top: 3rem;
+  right: 1rem;
+  box-shadow: #2d2a2d 1px 1px 2px 1px;
   z-index: 5;
   background-color: var(--main-text-color);
   color: var(--secondary-text-color);
   border: none;
-  box-shadow: #2d2a2d 1px 1px 6px 1px;
   border-radius: 100%;
-  padding: .3rem .6rem;
+  padding: .1rem .3rem;
   cursor: pointer;
 }
 
@@ -277,8 +276,16 @@ ul.header-nav-ul:nth-child(1) > li:nth-last-child(1),
 }
 
 .instagramGalleryLink {
-  width: 20%;
   margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.instagramGalleryLink img{
+  max-width: 100%;
+  object-fit: contain;
+  height: 80vh;
+  border-radius: 20px;
 }
 
 .instagramLink img {
@@ -731,8 +738,11 @@ tbody > tr:hover {
   }
 
   .themeButton {
+    font-size: 1.4rem;
     top: 1rem;
-    right: 1rem;
+    right: 1.4rem;
+    box-shadow: #2d2a2d 1px 1px 6px 1px;
+    padding: .3rem .6rem;
   }
 
   #burgerNavBar {
@@ -911,11 +921,8 @@ tbody > tr:hover {
   transform: rotate(-90deg);
 }
 
-.instagramGalleryLink {
-  width: 100%
-}
 .instagramGalleryLink img {
-  border-radius: 20px;
+  height: 100vh;
 }
 
 .scheduleImgContainer img {
