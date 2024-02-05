@@ -15,6 +15,8 @@ function Gallery() {
           title="Lien vers Instagram"
         >
           <div
+              className='instagramGalleryLink'
+
             style={{
               display: 'flex',
               color: 'black',
@@ -24,7 +26,6 @@ function Gallery() {
             <img
               src={InstaLogo}
               alt="Lien vers notre gallerie instagram"
-              style={{ width: '70vw', marginBottom:'1rem', borderRadius: '20px' }}
             />
           </div>
         </a>

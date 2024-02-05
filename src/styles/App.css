@@ -276,6 +276,11 @@ ul.header-nav-ul:nth-child(1) > li:nth-last-child(1),
  color: "black";
 }
 
+.instagramGalleryLink {
+  width: 20%;
+  margin-bottom: 1rem;
+}
+
 .instagramLink img {
   border-radius: 30%;
   transition: .3s all;
@@ -387,6 +392,10 @@ ul.header-nav-ul:nth-child(1) > li:nth-last-child(1),
 
 .scheduleContainer {
   margin-top: 4rem;
+}
+
+.scheduleImgContainer img {
+  width: 90vw;
 }
 
 .scheduleGridContainer {
@@ -854,9 +863,9 @@ tbody > tr:hover {
     animation-timing-function: "ease-in-out";
   }
 
-.flex-wrapper {
-  display: flex;
-}
+  .flex-wrapper {
+    display: flex;
+  }
 
 .scheduleGridContainer {
   margin-left: 1.5rem;
@@ -900,6 +909,17 @@ tbody > tr:hover {
 .vertical-text {
   display: block;
   transform: rotate(-90deg);
+}
+
+.instagramGalleryLink {
+  width: 100%
+}
+.instagramGalleryLink img {
+  border-radius: 20px;
+}
+
+.scheduleImgContainer img {
+  width: 50vw;
 }
 
 }
