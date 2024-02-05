@@ -1,3 +1,5 @@
+import InstaLogo from '../img/insta.jpg';
+
 function Gallery() {
   return (
     <section className="generalContainer">
@@ -5,30 +7,29 @@ function Gallery() {
         <div className="smooth-show">
         <h2 className="section-title">Gallerie</h2>
         <div className="gallery-flex">
-          <div className="galleryCard" id="galleryCard_1">
-            <img className="galleryImage img1" src={require("../img/image.png")} alt="Gallery"></img>
-            <div className="galleryDescription">Gallery description to complete</div>
+        <div >
+        <a
+          href="https://www.instagram.com/zteambjj/?hl=fr"
+          rel="noreferrer"
+          target="_blank"
+          title="Lien vers Instagram"
+        >
+          <div
+              className='instagramGalleryLink'
+
+            style={{
+              display: 'flex',
+              color: 'black',
+              justifyContent: 'center',
+            }}
+          >
+            <img
+              src={InstaLogo}
+              alt="Lien vers notre gallerie instagram"
+            />
           </div>
-          <div className="galleryCard" id="galleryCard_2">
-            <img className="galleryImage img2" src={require("../img/image.png")} alt="Gallery"></img>
-            <div className="galleryDescription">Gallery description to complete</div>
-          </div>
-          <div className="galleryCard" id="galleryCard_3">
-            <img className="galleryImage img3" src={require("../img/image.png")} alt="Gallery"></img>
-            <div className="galleryDescription">Gallery description to complete</div>
-          </div>
-          <div className="galleryCard" id="galleryCard_4">
-            <img className="galleryImage img4" src={require("../img/image.png")} alt="Gallery"></img>
-            <div className="galleryDescription">Gallery description to complete</div>
-          </div>
-          <div className="galleryCard" id="galleryCard_5">
-            <img className="galleryImage img5" src={require("../img/image.png")} alt="Gallery"></img>
-            <div className="galleryDescription">Gallery description to complete</div>
-          </div>
-          <div className="galleryCard" id="galleryCard_6">
-            <img className="galleryImage img6" src={require("../img/image.png")} alt="Gallery"></img>
-            <div className="galleryDescription">Gallery description to complete</div>
-          </div>
+        </a>
+      </div>
         </div>
         </div>
       </div>

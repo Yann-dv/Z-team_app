@@ -276,6 +276,11 @@ ul.header-nav-ul:nth-child(1) > li:nth-last-child(1),
  color: "black";
 }
 
+.instagramGalleryLink {
+  width: 20%;
+  margin-bottom: 1rem;
+}
+
 .instagramLink img {
   border-radius: 30%;
   transition: .3s all;
@@ -299,6 +304,7 @@ ul.header-nav-ul:nth-child(1) > li:nth-last-child(1),
 
 .instagramLink-p:hover {
   background: -webkit-linear-gradient(#c60dfe, #f741c0 , #ed702c, #ffde37);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -318,6 +324,8 @@ ul.header-nav-ul:nth-child(1) > li:nth-last-child(1),
   margin: .5rem;
   width: 90vw;
   height: auto;
+  border-radius: 10px;
+  box-shadow: 8px 8px 5px rgba(19, 19, 19, 0.689)
 }
 
 .homeContainer hr {
@@ -384,6 +392,10 @@ ul.header-nav-ul:nth-child(1) > li:nth-last-child(1),
 
 .scheduleContainer {
   margin-top: 4rem;
+}
+
+.scheduleImgContainer img {
+  width: 90vw;
 }
 
 .scheduleGridContainer {
@@ -601,6 +613,7 @@ tbody > tr:hover {
   background-color: var(--purple-background);
   margin: auto;
   margin-top: 1.5rem;
+  min-height: 95vh;
   width: 350px;
   position: relative;
   border: 2px solid var(--secondary-text-color);
@@ -616,6 +629,7 @@ tbody > tr:hover {
  opacity: 1;
  transition: .5s ease;
  cursor: pointer;
+ box-shadow: 8px 8px 5px rgba(19, 19, 19, 0.689);
 }
 
 .instructorCard-img:hover {
@@ -633,6 +647,14 @@ tbody > tr:hover {
   color: var(--secondary-text-color);
   font-size: 1.4rem;
   padding: 1rem;
+}
+
+.palmaresTitle {
+  text-decoration: underline;
+}
+
+.palmaresContent {
+  text-decoration: none;
 }
 
 .galleryBackground {
@@ -826,6 +848,8 @@ tbody > tr:hover {
     margin: 1rem;
     width: 50vw;
     height: auto;
+    border-radius: 10px;
+    box-shadow: 8px 8px 5px rgba(19, 19, 19, 0.689)
   }
 
   .footerLink {
@@ -839,9 +863,9 @@ tbody > tr:hover {
     animation-timing-function: "ease-in-out";
   }
 
-.flex-wrapper {
-  display: flex;
-}
+  .flex-wrapper {
+    display: flex;
+  }
 
 .scheduleGridContainer {
   margin-left: 1.5rem;
@@ -885,6 +909,17 @@ tbody > tr:hover {
 .vertical-text {
   display: block;
   transform: rotate(-90deg);
+}
+
+.instagramGalleryLink {
+  width: 100%
+}
+.instagramGalleryLink img {
+  border-radius: 20px;
+}
+
+.scheduleImgContainer img {
+  width: 50vw;
 }
 
 }
