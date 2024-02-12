@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/z-team_app/static/css/main.e9383462.css",
-    "main.js": "/z-team_app/static/js/main.4042af01.js",
+    "main.css": "/z-team_app/static/css/main.9ac7a884.css",
+    "main.js": "/z-team_app/static/js/main.1a27a371.js",
     "static/js/787.300e313d.chunk.js": "/z-team_app/static/js/787.300e313d.chunk.js",
     "static/media/main_trailer.mp4": "/z-team_app/static/media/main_trailer.7f221f070490511811b3.mp4",
     "static/media/blr.jpg": "/z-team_app/static/media/blr.7dd442899882d57b5203.jpg",
@@ -26,12 +26,12 @@
     "static/media/logo-b.svg": "/z-team_app/static/media/logo-b.8efc138aaf152103ee98.svg",
     "static/media/logo.svg": "/z-team_app/static/media/logo.a50dfb23200e3762920d.svg",
     "index.html": "/z-team_app/index.html",
-    "main.e9383462.css.map": "/z-team_app/static/css/main.e9383462.css.map",
-    "main.4042af01.js.map": "/z-team_app/static/js/main.4042af01.js.map",
+    "main.9ac7a884.css.map": "/z-team_app/static/css/main.9ac7a884.css.map",
+    "main.1a27a371.js.map": "/z-team_app/static/js/main.1a27a371.js.map",
     "787.300e313d.chunk.js.map": "/z-team_app/static/js/787.300e313d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e9383462.css",
-    "static/js/main.4042af01.js"
+    "static/css/main.9ac7a884.css",
+    "static/js/main.1a27a371.js"
   ]
 }
