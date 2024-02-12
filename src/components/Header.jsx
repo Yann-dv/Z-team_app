@@ -4,9 +4,13 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
 import { Link, NavLink } from 'react-router-dom';
 import logo from '../assets/logo192_no_back.png';
+import frFlag from '../assets/fr-flag.png';
+import enFlag from '../assets/en-flag.png';
 
 library.add(faSun);
 library.add(faMoon);
+
+const tradBar = document.getElementById('gt-nvframe');
 
 function Header() {
   return (
@@ -100,6 +104,9 @@ function Navbar() {
           >
             Inscription
           </a>
+        </li>
+        <li>
+          <TranslateButton />
         </li>
         <li>
           <ThemeButton />
@@ -208,6 +215,9 @@ function BurgerNavBar() {
             Inscriptions
           </a>
         </li>
+        <li className="header-nav-li">
+          <TranslateButton />
+        </li>
         <li>
           <ThemeButton />
         </li>
@@ -224,6 +234,28 @@ function toggleNavbar() {
   navbarList.classList.toggle('toggleNavbar');
   appHheader.classList.toggle('appHeaderMinimize');
   banner.classList.toggle('margin-top-less-4');
+}
+
+function TranslateButton() {
+  if(tradBar) 
+  {
+    /*flagLink.setAttribute('href', 'https://yann-dv.github.io/z-team_app/');
+    flagLink.setAttribute('title', 'Voir la version française');
+    flagVersion.style.background = "padding-box no-repeat center/ cover url({frFlag})";*/
+    return (
+      <a href="https://yann-dv.github.io/z-team_app/" id="flagLink" className="translateFlag">
+        <img src={frFlag} alt="Translate to french" title="Translate to french" className="translateFlagImg" />
+      </a>
+    );
+    
+  }
+  else {
+    return (
+      <a href="https://translate.google.com/translate?sl=fr&tl=en&u=https://yann-dv.github.io/z-team_app/" id="flagLink" className="translateFlag">
+        <img src={enFlag} alt="Traduire en anglais" title="Traduire en anglais" className="translateFlagImg" />
+      </a>
+    );
+  }
 }
 
 function ThemeButton() {

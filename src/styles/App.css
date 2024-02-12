@@ -33,6 +33,15 @@ ul.header-nav-ul:nth-child(1) > li:nth-last-child(1),
   list-style: none;
 }
 
+.translateFlag {
+  cursor: pointer;
+  width: 20%;
+}
+
+.translateFlagImg {
+  width: 100%;
+}
+
 .themeButton {
   position: absolute;
   top: 3rem;
@@ -743,6 +752,15 @@ tbody > tr:hover {
     right: 1.4rem;
     box-shadow: #2d2a2d 1px 1px 6px 1px;
     padding: .3rem .6rem;
+  }
+
+  .translateFlagImg {
+    z-index: 5;
+    width: 2rem;
+    height: 2rem;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    border-radius: 50%;
   }
 
   #burgerNavBar {
