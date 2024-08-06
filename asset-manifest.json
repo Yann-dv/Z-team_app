@@ -1,8 +1,22 @@
 {
   "files": {
-    "main.css": "/z-team_app/static/css/main.9ac7a884.css",
-    "main.js": "/z-team_app/static/js/main.1a27a371.js",
-    "static/js/787.300e313d.chunk.js": "/z-team_app/static/js/787.300e313d.chunk.js",
+    "main.css": "/z-team_app/static/css/main.135c4de7.css",
+    "main.js": "/z-team_app/static/js/main.d5e57fcc.js",
+    "reactPlayerYouTube.js": "/z-team_app/static/js/reactPlayerYouTube.7791adc0.chunk.js",
+    "reactPlayerSoundCloud.js": "/z-team_app/static/js/reactPlayerSoundCloud.7e3e5101.chunk.js",
+    "reactPlayerVimeo.js": "/z-team_app/static/js/reactPlayerVimeo.348f5892.chunk.js",
+    "reactPlayerMux.js": "/z-team_app/static/js/reactPlayerMux.b9efd86d.chunk.js",
+    "reactPlayerFacebook.js": "/z-team_app/static/js/reactPlayerFacebook.b4bd8e25.chunk.js",
+    "reactPlayerStreamable.js": "/z-team_app/static/js/reactPlayerStreamable.8aba92a6.chunk.js",
+    "reactPlayerWistia.js": "/z-team_app/static/js/reactPlayerWistia.b1c46fa9.chunk.js",
+    "reactPlayerTwitch.js": "/z-team_app/static/js/reactPlayerTwitch.695734e2.chunk.js",
+    "reactPlayerDailyMotion.js": "/z-team_app/static/js/reactPlayerDailyMotion.4dd6b4f1.chunk.js",
+    "reactPlayerMixcloud.js": "/z-team_app/static/js/reactPlayerMixcloud.c5d886d6.chunk.js",
+    "reactPlayerVidyard.js": "/z-team_app/static/js/reactPlayerVidyard.8796c097.chunk.js",
+    "reactPlayerKaltura.js": "/z-team_app/static/js/reactPlayerKaltura.26b7a3b5.chunk.js",
+    "reactPlayerFilePlayer.js": "/z-team_app/static/js/reactPlayerFilePlayer.634cc5e5.chunk.js",
+    "reactPlayerPreview.js": "/z-team_app/static/js/reactPlayerPreview.2718301c.chunk.js",
+    "static/js/488.25d15751.chunk.js": "/z-team_app/static/js/488.25d15751.chunk.js",
     "static/media/main_trailer.mp4": "/z-team_app/static/media/main_trailer.7f221f070490511811b3.mp4",
     "static/media/blr.jpg": "/z-team_app/static/media/blr.7dd442899882d57b5203.jpg",
     "static/media/artistemartial.jpg": "/z-team_app/static/media/artistemartial.eab641e156d5d3dd9d64.jpg",
@@ -26,12 +40,26 @@
     "static/media/logo-b.svg": "/z-team_app/static/media/logo-b.8efc138aaf152103ee98.svg",
     "static/media/logo.svg": "/z-team_app/static/media/logo.a50dfb23200e3762920d.svg",
     "index.html": "/z-team_app/index.html",
-    "main.9ac7a884.css.map": "/z-team_app/static/css/main.9ac7a884.css.map",
-    "main.1a27a371.js.map": "/z-team_app/static/js/main.1a27a371.js.map",
-    "787.300e313d.chunk.js.map": "/z-team_app/static/js/787.300e313d.chunk.js.map"
+    "main.135c4de7.css.map": "/z-team_app/static/css/main.135c4de7.css.map",
+    "main.d5e57fcc.js.map": "/z-team_app/static/js/main.d5e57fcc.js.map",
+    "reactPlayerYouTube.7791adc0.chunk.js.map": "/z-team_app/static/js/reactPlayerYouTube.7791adc0.chunk.js.map",
+    "reactPlayerSoundCloud.7e3e5101.chunk.js.map": "/z-team_app/static/js/reactPlayerSoundCloud.7e3e5101.chunk.js.map",
+    "reactPlayerVimeo.348f5892.chunk.js.map": "/z-team_app/static/js/reactPlayerVimeo.348f5892.chunk.js.map",
+    "reactPlayerMux.b9efd86d.chunk.js.map": "/z-team_app/static/js/reactPlayerMux.b9efd86d.chunk.js.map",
+    "reactPlayerFacebook.b4bd8e25.chunk.js.map": "/z-team_app/static/js/reactPlayerFacebook.b4bd8e25.chunk.js.map",
+    "reactPlayerStreamable.8aba92a6.chunk.js.map": "/z-team_app/static/js/reactPlayerStreamable.8aba92a6.chunk.js.map",
+    "reactPlayerWistia.b1c46fa9.chunk.js.map": "/z-team_app/static/js/reactPlayerWistia.b1c46fa9.chunk.js.map",
+    "reactPlayerTwitch.695734e2.chunk.js.map": "/z-team_app/static/js/reactPlayerTwitch.695734e2.chunk.js.map",
+    "reactPlayerDailyMotion.4dd6b4f1.chunk.js.map": "/z-team_app/static/js/reactPlayerDailyMotion.4dd6b4f1.chunk.js.map",
+    "reactPlayerMixcloud.c5d886d6.chunk.js.map": "/z-team_app/static/js/reactPlayerMixcloud.c5d886d6.chunk.js.map",
+    "reactPlayerVidyard.8796c097.chunk.js.map": "/z-team_app/static/js/reactPlayerVidyard.8796c097.chunk.js.map",
+    "reactPlayerKaltura.26b7a3b5.chunk.js.map": "/z-team_app/static/js/reactPlayerKaltura.26b7a3b5.chunk.js.map",
+    "reactPlayerFilePlayer.634cc5e5.chunk.js.map": "/z-team_app/static/js/reactPlayerFilePlayer.634cc5e5.chunk.js.map",
+    "reactPlayerPreview.2718301c.chunk.js.map": "/z-team_app/static/js/reactPlayerPreview.2718301c.chunk.js.map",
+    "488.25d15751.chunk.js.map": "/z-team_app/static/js/488.25d15751.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9ac7a884.css",
-    "static/js/main.1a27a371.js"
+    "static/css/main.135c4de7.css",
+    "static/js/main.d5e57fcc.js"
   ]
 }
