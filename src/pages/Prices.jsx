@@ -12,42 +12,62 @@ function Prices() {
                 </th>
               </tr>
               <tr>
-                <td>Adulte (paiement unique)</td>
-                <td>250€/an</td>
-              </tr>
-              <tr>
-                <td>Adulte (paiement en 3x)</td>
-                <td>85€/mois</td>
-              </tr>
-              <tr>
-                <td>Etudiants, sans-emploi (paiement en 3x)</td>
-                <td>65€/mois</td>
-              </tr>
-              <tr>
-                <td>Enfants (paiement en 3x)</td>
-                <td>50€/mois</td>
-              </tr>
-              <tr>
-                <td>Inscription club partenaire (paiement unique)</td>
+                <td>Adhésion annuelle sections Enfants et Féminines (paiement en 1 fois)</td>
                 <td>150€/an</td>
               </tr>
               <tr>
-                <td>Licence Cfjjb (paiement unique)</td>
-                <td>40€/an</td>
+                <td>Adhésion annuelle sections Enfants et Féminines (paiement en 3 fois)</td>
+                <td>50€/mois (Soit 150€ au total)</td>
               </tr>
               <tr>
-                <td>Passeport sportif cfjjb (paiement unique)</td>
-                <td>10€/an</td>
+                <td>Adhésion annuelle Demandeurs d'emploi, Etudiants et Black Belt (paiement en 1 fois)</td>
+                <td>285€/an</td>
+              </tr>
+              <tr>
+                <td>Adhésion annuelle Demandeurs d'emploi, Etudiants et Black Belt (paiement en 3 fois)</td>
+                <td>95€/mois (Soit 285€ au total)</td>
+              </tr>
+              <tr>
+                <td>Adhésion annuelle Adultes (paiement en 1 fois)</td>
+                <td>348€/an</td>
+              </tr>
+              <tr>
+                <td>Adhésion annuelle Adultes (paiement en 3 fois)</td>
+                <td>116€/mois (Soit 348€ au total)</td>
+              </tr>
+              <tr>
+                <td>CLUBS PARTENAIRES - Adhésion annuelle (paiement en 1 fois)</td>
+                <td>246€/an</td>
+              </tr>
+              <tr>
+                <td>CLUBS PARTENAIRES - Adhésion annuelle (paiement en 3 fois)</td>
+                <td>82€/mois (Soit 246€ au total)</td>
+              </tr>
+              <tr>
+                <td>CLUBS AFFILIÉS - Adhésion annuelle (paiement en 1 fois)</td>
+                <td>150€/an</td>
+              </tr>
+              <tr>
+                <td>CLUBS AFFILIÉS - Adhésion annuelle (paiement en 3 fois)</td>
+                <td>50€/mois (Soit 150€ au total)</td>
+              </tr>
+              <tr>
+                <td>Licence CFJJB</td>
+                <td>41€/an</td>
+              </tr>
+              <tr>
+                <td>Passeport sportif CFJJB (valable 10 ans)</td>
+                <td>25€</td>
               </tr>
               <tr>
                 <td>Séance d'essai</td>
-                <td>gratuit</td>
+                <td>Gratuit</td>
               </tr>
             </tbody>
           </table>
           <button className="registration-btn">
             <a
-              href="https://www.helloasso.com/associations/a-m-j-z-team-boulogne/adhesions/inscription-zteam-bjj-boulogne-2023-2024"
+              href="https://www.helloasso.com/associations/a-m-j-z-team-boulogne/adhesions/zteam-boulogne-adhesion-2024-2025"
               target="_blank"
               rel="noopener noreferrer"
             >
